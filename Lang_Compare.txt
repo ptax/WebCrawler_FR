@@ -1,0 +1,881 @@
+CodeInseeTable$NameCommune$EnName$DeName$PlName$EsName
+62737$Sains-en-Gohelle$Sains-en-Gohelle$Sains-en-Gohelle$Sains-en-Gohelle$Sains-en-Gohelle
+62736$Sailly-sur-la-Lys$Sailly-sur-la-Lys$Sailly-sur-la-Lys$Sailly-sur-la-Lys$Sailly-sur-la-Lys
+62735$Sailly-Labourse$Sailly-Labourse$Sailly-Labourse$Sailly-Labourse$Sailly-Labourse
+62734$Sailly-en-Ostrevent$Sailly-en-Ostrevent$Sailly-en-Ostrevent$Sailly-en-Ostrevent$Sailly-en-Ostrevent
+62733$Sailly-au-Bois$Sailly-au-Bois$Sailly-au-Bois$Sailly-au-Bois$Sailly-au-Bois
+62732$Sachin$Sachin, Pas-de-Calais$Sachin$Sachin$Sachin
+62731$Ruyaulcourt$Ruyaulcourt$Ruyaulcourt$Ruyaulcourt$Ruyaulcourt
+62730$Ruminghem$Ruminghem$Ruminghem$Ruminghem$Ruminghem
+62626$Noyelles-lès-Vermelles$Noyelles-lès-Vermelles$Noyelles-lès-Vermelles$Noyelles-lès-Vermelles$Noyelles-lès-Vermelles
+62739$Sains-lès-Marquion$Sains-lès-Marquion$Sains-lès-Marquion$Sains-lès-Marquion$Sains-lès-Marquion
+62738$Sains-lès-Fressin$Sains-lès-Fressin$Sains-lès-Fressin$Sains-lès-Fressin$Sains-lès-Fressin
+62308$Escœuilles$Escœuilles$$Escœuilles$Escœuilles
+62309$Esquerdes$Esquerdes$Esquerdes$Esquerdes$Esquerdes
+62306$Ervillers$Ervillers$Ervillers$Ervillers$Ervillers
+62307$Escalles$Escalles$Escalles$Escalles$Escalles
+62304$Erny-Saint-Julien$Erny-Saint-Julien$$Erny-Saint-Julien$Erny-Saint-Julien
+62302$Ergny$Ergny$Ergny$Ergny$Ergny
+62303$Érin$Érin$Érin$Érin (Pas-de-Calais)$Érin
+62300$Équihen-Plage$Équihen-Plage$Équihen-Plage$Équihen-Plage$Équihen-Plage
+62301$Équirre$Équirre$Équirre$Équirre$Équirre
+62889$Wierre-Effroy$Wierre-Effroy$Wierre-Effroy$Wierre-Effroy$Wierre-Effroy
+62888$Wierre-au-Bois$Wierre-au-Bois$Wierre-au-Bois$Wierre-au-Bois$Wierre-au-Bois
+62782$Saudemont$Saudemont$Saudemont$Saudemont$Saudemont
+62783$Saulchoy$Saulchoy$Saulchoy$Saulchoy (Pas-de-Calais)$Saulchoy
+62780$Sauchy-Cauchy$Sauchy-Cauchy$Sauchy-Cauchy$Sauchy-Cauchy$Sauchy-Cauchy
+62781$Sauchy-Lestrée$Sauchy-Lestrée$Sauchy-Lestrée$Sauchy-Lestrée$Sauchy-Lestrée
+62786$Selles$Selles, Pas-de-Calais$Selles$Selles (Pas-de-Calais)$Selles (Paso de Calais)
+62787$Sempy$Sempy$Sempy$Sempy$Sempy
+62784$Saulty$Saulty$Saulty$Saulty$Saulty
+62785$Savy-Berlette$Savy-Berlette$Savy-Berlette$Savy-Berlette$Savy-Berlette
+62788$Seninghem$Seninghem$Seninghem$Seninghem$Seninghem
+62789$Senlecques$Senlecques$Senlecques$Senlecques$Senlecques
+62661$Bouin-Plumoison$Bouin-Plumoison$Bouin-Plumoison$Bouin-Plumoison$Bouin-Plumoison
+62603$Nesles$Nesles$Nesles$Nesles$Nesles
+62602$Nempont-Saint-Firmin$Nempont-Saint-Firmin$Nempont-Saint-Firmin$Nempont-Saint-Firmin$Nempont-Saint-Firmin
+62601$Nédonchel$Nédonchel$Nédonchel$Nédonchel$Nédonchel
+62600$Nédon$Nédon$Nédon$Nédon$Nédon
+62607$Neuville-au-Cornet$Neuville-au-Cornet$Neuville-au-Cornet$Neuville-au-Cornet$Neuville-au-Cornet
+62606$Neuve-Chapelle$Neuve-Chapelle$Neuve-Chapelle$Neuve-Chapelle$Neuve-Chapelle
+62605$Neulette$Neulette$Neulette$Neulette$Neulette
+62604$Neufchâtel-Hardelot$Neufchâtel-Hardelot$Neufchâtel-Hardelot$Neufchâtel-Hardelot$Neufchâtel-Hardelot
+62609$Neuville-Saint-Vaast$Neuville-Saint-Vaast$Neuville-Saint-Vaast$Neuville-Saint-Vaast$Neuville-Saint-Vaast
+62608$Neuville-Bourjonval$Neuville-Bourjonval$Neuville-Bourjonval$Neuville-Bourjonval$Neuville-Bourjonval
+62238$Conteville-en-Ternois$Conteville-en-Ternois$Conteville-en-Ternois$Conteville-en-Ternois$Conteville-en-Ternois
+62239$Coquelles$Coquelles$Coquelles$Coquelles$Coquelles
+62232$La Comté$La Comté$La Comté$La Comté$La Comté
+62233$Conchil-le-Temple$Conchil-le-Temple$Conchil-le-Temple$Conchil-le-Temple$Conchil-le-Temple
+62230$Colembert$Colembert$Colembert$Colembert$Colembert
+62231$Colline-Beaumont$Colline-Beaumont$Colline-Beaumont$Colline-Beaumont$Colline-Beaumont
+62236$Contes$Contes, Pas-de-Calais$Contes$Contes (Pas-de-Calais)$Contes (Paso de Calais)
+62237$Conteville-lès-Boulogne$Conteville-lès-Boulogne$Conteville-lès-Boulogne$Conteville-lès-Boulogne$Conteville-lès-Boulogne
+62234$Conchy-sur-Canche$Conchy-sur-Canche$Conchy-sur-Canche$Conchy-sur-Canche$Conchy-sur-Canche
+62235$Condette$Condette$Condette$Condette$Condette
+62298$Épinoy$Épinoy$Épinoy$Épinoy$Épinoy
+62299$Eps$Eps, Pas-de-Calais$Eps$Eps$Eps
+62049$Auchy-au-Bois$Auchy-au-Bois$Auchy-au-Bois$Auchy-au-Bois$Auchy-au-Bois
+62048$Auchel$Auchel$Auchel$Auchel$Auchel
+62124$Beutin$Beutin$Beutin$Beutin$Beutin
+62125$Beuvrequen$Beuvrequen$Beuvrequen$Beuvrequen$Beuvrequen
+62122$Beugny$Beugny$Beugny$Beugny$Beugny
+62123$Beussent$Beussent$Beussent$Beussent$Beussent
+62120$Beugin$Beugin$Beugin$Beugin$Beugin
+62121$Beugnâtre$Beugnâtre$Beugnâtre$Beugnâtre$Beugnâtre
+62040$Arques$Arques, Pas-de-Calais$Arques (Pas-de-Calais)$Arques (Pas-de-Calais)$Arques (Paso de Calais)
+62043$Les Attaques$Les Attaques$Les Attaques$Les Attaques$Les Attaques
+62042$Athies$Athies, Pas-de-Calais$Athies$Athies (Pas-de-Calais)$Athies (Paso de Calais)
+62045$Aubigny-en-Artois$Aubigny-en-Artois$Aubigny-en-Artois$Aubigny-en-Artois$Aubigny-en-Artois
+62044$Attin$Attin$Attin$Attin$Attin
+62128$Biache-Saint-Vaast$Biache-Saint-Vaast$Biache-Saint-Vaast$Biache-Saint-Vaast$Biache-Saint-Vaast
+62129$Biefvillers-lès-Bapaume$Biefvillers-lès-Bapaume$Biefvillers-lès-Bapaume$Biefvillers-lès-Bapaume$Biefvillers-lès-Bapaume
+62290$Écurie$Écurie$Écurie$Écurie$Écurie
+62291$Éleu-dit-Leauwette$Éleu-dit-Leauwette$Éleu-dit-Leauwette$Éleu-dit-Leauwette$Éleu-dit-Leauwette
+62746$Saint-Étienne-au-Mont$Saint-Étienne-au-Mont$Saint-Étienne-au-Mont$Saint-Étienne-au-Mont$Saint-Étienne-au-Mont
+62361$Frévent$Frévent$Frévent$Frévent$Frévent
+62519$Lisbourg$Lisbourg$Lisbourg$Lisbourg$Lisbourg
+62518$Linzeux$Linzeux$Linzeux$Linzeux$Linzeux
+62517$Linghem$Linghem$Linghem$Linghem$Linghem
+62516$Lillers$Lillers$Lillers$Lillers$Lillers
+62515$Ligny-Thilloy$Ligny-Thilloy$Ligny-Thilloy$Ligny-Thilloy$Ligny-Thilloy
+62514$Ligny-Saint-Flochel$Ligny-Saint-Flochel$Ligny-Saint-Flochel$Ligny-Saint-Flochel$Ligny-Saint-Flochel
+62513$Ligny-sur-Canche$Ligny-sur-Canche$Ligny-sur-Canche$Ligny-sur-Canche$Ligny-sur-Canche
+62512$Ligny-lès-Aire$Ligny-lès-Aire$Ligny-lès-Aire$Ligny-lès-Aire$Ligny-lès-Aire
+62511$Lignereuil$Lignereuil$Lignereuil$Lignereuil$Lignereuil
+62510$Liévin$Liévin$Liévin$Liévin$Liévin
+62026$Ambricourt$Ambricourt$Ambricourt$Ambricourt$Ambricourt
+62025$Ambleteuse$Ambleteuse$Ambleteuse$Ambleteuse$Ambleteuse
+62667$Le Portel$Le Portel$Le Portel$Le Portel$Le Portel
+62594$Mory$Mory, Pas-de-Calais$Mory$Mory (Pas-de-Calais)$Mory
+62363$Frévin-Capelle$Frévin-Capelle$Frévin-Capelle$Frévin-Capelle$Frévin-Capelle
+CodeInseeTable$NameCommune$EnName$DeName$PlName$EsName
+62342$Fontaine-lès-Boulans$Fontaine-lès-Boulans$Fontaine-lès-Boulans$Fontaine-lès-Boulans$Fontaine-lès-Boulans
+62343$Fontaine-lès-Croisilles$Fontaine-lès-Croisilles$Fontaine-lès-Croisilles$Fontaine-lès-Croisilles$Fontaine-lès-Croisilles
+62340$Floringhem$Floringhem$Floringhem$Floringhem$Floringhem
+62341$Foncquevillers$Foncquevillers$Foncquevillers$Foncquevillers$Foncquevillers
+62346$Fortel-en-Artois$Fortel-en-Artois$Fortel-en-Artois$Fortel-en-Artois$Fortel-en-Artois
+62347$Fosseux$Fosseux$Fosseux$Fosseux$Fosseux
+62344$Fontaine-lès-Hermans$Fontaine-lès-Hermans$Fontaine-lès-Hermans$Fontaine-lès-Hermans$Fontaine-lès-Hermans
+62345$Fontaine-l'Étalon$Fontaine-l'Étalon$Fontaine-l'Étalon$Fontaine-l'Étalon$Fontaine-l'Étalon
+62348$Foufflin-Ricametz$Foufflin-Ricametz$Foufflin-Ricametz$Foufflin-Ricametz$Foufflin-Ricametz
+62349$Fouquereuil$Fouquereuil$Fouquereuil$Fouquereuil$Fouquereuil
+62666$Pont-à-Vendin$Pont-à-Vendin$Pont-à-Vendin$Pont-à-Vendin$Pont-à-Vendin
+62580$Monchy-Breton$Monchy-Breton$Monchy-Breton$Monchy-Breton$Monchy-Breton
+62581$Monchy-Cayeux$Monchy-Cayeux$Monchy-Cayeux$Monchy-Cayeux$Monchy-Cayeux
+62469$Inchy-en-Artois$Inchy-en-Artois$Inchy-en-Artois$Inchy-en-Artois$Inchy-en-Artois
+62468$Humières$Humières$Humières$Humières$Humières
+62584$Mont-Bernanchon$Mont-Bernanchon$Mont-Bernanchon$Mont-Bernanchon$Mont-Bernanchon
+62585$Montcavrel$Montcavrel$Montcavrel$Montcavrel$Montcavrel
+62586$Montenescourt$Montenescourt$Montenescourt$Montenescourt$Montenescourt
+62587$Montigny-en-Gohelle$Montigny-en-Gohelle$Montigny-en-Gohelle$Montigny-en-Gohelle$Montigny-en-Gohelle
+62463$Hucqueliers$Hucqueliers$Hucqueliers$Hucqueliers$Hucqueliers
+62462$Huclier$Huclier$Huclier$Huclier$Huclier
+62461$Huby-Saint-Leu$Huby-Saint-Leu$Huby-Saint-Leu$Huby-Saint-Leu$Huby-Saint-Leu
+62460$Hubersent$Hubersent$Hubersent$Hubersent$Hubersent
+62467$Humerœuille$Humerœuille$Humeroeuille$Humerœuille$Humerœuille
+62466$Humbert$Humbert, Pas-de-Calais$Humbert$Humbert (Pas-de-Calais)$Humbert
+62465$Humbercamps$Humbercamps$Humbercamps$Humbercamps$Humbercamps
+62464$Hulluch$Hulluch$Hulluch$Hulluch$Hulluch
+62407$Ham-en-Artois$Ham-en-Artois$Ham-en-Artois$Ham-en-Artois$Ham-en-Artois
+62406$Hamelincourt$Hamelincourt$Hamelincourt$Hamelincourt$Hamelincourt
+62904$Zouafques$Zouafques$Zouafques$Zouafques$Zouafques
+62816$Tilloy-lès-Hermaville$Tilloy-lès-Hermaville$Tilloy-lès-Hermaville$Tilloy-lès-Hermaville$Tilloy-lès-Hermaville
+62906$Zutkerque$Zutkerque$Zutkerque$Zutkerque$Zutkerque
+62907$Libercourt$Libercourt$Libercourt$Libercourt$Libercourt
+62900$Witternesse$Witternesse$Witternesse$Witternesse$Witternesse
+62450$Hestrus$Hestrus$Hestrus$Hestrus$Hestrus
+62869$Wailly$Wailly$Wailly$Wailly$Wailly
+62817$Tilloy-lès-Mofflaines$Tilloy-lès-Mofflaines$Tilloy-lès-Mofflaines$Tilloy-lès-Mofflaines$Tilloy-lès-Mofflaines
+62867$Wacquinghen$Wacquinghen$Wacquinghen$Wacquinghen$Wacquinghen
+62866$Waben$Waben$Waben$Waben$Waben
+62865$Vitry-en-Artois$Vitry-en-Artois$Vitry-en-Artois$Vitry-en-Artois$Vitry-en-Artois
+62598$Muncq-Nieurlet$Muncq-Nieurlet$Muncq-Nieurlet$Muncq-Nieurlet$Muncq-Nieurlet
+62908$La Capelle-lès-Boulogne$La Capelle-lès-Boulogne$La Capelle-lès-Boulogne$La Capelle-lès-Boulogne$La Capelle-lès-Boulogne
+62362$Frévillers$Frévillers$Frévillers$Frévillers$Frévillers
+62861$Vimy$Vimy$Vimy$Vimy$Vimy
+62860$Villers-Sir-Simon$Villers-Sir-Simon$Villers-Sir-Simon$Villers-Sir-Simon$Villers-Sir-Simon
+62647$Le Parcq$Le Parcq$Le Parcq$Le Parcq$Le Parcq
+62646$Palluel$Palluel$Palluel$Palluel$Palluel
+62645$Oye-Plage$Oye-Plage$Oye-Plage$Oye-Plage$Oye-Plage
+62644$Ouve-Wirquin$Ouve-Wirquin$$Ouve-Wirquin$Ouve-Wirquin
+62642$Ourton$Ourton$Ourton$Ourton$Ourton
+62641$Ostreville$Ostreville$Ostreville$Ostreville$Ostreville
+62640$Orville$Orville, Pas-de-Calais$Orville$Orville (Pas-de-Calais)$Orville (Paso de Calais)
+62364$Fruges$Fruges$Fruges$Fruges$Fruges
+62111$Berlencourt-le-Cauroy$Berlencourt-le-Cauroy$Berlencourt-le-Cauroy$Berlencourt-le-Cauroy$Berlencourt-le-Cauroy
+62649$Pas-en-Artois$Pas-en-Artois$Pas-en-Artois$Pas-en-Artois$Pas-en-Artois
+62648$Parenty$Parenty$Parenty$Parenty$Parenty
+62885$Westrehem$Westrehem$Westrehem$Westrehem$Westrehem
+62887$Widehem$Widehem$Widehem$Widehem$Widehem
+62886$Wicquinghem$Wicquinghem$Wicquinghem$Wicquinghem$Wicquinghem
+62768$Saint-Rémy-au-Bois$Saint-Rémy-au-Bois$Saint-Rémy-au-Bois$Saint-Rémy-au-Bois$Saint-Rémy-au-Bois
+62769$Saint-Tricat$Saint-Tricat$Saint-Tricat$Saint-Tricat$Saint-Tricat
+62883$Wavrans-sur-Ternoise$Wavrans-sur-Ternoise$Wavrans-sur-Ternoise$Wavrans-sur-Ternoise$Wavrans-sur-Ternoise
+62882$Wavrans-sur-l'Aa$Wavrans-sur-l'Aa$Wavrans-sur-l’Aa$Wavrans-sur-l'Aa$Wavrans-sur-l'Aa
+62764$Saint-Nicolas$Saint-Nicolas, Pas-de-Calais$Saint-Nicolas$Saint-Nicolas (Pas-de-Calais)$Saint-Nicolas (Paso de Calais)
+62765$Saint-Omer$Saint-Omer$Saint-Omer (Pas-de-Calais)$Saint-Omer (Pas-de-Calais)$Saint-Omer
+62766$Saint-Omer-Capelle$Saint-Omer-Capelle$Saint-Omer-Capelle$Saint-Omer-Capelle$Saint-Omer-Capelle
+62767$Saint-Pol-sur-Ternoise$Saint-Pol-sur-Ternoise$Saint-Pol-sur-Ternoise$Saint-Pol-sur-Ternoise$Saint-Pol-sur-Ternoise
+62760$Saint-Martin-d'Hardinghem$Saint-Martin-d'Hardinghem$$Saint-Martin-d'Hardinghem$Saint-Martin-d'Hardinghem
+62761$Saint-Martin-sur-Cojeul$Saint-Martin-sur-Cojeul$Saint-Martin-sur-Cojeul$Saint-Martin-sur-Cojeul$Saint-Martin-sur-Cojeul
+62762$Saint-Michel-sous-Bois$Saint-Michel-sous-Bois$Saint-Michel-sous-Bois$Saint-Michel-sous-Bois$Saint-Michel-sous-Bois
+62763$Saint-Michel-sur-Ternoise$Saint-Michel-sur-Ternoise$Saint-Michel-sur-Ternoise$Saint-Michel-sur-Ternoise$Saint-Michel-sur-Ternoise
+62367$Gauchin-Verloingt$Gauchin-Verloingt$Gauchin-Verloingt$Gauchin-Verloingt$Gauchin-Verloingt
+62050$Auchy-lès-Hesdin$Auchy-lès-Hesdin$Auchy-lès-Hesdin$Auchy-lès-Hesdin$Auchy-lès-Hesdin
+62438$Hermaville$Hermaville$Hermaville$Hermaville$Hermaville
+62051$Auchy-les-Mines$Auchy-les-Mines$Auchy-les-Mines$Auchy-les-Mines$Auchy-les-Mines
+62439$Hermelinghen$Hermelinghen$Hermelinghen$Hermelinghen$Hermelinghen
+62089$Bazinghen$Bazinghen$Bazinghen$Bazinghen$Bazinghen
+62088$Bayenghem-lès-Seninghem$Bayenghem-lès-Seninghem$$Bayenghem-lès-Seninghem$Bayenghem-lès-Seninghem
+62085$Basseux$Basseux$Basseux$Basseux$Basseux
+62084$Barly$Barly, Pas-de-Calais$Barly$Barly (Pas-de-Calais)$Barly (Paso de Calais)
+62087$Bayenghem-lès-Éperlecques$Bayenghem-lès-Éperlecques$Bayenghem-lès-Éperlecques$Bayenghem-lès-Éperlecques$Bayenghem-lès-Éperlecques
+62086$Bavincourt$Bavincourt$Bavincourt$Bavincourt$Bavincourt
+62081$Baralle$Baralle$Baralle$Baralle$Baralle
+62080$Bapaume$Bapaume$Bapaume$Bapaume$Bapaume
+62083$Barlin$Barlin$Barlin$Barlin$Barlin
+62082$Barastre$Barastre$Barastre$Barastre$Barastre
+62243$Coullemont$Coullemont$Coullemont$Coullemont$Coullemont
+62242$Couin$Couin$Couin$Couin$Couin
+62241$Cormont$Cormont$Cormont$Cormont$Cormont
+62169$Bouvelinghem$Bouvelinghem$Bouvelinghem$Bouvelinghem$Bouvelinghem
+62247$Coupelle-Vieille$Coupelle-Vieille$Coupelle-Vieille$Coupelle-Vieille$Coupelle-Vieille
+62246$Coupelle-Neuve$Coupelle-Neuve$Coupelle-Neuve$Coupelle-Neuve$Coupelle-Neuve
+62245$Coulomby$Coulomby$Coulomby$Coulomby$Coulomby
+62244$Coulogne$Coulogne$Coulogne$Coulogne$Coulogne
+62162$Bourecq$Bourecq$Bourecq$Bourecq$Bourecq
+62163$Bouret-sur-Canche$Bouret-sur-Canche$Bouret-sur-Canche$Bouret-sur-Canche$Bouret-sur-Canche
+62249$Courcelles-lès-Lens$Courcelles-lès-Lens$Courcelles-lès-Lens$Courcelles-lès-Lens$Courcelles-lès-Lens
+62161$Bouquehault$Bouquehault$Bouquehault$Bouquehault$Bouquehault
+62166$Bours$Bours, Pas-de-Calais$Bours$Bours (Pas-de-Calais)$Bours (Paso de Calais)
+62167$Boursin$Boursin$Boursin$Boursin$Boursin
+62164$Bourlon$Bourlon$Bourlon$Bourlon$Bourlon
+62165$Bournonville$Bournonville, Pas-de-Calais$Bournonville$Bournonville$Bournonville
+62419$Haut-Loquin$Haut-Loquin$$Haut-Loquin$Haut-Loquin
+62430$Hénu$Hénu$Hénu$Hénu$Hénu
+62431$Bellinghem$Bellinghem$Bellinghem$Bellinghem$Bellinghem
+62855$Villers-au-Flos$Villers-au-Flos$Villers-au-Flos$Villers-au-Flos$Villers-au-Flos
+62168$Bourthes$Bourthes$Bourthes$Bourthes$Bourthes
+62240$Corbehem$Corbehem$Corbehem$Corbehem$Corbehem
+62016$Airon-Saint-Vaast$Airon-Saint-Vaast$Airon-Saint-Vaast$Airon-Saint-Vaast$Airon-Saint-Vaast
+62017$Aix-en-Ergny$Aix-en-Ergny$Aix-en-Ergny$Aix-en-Ergny$Aix-en-Ergny
+62014$Aire-sur-la-Lys$Aire-sur-la-Lys$Aire-sur-la-Lys$Aire-sur-la-Lys$Aire-sur-la-Lys
+62015$Airon-Notre-Dame$Airon-Notre-Dame$Airon-Notre-Dame$Airon-Notre-Dame$Airon-Notre-Dame
+62012$Agnières$Agnières$Agnières$Agnières$Agnières
+62013$Agny$Agny$Agny$Agny$Agny
+62010$Affringues$Affringues$$Affringues$Affringues
+62011$Agnez-lès-Duisans$Agnez-lès-Duisans$Agnez-lès-Duisans$Agnez-lès-Duisans$Agnez-lès-Duisans
+62018$Aix-en-Issart$Aix-en-Issart$Aix-en-Issart$Aix-en-Issart$Aix-en-Issart
+62019$Aix-Noulette$Aix-Noulette$Aix-Noulette$Aix-Noulette$Aix-Noulette
+62178$Bruay-la-Buissière$Bruay-la-Buissière$Bruay-la-Buissière$Bruay-la-Buissière$Bruay-la-Buissière
+62544$Manin$Manin, Pas-de-Calais$Manin$Manin$Manin
+62545$Maninghem$Maninghem$Maninghem$Maninghem$Maninghem
+62546$Maninghen-Henne$Maninghen-Henne$Maninghen-Henne$Maninghen-Henne$Maninghen-Henne
+62248$Courcelles-le-Comte$Courcelles-le-Comte$Courcelles-le-Comte$Courcelles-le-Comte$Courcelles-le-Comte
+62540$Maisnil-lès-Ruitz$Maisnil-lès-Ruitz$Maisnil-lès-Ruitz$Maisnil-lès-Ruitz$Maisnil-lès-Ruitz
+62541$Maisoncelle$Maisoncelle$Maisoncelle$Maisoncelle$Maisoncelle
+62429$Hénin-sur-Cojeul$Hénin-sur-Cojeul$Henneveux$Hénin-sur-Cojeul$Hénin-sur-Cojeul
+62428$Hénin-sur-Cojeul$Hénin-sur-Cojeul$Hénin-sur-Cojeul$Hénin-sur-Cojeul$Hénin-sur-Cojeul
+62426$Héninel$Héninel$Héninel$Héninel$Héninel
+62425$Hendecourt-lès-Ransart$Hendecourt-lès-Ransart$Hendecourt-lès-Ransart$Hendecourt-lès-Ransart$Hendecourt-lès-Ransart
+62424$Hendecourt-lès-Cagnicourt$Hendecourt-lès-Cagnicourt$Hendecourt-lès-Cagnicourt$Hendecourt-lès-Cagnicourt$Hendecourt-lès-Cagnicourt
+62423$Helfaut$Helfaut$Helfaut$Helfaut$Helfaut
+62422$Hébuterne$Hébuterne$Hébuterne$Hébuterne$Hébuterne
+62421$Havrincourt$Havrincourt$Havrincourt$Havrincourt$Havrincourt
+62458$Houlle$Houlle$Houlle$Houlle$Houlle
+62181$Bucquoy$Bucquoy$Bucquoy$Bucquoy$Bucquoy
+62459$Houvin-Houvigneul$Houvin-Houvigneul$Houvin-Houvigneul$Houvin-Houvigneul$Houvin-Houvigneul
+62618$Nordausques$Nordausques$Nordausques$Nordausques$Nordausques
+62720$Rombly$Rombly$Rombly$Rombly$Rombly
+62721$Roquetoire$Roquetoire$Roquetoire$Roquetoire$Roquetoire
+62689$Ransart$Ransart, Pas-de-Calais$Ransart$Ransart$Ransart
+62688$Rang-du-Fliers$Rang-du-Fliers$Rang-du-Fliers$Rang-du-Fliers$Rang-du-Fliers
+62724$Rouvroy$Rouvroy, Pas-de-Calais$Rouvroy$Rouvroy (Pas-de-Calais)$Rouvroy (Paso de Calais)
+62725$Royon$Royon$Royon$Royon$Royon
+62726$Ruisseauville$Ruisseauville$Ruisseauville$Ruisseauville$Ruisseauville
+62727$Ruitz$Ruitz$Ruitz$Ruitz$Ruitz
+62683$Quœux-Haut-Maînil$Quœux-Haut-Maînil$Quœux-Haut-Maînil$Quœux-Haut-Maînil$Quœux-Haut-Maînil
+62682$Quilen$Quilen$Quilen$Quilen$Quilen
+62681$Quiestède$Quiestède$Quiestède$Quiestède$Quiestède
+62680$Quiéry-la-Motte$Quiéry-la-Motte$Quiéry-la-Motte$Quiéry-la-Motte$Quiéry-la-Motte
+62686$Ramecourt$Ramecourt, Pas-de-Calais$Ramecourt$Ramecourt (Pas-de-Calais)$Ramecourt (Paso de Calais)
+62685$Radinghem$Radinghem$Radinghem$Radinghem$Radinghem
+62684$Racquinghem$Racquinghem$Racquinghem$Racquinghem$Racquinghem
+62619$Noreuil$Noreuil$Noreuil$Noreuil$Noreuil
+62339$Fleury$Fleury, Pas-de-Calais$Fleury$Fleury (Pas-de-Calais)$Fleury (Paso de Calais)
+62338$Fleurbaix$Fleurbaix$Fleurbaix$Fleurbaix$Fleurbaix
+62333$Fiefs$Fiefs, Pas-de-Calais$Fiefs$Fiefs$Fiefs
+62332$Ficheux$Ficheux$Ficheux$Ficheux$Ficheux
+62331$Feuchy$Feuchy$Feuchy$Feuchy$Feuchy
+62330$Festubert$Festubert$Festubert$Festubert$Festubert
+62337$Flers$Flers, Pas-de-Calais$Flers$Flers (Pas-de-Calais)$Flers (Paso de Calais)
+62336$Fléchin$Fléchin$Fléchin$Fléchin$Fléchin
+62335$Fillièvres$Fillièvres$Fillièvres$Fillièvres$Fillièvres
+62334$Fiennes$Fiennes, Pas-de-Calais$Fiennes$Fiennes$Fiennes
+62678$Quesques$Quesques$Quesques$Quesques$Quesques
+62834$Vacqueriette-Erquières$Vacqueriette-Erquières$Vacqueriette-Erquières$Vacqueriette-Erquières$Vacqueriette-Erquières
+62835$Valhuon$Valhuon$Valhuon$Valhuon$Valhuon
+62836$Vaudricourt$Vaudricourt, Pas-de-Calais$Vaudricourt$Vaudricourt (Pas-de-Calais)$Vaudricourt (Paso de Calais)
+62837$Vaudringhem$Vaudringhem$Vaudringhem$Vaudringhem$Vaudringhem
+62830$Trescault$Trescault$Trescault$Trescault$Trescault
+62831$Troisvaux$Troisvaux$Troisvaux$Troisvaux$Troisvaux
+62832$Tubersent$Tubersent$Tubersent$Tubersent$Tubersent
+62833$Vacquerie-le-Boucq$Vacquerie-le-Boucq$Vacquerie-le-Boucq$Vacquerie-le-Boucq$Vacquerie-le-Boucq
+62838$Vaulx$Vaulx, Pas-de-Calais$Vaulx$Vaulx (Pas-de-Calais)$Vaulx (Paso de Calais)
+62839$Vaulx-Vraucourt$Vaulx-Vraucourt$Vaulx-Vraucourt$Vaulx-Vraucourt$Vaulx-Vraucourt
+62755$Saint-Léonard$Saint-Léonard, Pas-de-Calais$Saint-Léonard$Saint-Léonard (Pas-de-Calais)$Saint-Léonard (Paso de Calais)
+62754$Saint-Léger$Saint-Léger, Pas-de-Calais$Saint-Léger$Saint-Léger (Pas-de-Calais)$Saint-Léger (Paso de Calais)
+62757$Saint-Martin-lez-Tatinghem (*)$Saint-Martin-lez-Tatinghem$Saint-Martin-lez-Tatinghem$Saint-Martin-lez-Tatinghem$Saint-Martin-lez-Tatinghem
+62204$Campagne-lès-Hesdin$Campagne-lès-Hesdin$Campagne-lès-Hesdin$Campagne-lès-Hesdin$Campagne-lès-Hesdin
+62203$Campagne-lès-Guines$Campagne-lès-Guines$Campagne-lès-Guines$Campagne-lès-Guines$Campagne-lès-Guines
+62202$Campagne-lès-Boulonnais$Campagne-lès-Boulonnais$Campagne-lès-Boulonnais$Campagne-lès-Boulonnais$Campagne-lès-Boulonnais
+62201$Camiers$Camiers$Camiers$Camiers$Camiers
+62200$Cambrin$Cambrin$Cambrin$Cambrin$Cambrin
+62614$Nielles-lès-Ardres$Nielles-lès-Ardres$Nielles-lès-Ardres$Nielles-lès-Ardres$Nielles-lès-Ardres
+62615$Nielles-lès-Calais$Nielles-lès-Calais$Nielles-lès-Calais$Nielles-lès-Calais$Nielles-lès-Calais
+62616$Nœux-lès-Auxi$Nœux-lès-Auxi$Noeux-lès-Auxi$Nœux-lès-Auxi$Nœux-lès-Auxi
+62617$Nœux-les-Mines$Nœux-les-Mines$Nœux-les-Mines$Nœux-les-Mines$Nœux-les-Mines
+62610$Neuville-sous-Montreuil$Neuville-sous-Montreuil$Neuville-sous-Montreuil$Neuville-sous-Montreuil$Neuville-sous-Montreuil
+62611$Neuville-Vitasse$Neuville-Vitasse$Neuville-Vitasse$Neuville-Vitasse$Neuville-Vitasse
+62209$Canlers$Canlers$Canlers$Canlers$Canlers
+62208$Canettemont$Canettemont$Canettemont$Canettemont$Canettemont
+62778$Sars-le-Bois$Sars-le-Bois$Sars-le-Bois$Sars-le-Bois$Sars-le-Bois
+62676$Quernes$Quernes$Quernes$Quernes$Quernes
+62213$Carency$Carency$Carency$Carency$Carency
+62113$Berles-Monchel$Berles-Monchel$Berles-Monchel$Berles-Monchel$Berles-Monchel
+62112$Berles-au-Bois$Berles-au-Bois$Berles-au-Bois$Berles-au-Bois$Berles-au-Bois
+62058$Aumerval$Aumerval$Aumerval$Aumerval$Aumerval
+62059$Autingues$Autingues$Autingues$Autingues$Autingues
+62117$Bertincourt$Bertincourt$Bertincourt$Bertincourt$Bertincourt
+62116$Bernieulles$Bernieulles$Bernieulles$Bernieulles$Bernieulles
+62115$Berneville$Berneville$Berneville$Berneville$Berneville
+62114$Bermicourt$Bermicourt$Bermicourt$Bermicourt$Bermicourt
+62052$Audembert$Audembert$Audembert$Audembert$Audembert
+62053$Audincthun$Audincthun$$Audincthun$Audincthun
+62119$Béthune$Béthune$Béthune$Béthune$Béthune
+62118$Béthonsart$Béthonsart$Béthonsart$Béthonsart$Béthonsart
+62056$Audresselles$Audresselles$Audresselles$Audresselles$Audresselles
+62057$Audruicq$Audruicq$Audruicq$Audruicq$Audruicq
+62054$Audinghen$Audinghen$Audinghen$Audinghen$Audinghen
+62055$Audrehem$Audrehem$Audrehem$Audrehem$Audrehem
+62508$Lières$Lières$Lières$Lières$Lières
+62509$Liettres$Liettres$Liettres$Liettres$Liettres
+62500$Lespesses$Lespesses$Lespesses$Lespesses$Lespesses
+62501$Lespinoy$Lespinoy$Lespinoy$Lespinoy$Lespinoy
+62502$Lestrem$Lestrem$Lestrem$Lestrem$Lestrem
+62503$Leubringhen$Leubringhen$Leubringhen$Leubringhen$Leubringhen
+62504$Leulinghem$Leulinghem$Leulinghem$Leulinghem$Leulinghem
+62505$Leulinghen-Bernes$Leulinghen-Bernes$Leulinghen-Bernes$Leulinghen-Bernes$Leulinghen-Bernes
+62506$Licques$Licques$Licques$Licques$Licques
+62507$Liencourt$Liencourt$Liencourt$Liencourt$Liencourt
+62315$Estréelles$Estréelles$Estréelles$Estréelles$Estréelles
+62314$Estrée-Cauchy$Estrée-Cauchy$Estrée-Cauchy$Estrée-Cauchy$Estrée-Cauchy
+62317$Étaing$Étaing$Étaing$Étaing$Étaing
+62316$Estrée-Wamin$Estrée-Wamin$Estrée-Wamin$Estrée-Wamin$Estrée-Wamin
+62322$Famechon$Famechon, Pas-de-Calais$Famechon$Famechon (Pas-de-Calais)$Famechon (Paso de Calais)
+62311$Estevelles$Estevelles$Estevelles$Estevelles$Estevelles
+62323$Fampoux$Fampoux$Fampoux$Fampoux$Fampoux
+62313$Estrée-Blanche$Estrée-Blanche$Estrée-Blanche$Estrée-Blanche$Estrée-Blanche
+62312$Estrée$Estrée$Estrée$Estrée$Estrée
+62474$Isques$Isques$Isques$Isques$Isques
+62475$Ivergny$Ivergny$Ivergny$Ivergny$Ivergny
+62476$Izel-lès-Équerchin$Izel-lès-Équerchin$Izel-lès-Équerchin$Izel-lès-Équerchin$Izel-lès-Équerchin
+62477$Izel-lès-Hameau$Izel-lès-Hameau$Izel-lès-Hameau$Izel-lès-Hameau$Izel-lès-Hameau
+62470$Incourt$Incourt, Pas-de-Calais$Incourt$Incourt$Incourt
+62808$Teneur$Teneur$Teneur$Teneur$Teneur
+62379$Gouy-en-Artois$Gouy-en-Artois$Gouy-en-Artois$Gouy-en-Artois$Gouy-en-Artois
+62378$Gouves$Gouves$Gouves$Gouves$Gouves
+62377$Gosnay$Gosnay$Gosnay$Gosnay$Gosnay
+62376$Gonnehem$Gonnehem$Gonnehem$Gonnehem$Gonnehem
+62375$Gommecourt$Gommecourt, Pas-de-Calais$Gommecourt$Gommecourt (Pas-de-Calais)$Gommecourt (Paso de Calais)
+62374$Gomiécourt$Gomiécourt$Gomiécourt$Gomiécourt$Gomiécourt
+62373$Givenchy-lès-la-Bassée$Givenchy-lès-la-Bassée$Givenchy-lès-la-Bassée$Givenchy-lès-la-Bassée$Givenchy-lès-la-Bassée
+62800$Souastre$Souastre$Souastre$Souastre$Souastre
+62371$Givenchy-en-Gohelle$Givenchy-en-Gohelle$Givenchy-en-Gohelle$Givenchy-en-Gohelle$Givenchy-en-Gohelle
+62370$Gennes-Ivergny$Gennes-Ivergny$Gennes-Ivergny$Gennes-Ivergny$Gennes-Ivergny
+62579$Monchy-au-Bois$Monchy-au-Bois$Monchy-au-Bois$Monchy-au-Bois$Monchy-au-Bois
+62578$Monchiet$Monchiet$Monchiet$Monchiet$Monchiet
+62574$Mingoval$Mingoval$Mingoval$Mingoval$Mingoval
+62577$Monchel-sur-Canche$Monchel-sur-Canche$Monchel-sur-Canche$Monchel-sur-Canche$Monchel-sur-Canche
+62576$Moncheaux-lès-Frévent$Moncheaux-lès-Frévent$Moncheaux-lès-Frévent$Moncheaux-lès-Frévent$Moncheaux-lès-Frévent
+62571$Merlimont$Merlimont$Merlimont$Merlimont$Merlimont
+62570$Méricourt$Méricourt, Pas-de-Calais$Méricourt$Méricourt (Pas-de-Calais)$Méricourt (Paso de Calais)
+62573$Meurchin$Meurchin$Meurchin$Meurchin$Meurchin
+62572$Metz-en-Couture$Metz-en-Couture$Metz-en-Couture$Metz-en-Couture$Metz-en-Couture
+62147$Boiry-Sainte-Rictrude$Boiry-Sainte-Rictrude$Boiry-Sainte-Rictrude$Boiry-Sainte-Rictrude$Boiry-Sainte-Rictrude
+62878$Warlus$Warlus, Pas-de-Calais$Warlus$Warlus (Pas-de-Calais)$Warlus (Paso de Calais)
+62879$Warluzel$Warluzel$Warluzel$Warluzel$Warluzel
+62870$Wailly-Beaucamp$Wailly-Beaucamp$Wailly-Beaucamp$Wailly-Beaucamp$Wailly-Beaucamp
+62871$Wambercourt$Wambercourt$Wambercourt$Wambercourt$Wambercourt
+62872$Wamin$Wamin$Wamin$Wamin$Wamin
+62873$Wancourt$Wancourt$Wancourt$Wancourt$Wancourt
+62874$Wanquetin$Wanquetin$Wanquetin$Wanquetin$Wanquetin
+62875$Wardrecques$Wardrecques$Wardrecques$Wardrecques$Wardrecques
+62876$Warlencourt-Eaucourt$Warlencourt-Eaucourt$Warlencourt-Eaucourt$Warlencourt-Eaucourt$Warlencourt-Eaucourt
+62877$Warlincourt-lès-Pas$Warlincourt-lès-Pas$Warlincourt-lès-Pas$Warlincourt-lès-Pas$Warlincourt-lès-Pas
+62650$Pelves$Pelves$Pelves$Pelves$Pelves
+62651$Penin$Penin$Penin$Penin$Penin
+62652$Pernes$Pernes, Pas-de-Calais$Pernes$Pernes (Francja)$Pernes
+62653$Pernes-lès-Boulogne$Pernes-lès-Boulogne$Pernes-lès-Boulogne$Pernes-lès-Boulogne$Pernes-lès-Boulogne
+62654$Peuplingues$Peuplingues$Peuplingues$Peuplingues$Peuplingues
+62655$Pierremont$Pierremont$Pierremont$Pierremont$Pierremont
+62656$Pihem$Pihem$Pihem$Pihem$Pihem
+62657$Pihen-lès-Guînes$Pihen-lès-Guînes$Pihen-lès-Guînes$Pihen-lès-Guînes$Pihen-lès-Guînes
+62658$Pittefaux$Pittefaux$Pittefaux$Pittefaux$Pittefaux
+62659$Planques$Planques$Planques$Planques$Planques
+62868$Wail$Wail$Wail$Wail$Wail
+62719$Rollancourt$Rollancourt$Rollancourt$Rollancourt$Rollancourt
+62718$Rœux$Rœux$Roeux$Rœux$Rœux
+62894$Wimille$Wimille$Wimille$Wimille$Wimille
+62895$Wingles$Wingles$Wingles$Wingles$Wingles
+62892$Willerval$Willerval$Willerval$Willerval$Willerval
+62893$Wimereux$Wimereux$Wimereux$Wimereux$Wimereux
+62890$Willeman$Willeman$Willeman$Willeman$Willeman
+62891$Willencourt$Willencourt$Willencourt$Willencourt$Willencourt
+62711$Rinxent$Rinxent$Rinxent$Rinxent$Rinxent
+62710$Rimboval$Rimboval$Rimboval$Rimboval$Rimboval
+62713$Robecq$Robecq$Robecq$Robecq$Robecq
+62712$Rivière$Rivière, Pas-de-Calais$Rivière$Rivière (Pas-de-Calais)$Rivière (Paso de Calais)
+62715$Rocquigny$Rocquigny, Pas-de-Calais$Rocquigny$Rocquigny (Pas-de-Calais)$Rocquigny (Paso de Calais)
+62714$Roclincourt$Roclincourt$Roclincourt$Roclincourt$Roclincourt
+62898$Wisques$Wisques$Wisques$Wisques$Wisques
+62716$Rodelinghem$Rodelinghem$Rodelinghem$Rodelinghem$Rodelinghem
+62489$Lapugnoy$Lapugnoy$Lapugnoy$Lapugnoy$Lapugnoy
+62488$Landrethun-lès-Ardres$Landrethun-lès-Ardres$Landrethun-lès-Ardres$Landrethun-lès-Ardres$Landrethun-lès-Ardres
+62472$Inxent$Inxent$Inxent$Inxent$Inxent
+62481$Labroye$Labroye$Labroye$Labroye$Labroye
+62480$Labourse$Labourse$Labourse$Labourse$Labourse
+62483$Lacres$Lacres$Lacres$Lacres$Lacres
+62473$Isbergues$Isbergues$Isbergues$Isbergues$Isbergues
+62485$Laires$Laires$$Laires$Laires
+62484$Lagnicourt-Marcel$Lagnicourt-Marcel$Lagnicourt-Marcel$Lagnicourt-Marcel$Lagnicourt-Marcel
+62487$Landrethun-le-Nord$Landrethun-le-Nord$Landrethun-le-Nord$Landrethun-le-Nord$Landrethun-le-Nord
+62486$Lambres$Lambres$Lambres$Lambres$Lambres
+62805$Tangry$Tangry$Tangry$Tangry$Tangry
+62804$Sus-Saint-Léger$Sus-Saint-Léger$Sus-Saint-Léger$Sus-Saint-Léger$Sus-Saint-Léger
+62126$Beuvry$Beuvry$Beuvry$Beuvry$Beuvry
+62806$Tardinghen$Tardinghen$Tardinghen$Tardinghen$Tardinghen
+62127$Bezinghem$Bezinghem$Bezinghem$Bezinghem$Bezinghem
+62478$Journy$Journy$Journy$Journy$Journy
+62372$Givenchy-le-Noble$Givenchy-le-Noble$Givenchy-le-Noble$Givenchy-le-Noble$Givenchy-le-Noble
+62157$Boubers-lès-Hesmond$Boubers-lès-Hesmond$Boubers-lès-Hesmond$Boubers-lès-Hesmond$Boubers-lès-Hesmond
+62156$Bonningues-lès-Calais$Bonningues-lès-Calais$Bonningues-lès-Calais$Bonningues-lès-Calais$Bonningues-lès-Calais
+62155$Bonningues-lès-Ardres$Bonningues-lès-Ardres$Bonningues-lès-Ardres$Bonningues-lès-Ardres$Bonningues-lès-Ardres
+62154$Bonnières$Bonnières, Pas-de-Calais$Bonnières$Bonnières (Pas-de-Calais)$Bonnières (Paso de Calais)
+62153$Boisleux-Saint-Marc$Boisleux-Saint-Marc$$Boisleux-Saint-Marc$Boisleux-Saint-Marc
+62152$Bomy$Bomy$Boisleux-Saint-Marc$Bomy$Bomy
+62623$Nouvelle-Église$Nouvelle-Église$Nouvelle-Église$Nouvelle-Église$Nouvelle-Église
+62622$Nort-Leulinghem$Nort-Leulinghem$Nort-Leulinghem$Nort-Leulinghem$Nort-Leulinghem
+62096$Beaumetz-lès-Cambrai$Beaumetz-lès-Cambrai$Beaumetz-lès-Cambrai$Beaumetz-lès-Cambrai$Beaumetz-lès-Cambrai
+62097$Beaumetz-lès-Loges$Beaumetz-lès-Loges$Beaumetz-lès-Loges$Beaumetz-lès-Loges$Beaumetz-lès-Loges
+62094$Beaumerie-Saint-Martin$Beaumerie-Saint-Martin$Beaumerie-Saint-Martin$Beaumerie-Saint-Martin$Beaumerie-Saint-Martin
+62095$Beaumetz-lès-Aire$Beaumetz-lès-Aire$$Beaumetz-lès-Aire$Beaumetz-lès-Aire
+62092$Beaufort-Blavincourt$Beaufort-Blavincourt$Beaufort-Blavincourt$Beaufort-Blavincourt$Beaufort-Blavincourt
+62093$Beaulencourt$Beaulencourt$Beaulencourt$Beaulencourt$Beaulencourt
+62090$Béalencourt$Béalencourt$Béalencourt$Béalencourt$Béalencourt
+62158$Boubers-sur-Canche$Boubers-sur-Canche$Boubers-sur-Canche$Boubers-sur-Canche$Boubers-sur-Canche
+62395$Guigny$Guigny$Guigny$Guigny$Guigny
+62397$Guînes$Guînes$Guînes$Guînes$Guînes
+62396$Guinecourt$Guinecourt$Guinecourt$Guinecourt$Guinecourt
+62391$Guarbecque$Guarbecque$Guarbecque$Guarbecque$Guarbecque
+62259$Croisilles$Croisilles, Pas-de-Calais$Croisilles$Croisilles (Pas-de-Calais)$Croisilles (Paso de Calais)
+62393$Guemps$Guemps$Guemps$Guemps$Guemps
+62392$Guémappe$Guémappe$Guémappe$Guémappe$Guémappe
+62254$Coyecques$Coyecques$$Coyecques$Coyecques
+62255$Crémarest$Crémarest$Crémarest$Crémarest$Crémarest
+62256$Crépy$Crépy, Pas-de-Calais$Crépy$Crépy (Pas-de-Calais)$Crépy (Paso de Calais)
+62257$Créquy$Créquy$Créquy$Créquy (Pas-de-Calais)$Créquy
+62399$Habarcq$Habarcq$Habarcq$Habarcq$Habarcq
+62251$Courset$Courset$Courset$Courset$Courset
+62252$La Couture$La Couture, Pas-de-Calais$La Couture$La Couture (Pas-de-Calais)$La Couture (Paso de Calais)
+62253$Couturelle$Couturelle$Couturelle$Couturelle$Couturelle
+62547$Marant$Marant$Marant$Marant$Marant
+62047$Aubrometz$Aubrometz$Aubrometz$Aubrometz$Aubrometz
+62079$Bancourt$Bancourt$Bancourt$Bancourt$Bancourt
+62046$Aubin-Saint-Vaast$Aubin-Saint-Vaast$Aubin-Saint-Vaast$Aubin-Saint-Vaast$Aubin-Saint-Vaast
+62023$Allouagne$Allouagne$Allouagne$Allouagne$Allouagne
+62022$Alincthun$Alincthun$Alincthun$Alincthun$Alincthun
+62021$Alette$Alette$Alette$Alette$Alette
+62020$Alembon$Alembon$Alembon$Alembon$Alembon
+62027$Ambrines$Ambrines$Ambrines$Ambrines$Ambrines
+62542$Maizières$Maizières, Pas-de-Calais$Maizières$Maizières (Pas-de-Calais)$Maizières (Paso de Calais)
+62479$Labeuvrière$Labeuvrière$Labeuvrière$Labeuvrière$Labeuvrière
+62024$Alquines$Alquines$Alquines$Alquines$Alquines
+62029$Amettes$Amettes$Amettes$Amettes$Amettes
+62028$Ames$Ames, Pas-de-Calais$Ames$Ames (Francja)$Ames (Paso de Calais)
+62531$Louches$Louches$Louches$Louches$Louches
+62530$Lottinghen$Lottinghen$Lottinghen$Lottinghen$Lottinghen
+62533$Lugy$Lugy$Lugy$Lugy$Lugy
+62532$Lozinghem$Lozinghem$Lozinghem$Lozinghem$Lozinghem
+62535$La Madelaine-sous-Montreuil$La Madelaine-sous-Montreuil$La Madelaine-sous-Montreuil$La Madelaine-sous-Montreuil$La Madelaine-sous-Montreuil
+62534$Lumbres$Lumbres$Lumbres$Lumbres$Lumbres
+62537$Magnicourt-sur-Canche$Magnicourt-sur-Canche$Magnicourt-sur-Canche$Magnicourt-sur-Canche$Magnicourt-sur-Canche
+62536$Magnicourt-en-Comte$Magnicourt-en-Comte$Magnicourt-en-Comte$Magnicourt-en-Comte$Magnicourt-en-Comte
+62539$Maisnil$Maisnil$Maisnil$Maisnil (Pas-de-Calais)$Maisnil
+62538$Maintenay$Maintenay$Maintenay$Maintenay$Maintenay
+62432$Herbinghen$Herbinghen$Herbinghen$Herbinghen$Herbinghen
+62433$Héricourt$Héricourt, Pas-de-Calais$Héricourt$Héricourt (Pas-de-Calais)$Héricourt (Paso de Calais)
+62434$La Herlière$La Herlière$La Herlière$La Herlière$La Herlière
+62435$Herlincourt$Herlincourt$Herlincourt$Herlincourt$Herlincourt
+62436$Herlin-le-Sec$Herlin-le-Sec$Herlin-le-Sec$Herlin-le-Sec$Herlin-le-Sec
+62437$Herly$Herly, Pas-de-Calais$Herly$Herly (Pas-de-Calais)$Herly (Paso de Calais)
+62275$Douriez$Douriez$Douriez$Douriez$Douriez
+62192$Cagnicourt$Cagnicourt$Cagnicourt$Cagnicourt$Cagnicourt
+62277$Drocourt$Drocourt, Pas-de-Calais$Drocourt$Drocourt (Pas-de-Calais)$Drocourt (Paso de Calais)
+62140$Bléquin$Bléquin$Bléquin$Bléquin$Bléquin
+62141$Blessy$Blessy, Pas-de-Calais$Blessy$Blessy$Blessy
+62283$Écoivres$Écoivres$Écoivres$Écoivres$Écoivres
+62271$Dohem$Dohem$Dohem$Dohem$Dohem
+62142$Blingel$Blingel$Blingel$Blingel$Blingel
+62143$Boffles$Boffles$Boffles$Boffles$Boffles
+62170$Bouvigny-Boyeffles$Bouvigny-Boyeffles$Bouvigny-Boyeffles$Bouvigny-Boyeffles$Bouvigny-Boyeffles
+62144$Boiry-Becquerelle$Boiry-Becquerelle$Boiry-Becquerelle$Boiry-Becquerelle$Boiry-Becquerelle
+62276$Douvrin$Douvrin$Douvrin$Douvrin$Douvrin
+62145$Boiry-Notre-Dame$Boiry-Notre-Dame$Boiry-Notre-Dame$Boiry-Notre-Dame$Boiry-Notre-Dame
+62324$Farbus$Farbus$Farbus$Farbus$Farbus
+62325$Fauquembergues$Fauquembergues$Fauquembergues$Fauquembergues$Fauquembergues
+62326$Favreuil$Favreuil$Favreuil$Favreuil$Favreuil
+62327$Febvin-Palfart$Febvin-Palfart$Febvin-Palfart$Febvin-Palfart$Febvin-Palfart
+62320$Étrun$Étrun$Étrun$Étrun$Étrun
+62321$Évin-Malmaison$Évin-Malmaison$Évin-Malmaison$Évin-Malmaison$Évin-Malmaison
+62289$Écuires$Écuires$Écuires$Écuires$Écuires
+62288$Ecques$Ecques$Ecques$Ecques$Ecques
+62286$Ecquedecques$Ecquedecques$Ecquedecques$Ecquedecques$Ecquedecques
+62285$Écoust-Saint-Mein$Écoust-Saint-Mein$Écoust-Saint-Mein$Écoust-Saint-Mein$Écoust-Saint-Mein
+62284$Écourt-Saint-Quentin$Écourt-Saint-Quentin$Écourt-Saint-Quentin$Écourt-Saint-Quentin$Écourt-Saint-Quentin
+62328$Ferfay$Ferfay$Ferfay$Ferfay$Ferfay
+62282$Éclimeux$Éclimeux$Éclimeux$Éclimeux$Éclimeux
+62281$Echinghen$Echinghen$Echinghen$Echinghen$Echinghen
+62280$Dury$Dury, Pas-de-Calais$Dury$Dury (Pas-de-Calais)$Dury (Paso de Calais)
+62449$Hesmond$Hesmond$Hesmond$Hesmond$Hesmond
+62448$Hesdin-l'Abbé$Hesdin-l'Abbé$Hesdin-l'Abbé$Hesdin-l'Abbé$Hesdin-l'Abbé
+62445$Hesdigneul-lès-Béthune$Hesdigneul-lès-Béthune$Hesdigneul-lès-Béthune$Hesdigneul-lès-Béthune$Hesdigneul-lès-Béthune
+62444$Hervelinghen$Hervelinghen$Hervelinghen$Hervelinghen$Hervelinghen
+62447$Hesdin$Hesdin$Hesdin$Hesdin$Hesdin
+62446$Hesdigneul-lès-Boulogne$Hesdigneul-lès-Boulogne$Hesdigneul-lès-Boulogne$Hesdigneul-lès-Boulogne$Hesdigneul-lès-Boulogne
+62441$Hermin$Hermin$Hermin$Hermin$Hermin
+62440$Hermies$Hermies$Hermies$Hermies$Hermies
+62443$Hersin-Coupigny$Hersin-Coupigny$Hersin-Coupigny$Hersin-Coupigny$Hersin-Coupigny
+62442$Hernicourt$Hernicourt$Hernicourt$Hernicourt$Hernicourt
+62543$Mametz$Mametz, Pas-de-Calais$Mametz (Pas-de-Calais)$Mametz (Pas-de-Calais)$Mametz (Paso de Calais)
+62841$Vendin-lès-Béthune$Vendin-lès-Béthune$Vendin-lès-Béthune$Vendin-lès-Béthune$Vendin-lès-Béthune
+62840$Vélu$Vélu$Vélu$Vélu$Vélu
+62843$Verchin$Verchin$Verchin$Verchin$Verchin
+62842$Vendin-le-Vieil$Vendin-le-Vieil$Vendin-le-Vieil$Vendin-le-Vieil$Vendin-le-Vieil
+62845$Verlincthun$Verlincthun$Verlincthun$Verlincthun$Verlincthun
+62844$Verchocq$Verchocq$Verchocq$Verchocq$Verchocq
+62847$Verquigneul$Verquigneul$Verquigneul$Verquigneul$Verquigneul
+62846$Vermelles$Vermelles$Vermelles$Vermelles$Vermelles
+62849$Verton$Verton$Verton$Verton$Verton
+62848$Verquin$Verquin$Verquin$Verquin$Verquin
+62229$Ferques$Ferques$Ferques$Ferques$Ferques
+62228$Clerques$Clerques$Clerques$Clerques$Clerques
+62360$Fréthun$Fréthun$Fréthun$Fréthun$Fréthun
+62210$Canteleux$Canteleux$Canteleux$Canteleux$Canteleux
+62211$Capelle-Fermont$Capelle-Fermont$Capelle-Fermont$Capelle-Fermont$Capelle-Fermont
+62744$Sainte-Catherine-lès-Arras$Sainte-Catherine, Pas-de-Calais$Sainte-Catherine$Sainte-Catherine (Pas-de-Calais)$Sainte-Catherine (Paso de Calais)
+62745$Saint-Denœux$Saint-Denœux$Saint-Denoeux$Saint-Denœux$Saint-Denœux
+62214$Carly$Carly, Pas-de-Calais$Carly$Carly$Carly (Paso de Calais)
+62743$SAinte-Austreberthe$Sainte-Austreberthe, Pas-de-Calais$Sainte-Austreberthe$Sainte-Austreberthe (Pas-de-Calais)$Sainte-Austreberthe (Paso de Calais)
+62216$La Cauchie$La Cauchie$La Cauchie$La Cauchie$La Cauchie
+62217$Cauchy-à-la-Tour$Cauchy-à-la-Tour$Cauchy-à-la-Tour$Cauchy-à-la-Tour$Cauchy-à-la-Tour
+62218$Caucourt$Caucourt$Caucourt$Caucourt$Caucourt
+62660$Plouvain$Plouvain$Plouvain$Plouvain$Plouvain
+62191$Caffiers$Caffiers$Caffiers$Caffiers$Caffiers
+62662$Polincove$Polincove$Polincove$Polincove$Polincove
+62665$Le Ponchel$Le Ponchel$Le Ponchel$Le Ponchel$Le Ponchel
+62664$Pommier$Pommier$Pommier$Pommier$Pommier
+62748$Saint-Folquin$Saint-Folquin$Saint-Folquin$Saint-Folquin$Saint-Folquin
+62749$SAint-Georges$Saint-Georges, Pas-de-Calais$Saint-Georges$Saint-Georges (Pas-de-Calais)$Saint-Georges (Paso de Calais)
+62669$Pressy$Pressy$Pressy$Pressy$Pressy
+62668$Prédefin$Prédefin$Prédefin$Prédefin$Prédefin
+62212$Capelle-lès-Hesdin$Capelle-lès-Hesdin$Capelle-lès-Hesdin$Capelle-lès-Hesdin$Capelle-lès-Hesdin
+62694$Rebreuve-sur-Canche$Rebreuve-sur-Canche$Rebreuve-sur-Canche$Rebreuve-sur-Canche$Rebreuve-sur-Canche
+62695$Rebreuviette$Rebreuviette$Rebreuviette$Rebreuviette$Rebreuviette
+62696$Reclinghem$Reclinghem$$Reclinghem$Reclinghem
+62198$Cambligneul$Cambligneul$Cambligneul$Cambligneul$Cambligneul
+62690$Raye-sur-Authie$Raye-sur-Authie$Raye-sur-Authie$Raye-sur-Authie$Raye-sur-Authie
+62691$Saint-Augustin (*)$Saint-Augustin, Pas-de-Calais$Saint-Augustin (Pas-de-Calais)$Saint-Augustin (Pas-de-Calais)$Saint-Augustin (Paso de Calais)
+62692$Rebergues$Rebergues$Rebergues$Rebergues$Rebergues
+62693$Rebreuve-Ranchicourt$Rebreuve-Ranchicourt$Rebreuve-Ranchicourt$Rebreuve-Ranchicourt$Rebreuve-Ranchicourt
+62742$Saint-Aubin$Saint-Aubin, Pas-de-Calais$Saint-Aubin$Saint-Aubin (Pas-de-Calais)$Saint-Aubin (Paso de Calais)
+62698$Recques-sur-Course$Recques-sur-Course$Recques-sur-Course$Recques-sur-Course$Recques-sur-Course
+62699$Recques-sur-Hem$Recques-sur-Hem$Recques-sur-Hem$Recques-sur-Hem$Recques-sur-Hem
+62740$Sains-lès-Pernes$Sains-lès-Pernes$Sains-lès-Pernes$Sains-lès-Pernes$Sains-lès-Pernes
+62741$Saint-Amand$Saint-Amand, Pas-de-Calais$Saint-Amand$Saint-Amand (Pas-de-Calais)$Saint-Amand (Paso de Calais)
+62067$Avroult$Avroult$$Avroult$Avroult
+62066$Avondance$Avondance$Avondance$Avondance$Avondance
+62065$Avion$Avion, Pas-de-Calais$Avion$Avion$Avion (Paso de Calais)
+62064$Avesnes-lès-Bapaume$Avesnes-lès-Bapaume$Avesnes-lès-Bapaume$Avesnes-lès-Bapaume$Avesnes-lès-Bapaume
+62063$Avesnes-le-Comte$Avesnes-le-Comte$Avesnes-le-Comte$Avesnes-le-Comte$Avesnes-le-Comte
+62062$Avesnes$Avesnes$Avesnes$Avesnes$Avesnes
+62061$Averdoingt$Averdoingt$Averdoingt$Averdoingt$Averdoingt
+62219$Caumont$Caumont, Pas-de-Calais$Caumont$Caumont (Pas-de-Calais)$Caumont (Paso de Calais)
+62663$Pommera$Pommera$Pommera$Pommera$Pommera
+62069$Azincourt$Azincourt$Azincourt$Azincourt$Azincourt
+62068$Ayette$Ayette$Ayette$Ayette$Ayette
+62265$Delettes$Delettes$Delettes$Delettes$Delettes
+62264$Dannes$Dannes$Dannes$Dannes$Dannes
+62267$Dennebrœucq$Dennebrœucq$$Dennebrœucq$Dennebrœucq
+62190$Busnes$Busnes$Busnes$Busnes$Busnes
+62261$Cucq$Cucq$Cucq$Cucq$Cucq
+62109$Bergueneuse$Bergueneuse$Bergueneuse$Bergueneuse$Bergueneuse
+62263$Dainville$Dainville$Dainville$Dainville$Dainville
+62262$Cuinchy$Cuinchy$Cuinchy$Cuinchy$Cuinchy
+62104$Bellebrune$Bellebrune$Bellebrune$Bellebrune$Bellebrune
+62197$Camblain-Châtelain$Camblain-Châtelain$Camblain-Châtelain$Camblain-Châtelain$Camblain-Châtelain
+62106$Bellonne$Bellonne$Bellonne$Bellonne$Bellonne
+62107$Bénifontaine$Bénifontaine$Bénifontaine$Bénifontaine$Bénifontaine
+62269$Diéval$Diéval$Diéval$Diéval$Diéval
+62268$Desvres$Desvres$Desvres$Desvres$Desvres
+62102$Bécourt$Bécourt, Pas-de-Calais$Bécourt$Bécourt$Bécourt
+62196$La Calotterie$La Calotterie$La Calotterie$La Calotterie$La Calotterie
+62195$Calonne-sur-la-Lys$Calonne-sur-la-Lys$Calonne-sur-la-Lys$Calonne-sur-la-Lys$Calonne-sur-la-Lys
+62194$Calonne-Ricouart$Calonne-Ricouart$Calonne-Ricouart$Calonne-Ricouart$Calonne-Ricouart
+62548$Marck$Marck, Pas-de-Calais$Marck$Marck$Marck
+62174$Brêmes$Brêmes$Brêmes$Brêmes$Brêmes
+62099$Beaurainville$Beaurainville$Beaurains$Beaurainville$Beaurainville
+62549$Marconne$Marconne$Marconne$Marconne$Marconne
+62896$Wirwignes$Wirwignes$Wirwignes$Wirwignes$Wirwignes
+62897$Wismes$Wismes$Wismes$Wismes$Wismes
+62401$Haisnes$Haisnes$Haisnes$Haisnes$Haisnes
+62400$Haillicourt$Haillicourt$Haillicourt$Haillicourt$Haillicourt
+62403$Hallines$Hallines$Hallines$Hallines$Hallines
+62402$Halinghen$Halinghen$Halinghen$Halinghen$Halinghen
+62405$Hamblain-les-Prés$Hamblain-les-Prés$Hamblain-les-Prés$Hamblain-les-Prés$Hamblain-les-Prés
+62404$Halloy$Halloy, Pas-de-Calais$Halloy$Halloy (Pas-de-Calais)$Halloy (Paso de Calais)
+62818$Tilly-Capelle$Tilly-Capelle$Tilly-Capelle$Tilly-Capelle$Tilly-Capelle
+62819$Tilques$Tilques$Tilques$Tilques$Tilques
+62409$Hannescamps$Hannescamps$Hannescamps$Hannescamps$Hannescamps
+62408$Hames-Boucres$Hames-Boucres$Hames-Boucres$Hames-Boucres$Hames-Boucres
+62814$Thièvres$Thièvres, Pas-de-Calais$Thièvres$Thièvres (Pas-de-Calais)$Thièvres (Paso de Calais)
+62815$Tigny-Noyelle$Tigny-Noyelle$Tigny-Noyelle$Tigny-Noyelle$Tigny-Noyelle
+62812$Thiembronne$Thiembronne$Thiembronne$Thiembronne$Thiembronne
+62365$Galametz$Galametz$Galametz$Galametz$Galametz
+62810$Thélus$Thélus$Thélus$Thélus$Thélus
+62811$Thérouanne$Thérouanne$Thérouanne$Thérouanne$Thérouanne
+62723$Roussent$Roussent$Roussent$Roussent$Roussent
+62568$Mercatel$Mercatel$Mercatel$Mercatel$Mercatel
+62569$Merck-Saint-Liévin$Merck-Saint-Liévin$$Merck-Saint-Liévin$Merck-Saint-Liévin
+62566$Menneville$Menneville, Pas-de-Calais$Menneville$Menneville (Pas-de-Calais)$Menneville (Paso de Calais)
+62567$Mentque-Nortbécourt$Mentque-Nortbécourt$Mentque-Nortbécourt$Mentque-Nortbécourt$Mentque-Nortbécourt
+62564$Mazinghem$Mazinghem$Mazinghem$Mazinghem$Mazinghem
+62565$Mencas$Mencas$Mencas$Mencas$Mencas
+62562$Matringhem$Matringhem$Matringhem$Matringhem$Matringhem
+62563$Mazingarbe$Mazingarbe$Mazingarbe$Mazingarbe$Mazingarbe
+62560$Marquise$Marquise, Pas-de-Calais$Marquise$Marquise$Marquise
+62561$Martinpuich$Martinpuich$Martinpuich$Martinpuich$Martinpuich
+62728$Rumaucourt$Rumaucourt$Rumaucourt$Rumaucourt$Rumaucourt
+62697$Récourt$Récourt$Récourt$Récourt$Récourt
+62717$Roëllecourt$Roëllecourt$Roëllecourt$Roëllecourt$Roëllecourt
+62729$Rumilly$Rumilly, Pas-de-Calais$Rumilly$Rumilly (Pas-de-Calais)$Rumilly (Paso de Calais)
+62899$Wissant$Wissant$Wissant$Wissant$Wissant
+62708$Riencourt-lès-Bapaume$Riencourt-lès-Bapaume$Riencourt-lès-Bapaume$Riencourt-lès-Bapaume$Riencourt-lès-Bapaume
+62709$Riencourt-lès-Cagnicourt$Riencourt-lès-Cagnicourt$Riencourt-lès-Cagnicourt$Riencourt-lès-Cagnicourt$Riencourt-lès-Cagnicourt
+62319$Éterpigny$Éterpigny, Pas-de-Calais$Éterpigny$Éterpigny (Pas-de-Calais)$Éterpigny (Paso de Calais)
+62318$Étaples$Étaples$Étaples$Étaples$Étaples
+62702$Remilly-Wirquin$Remilly-Wirquin$$Remilly-Wirquin$Remilly-Wirquin
+62703$Rémy$Rémy$Rémy$Rémy$Rémy
+62700$Regnauville$Regnauville$Regnauville$Regnauville$Regnauville
+62701$Rely$Rely, Pas-de-Calais$Rely$Rely$Rely
+62706$Richebourg$Richebourg, Pas-de-Calais$Richebourg$Richebourg (Pas-de-Calais)$Richebourg (Paso de Calais)
+62310$Essars$Essars$Essars$Essars$Essars
+62704$Renty$Renty$Renty$Renty$Renty
+62705$Réty$Rety$Rety$Rety$Rety
+62498$Lens$Lens, Pas-de-Calais$Lens$Lens$Lens (Paso de Calais)
+62499$Lépine$Lépine, Pas-de-Calais$Lépine$Lépine$Lépine
+62278$Drouvin-le-Marais$Drouvin-le-Marais$Drouvin-le-Marais$Drouvin-le-Marais$Drouvin-le-Marais
+62492$Lebiez$Lebiez$Lebiez$Lebiez$Lebiez
+62493$Lebucquière$Lebucquière$Lebucquière$Lebucquière$Lebucquière
+62490$Lattre-Saint-Quentin$Lattre-Saint-Quentin$Lattre-Saint-Quentin$Lattre-Saint-Quentin$Lattre-Saint-Quentin
+62491$Laventie$Laventie$Laventie$Laventie$Laventie
+62496$Lefaux$Lefaux$Lefaux$Lefaux$Lefaux
+62497$Leforest$Leforest$Leforest$Leforest$Leforest
+62494$Léchelle$Léchelle, Pas-de-Calais$Léchelle$Léchelle (Pas-de-Calais)$Léchelle (Paso de Calais)
+62495$Ledinghem$Ledinghem$Ledinghem$Ledinghem$Ledinghem
+62791$Séricourt$Séricourt$Séricourt$Séricourt$Séricourt
+62790$Senlis$Senlis, Pas-de-Calais$Senlis$Senlis (Pas-de-Calais)$Senlis (Paso de Calais)
+62793$Servins$Servins$Servins$Servins$Servins
+62792$Serques$Serques$Serques$Serques$Serques
+62795$Sibiville$Sibiville$Sibiville$Sibiville$Sibiville
+62794$Setques$Setques$$Setques$Setques
+62797$Siracourt$Siracourt$Siracourt$Siracourt$Siracourt
+62796$Simencourt$Simencourt$Simencourt$Simencourt$Simencourt
+62799$Sorrus$Sorrus$Sorrus$Sorrus$Sorrus
+62798$Sombrin$Sombrin$Sombrin$Sombrin$Sombrin
+62279$Duisans$Duisans$Duisans$Duisans$Duisans
+62670$Preures$Preures$Preures$Preures$Preures
+62130$Bienvillers-au-Bois$Bienvillers-au-Bois$Bienvillers-au-Bois$Bienvillers-au-Bois$Bienvillers-au-Bois
+62636$Offrethun$Offrethun$Offrethun$Offrethun$Offrethun
+62637$Oignies$Oignies$Oignies$Oignies$Oignies
+62634$Offekerque$Offekerque$Offekerque$Offekerque$Offekerque
+62635$Offin$Offin$Offin$Offin$Offin
+62632$Oblinghem$Oblinghem$Oblinghem$Oblinghem$Oblinghem
+62633$Œuf-en-Ternois$Œuf-en-Ternois$Œuf-en-Ternois$Œuf-en-Ternois$Œuf-en-Ternois
+62146$Boiry-Saint-Martin$Boiry-Saint-Martin$Boiry-Saint-Martin$Boiry-Saint-Martin$Boiry-Saint-Martin
+62631$Nuncq-Hautecôte$Nuncq-Hautecôte$Nuncq-Hautecôte$Nuncq-Hautecôte$Nuncq-Hautecôte
+62148$Bois-Bernard$Bois-Bernard$Bois-Bernard$Bois-Bernard$Bois-Bernard
+62149$Boisdinghem$Boisdinghem$$Boisdinghem$Boisdinghem
+62638$Oisy-le-Verger$Oisy-le-Verger$Oisy-le-Verger$Oisy-le-Verger$Oisy-le-Verger
+62639$Oppy$Oppy, Pas-de-Calais$Oppy$Oppy$Oppy
+62386$Grenay$Grenay, Pas-de-Calais$Grenay$Grenay (Pas-de-Calais)$Grenay (Paso de Calais)
+62387$Grévillers$Grévillers$Grévillers$Grévillers$Grévillers
+62384$Graincourt-lès-Havrincourt$Graincourt-lès-Havrincourt$Graincourt-lès-Havrincourt$Graincourt-lès-Havrincourt$Graincourt-lès-Havrincourt
+62385$Grand-Rullecourt$Grand-Rullecourt$Grand-Rullecourt$Grand-Rullecourt$Grand-Rullecourt
+62382$Gouy-Saint-André$Gouy-Saint-André$Gouy-Saint-André$Gouy-Saint-André$Gouy-Saint-André
+62383$Gouy-sous-Bellonne$Gouy-sous-Bellonne$Gouy-sous-Bellonne$Gouy-sous-Bellonne$Gouy-sous-Bellonne
+62380$Gouy-Servins$Gouy-Servins$Gouy-Servins$Gouy-Servins$Gouy-Servins
+62381$Gouy-en-Ternois$Gouy-en-Ternois$Gouy-en-Ternois$Gouy-en-Ternois$Gouy-en-Ternois
+62221$Chelers$Chelers$Chelers$Chelers$Chelers
+62220$Cavron-Saint-Martin$Cavron-Saint-Martin$Cavron-Saint-Martin$Cavron-Saint-Martin$Cavron-Saint-Martin
+62223$Chérisy$Chérisy$Chérisy$Chérisy$Chérisy
+62222$Chériennes$Chériennes$Chériennes$Chériennes$Chériennes
+62225$Clairmarais$Clairmarais$Clairmarais$Clairmarais$Clairmarais
+62224$Chocques$Chocques$Chocques$Chocques$Chocques
+62227$Clenleu$Clenleu$Clenleu$Clenleu$Clenleu
+62389$Grincourt-lès-Pas$Grincourt-lès-Pas$Grincourt-lès-Pas$Grincourt-lès-Pas$Grincourt-lès-Pas
+62862$Vincly$Vincly$Vincly$Vincly$Vincly
+62131$Bihucourt$Bihucourt$Bihucourt$Bihucourt$Bihucourt
+62366$Gauchin-le-Gal$Gauchin-Légal$Gauchin-Légal$Gauchin-Légal$Gauchin-Légal
+62135$Blairville$Blairville, Pas-de-Calais$Blairville$Blairville$Blairville
+62134$Bimont$Bimont$Bimont$Bimont$Bimont
+62137$Blangerval-Blangermont$Blangerval-Blangermont$Blangerval-Blangermont$Blangerval-Blangermont$Blangerval-Blangermont
+62038$Ardres$Ardres$Ardres$Ardres$Ardres
+62039$Arleux-en-Gohelle$Arleux-en-Gohelle$Arleux-en-Gohelle$Arleux-en-Gohelle$Arleux-en-Gohelle
+62133$Billy-Montigny$Billy-Montigny$Billy-Montigny$Billy-Montigny$Billy-Montigny
+62132$Billy-Berclau$Billy-Berclau$Billy-Berclau$Billy-Berclau$Billy-Berclau
+62034$Annequin$Annequin$Annequin$Annequin$Annequin
+62035$Annezin$Annezin$Annezin$Annezin$Annezin
+62036$Anvin$Anvin$Anvin$Anvin$Anvin
+62037$Anzin-Saint-Aubin$Anzin-Saint-Aubin$Anzin-Saint-Aubin$Anzin-Saint-Aubin$Anzin-Saint-Aubin
+62030$Amplier$Amplier$Amplier$Amplier$Amplier
+62031$Andres$Andres, Pas-de-Calais$Andres$Andres$Andres (Paso de Calais)
+62032$Angres$Angres$Angres$Angres$Angres
+62033$Annay$Annay, Pas-de-Calais$Annay$Annay (Pas-de-Calais)$Annay (Paso de Calais)
+62583$Mondicourt$Mondicourt$Mondicourt$Mondicourt$Mondicourt
+62199$Camblain-l'Abbé$Camblain-l'Abbé$Camblain-l'Abbé$Camblain-l'Abbé$Camblain-l'Abbé
+62523$Loison-sous-Lens$Loison-sous-Lens$Loison-sous-Lens$Loison-sous-Lens$Loison-sous-Lens
+62520$Locon$Locon$Locon$Locon$Locon
+62521$La Loge$La Loge, Pas-de-Calais$La Loge$La Loge$La Loge
+62526$Longueville$Longueville, Pas-de-Calais$Longueville$Longueville (Pas-de-Calais)$Longueville (Paso de Calais)
+62527$Longvilliers$Longvilliers, Pas-de-Calais$Longvilliers$Longvilliers (Pas-de-Calais)$Longvilliers (Paso de Calais)
+62524$Longfossé$Longfossé$Longfossé$Longfossé$Longfossé
+62525$Longuenesse$Longuenesse$Longuenesse$Longuenesse$Longuenesse
+62139$Blendecques$Blendecques$Blendecques$Blendecques$Blendecques
+62060$Auxi-le-Château$Auxi-le-Château$Auxi-le-Château$Auxi-le-Château$Auxi-le-Château
+62410$Haplincourt$Haplincourt$Haplincourt$Haplincourt$Haplincourt
+62138$Blangy-sur-Ternoise$Blangy-sur-Ternoise$Blangy-sur-Ternoise$Blangy-sur-Ternoise$Blangy-sur-Ternoise
+62588$Montreuil$Montreuil, Pas-de-Calais$Montreuil$Montreuil (Pas-de-Calais)$Montreuil (Paso de Calais)
+62411$Haravesnes$Haravesnes$Haravesnes$Haravesnes$Haravesnes
+62589$Mont-Saint-Éloi$Mont-Saint-Éloi$Mont-Saint-Éloi$Mont-Saint-Éloi$Mont-Saint-Éloi
+62809$Ternas$Ternas$Ternas$Ternas$Ternas
+62108$Berck$Berck$Berck$Berck$Berck
+62909$Ytres$Ytres$Ytres$Ytres$Ytres
+62902$Wizernes$Wizernes$Wizernes$Wizernes$Wizernes
+62418$Hauteville$Hauteville, Pas-de-Calais$Hauteville$Hauteville (Pas-de-Calais)$Hauteville (Paso de Calais)
+62351$Fouquières-lez-Lens$Fouquières-lès-Lens$Fouquières-lès-Lens$Fouquières-lès-Lens$Fouquières-lès-Lens
+62350$Fouquières-lès-Béthune$Fouquières-lès-Béthune$Fouquières-lès-Béthune$Fouquières-lès-Béthune$Fouquières-lès-Béthune
+62353$Frémicourt$Frémicourt$Frémicourt$Frémicourt$Frémicourt
+62352$Framecourt$Framecourt$Framecourt$Framecourt$Framecourt
+62355$Fresnes-lès-Montauban$Fresnes-lès-Montauban$Fresnes-lès-Montauban$Fresnes-lès-Montauban$Fresnes-lès-Montauban
+62354$Frencq$Frencq$Frencq$Frencq$Frencq
+62357$Fresnoy$Fresnoy$Fresnoy$Fresnoy$Fresnoy
+62356$Fresnicourt-le-Dolmen$Fresnicourt-le-Dolmen$Fresnicourt-le-Dolmen$Fresnicourt-le-Dolmen$Fresnicourt-le-Dolmen
+62359$Fressin$Fressin$Fressin$Fressin$Fressin
+62358$Fresnoy-en-Gohelle$Fresnoy-en-Gohelle$Fresnoy-en-Gohelle$Fresnoy-en-Gohelle$Fresnoy-en-Gohelle
+62292$Elnes$Elnes$Elnes$Elnes$Elnes
+62293$Embry$Embry, Pas-de-Calais$Embry$Embry$Embry
+62294$Enquin-lez-Guinegatte$Enquin-lez-Guinegatte$Enquin-lez-Guinegatte$Enquin-lez-Guinegatte$Enquin-lez-Guinegatte
+62296$Enquin-sur-Baillons$Enquin-sur-Baillons$Enquin-sur-Baillons$Enquin-sur-Baillons$Enquin-sur-Baillons
+62297$Éperlecques$Éperlecques$Éperlecques$Éperlecques$Éperlecques
+62597$Moyenneville$Moyenneville, Pas-de-Calais$Moyenneville$Moyenneville (Pas-de-Calais)$Moyenneville (Paso de Calais)
+62596$Mouriez$Mouriez$Mouriez$Mouriez$Mouriez
+62595$Moulle$Moulle$Moulle$Moulle$Moulle
+62266$Denier$Denier, Pas-de-Calais$Denier$Denier (miejscowość)$Denier (Paso de Calais)
+62593$Morval$Morval$Morval$Morval$Morval
+62592$Moringhem$Moringhem$Moringhem$Moringhem$Moringhem
+62591$Morchies$Morchies$Morchies$Morchies$Morchies
+62590$Monts-en-Ternois$Monts-en-Ternois$Monts-en-Ternois$Monts-en-Ternois$Monts-en-Ternois
+62456$Houchin$Houchin$Houchin$Houchin$Houchin
+62457$Houdain$Houdain$Houdain$Houdain$Houdain
+62454$Hinges$Hinges, Pas-de-Calais$Hinges$Hinges$Hinges
+62455$Hocquinghen$Hocquinghen$Hocquinghen$Hocquinghen$Hocquinghen
+62452$Heuringhem$Heuringhem$Heuringhem$Heuringhem$Heuringhem
+62453$Hézecques$Hézecques$Hézecques$Hézecques$Hézecques
+62599$Nabringhen$Nabringhen$Nabringhen$Nabringhen$Nabringhen
+62451$Heuchin$Heuchin$Heuchin$Heuchin$Heuchin
+62625$Noyelles-lès-Humières$Noyelles-lès-Humières$Noyelles-lès-Humières$Noyelles-lès-Humières$Noyelles-lès-Humières
+62627$Noyelles-sous-Bellonne$Noyelles-sous-Bellonne$Noyelles-sous-Bellonne$Noyelles-sous-Bellonne$Noyelles-sous-Bellonne
+62852$Vieille-Église$Vieille-Église$Vieille-Église$Vieille-Église$Vieille-Église
+62853$Vieil-Moutier$Vieil-Moutier$Vieil-Moutier$Vieil-Moutier$Vieil-Moutier
+62850$Vieil-Hesdin$Vieil-Hesdin$Vieil-Hesdin$Vieil-Hesdin$Vieil-Hesdin
+62851$Vieille-Chapelle$Vieille-Chapelle$Vieille-Chapelle$Vieille-Chapelle$Vieille-Chapelle
+62856$Villers-Brûlin$Villers-Brûlin$Villers-Brûlin$Villers-Brûlin$Villers-Brûlin
+62857$Villers-Châtel$Villers-Châtel$Villers-Châtel$Villers-Châtel$Villers-Châtel
+62854$Villers-au-Bois$Villers-au-Bois$Villers-au-Bois$Villers-au-Bois$Villers-au-Bois
+62105$Belle-et-Houllefort$Belle-et-Houllefort$Belle-et-Houllefort$Belle-et-Houllefort$Belle-et-Houllefort
+62621$Nortkerque$Nortkerque$Nortkerque$Nortkerque$Nortkerque
+62858$Villers-lès-Cagnicourt$Villers-lès-Cagnicourt$Villers-lès-Cagnicourt$Villers-lès-Cagnicourt$Villers-lès-Cagnicourt
+62859$Villers-l'Hôpital$Villers-l'Hôpital$Villers-l'Hôpital$Villers-l'Hôpital$Villers-l'Hôpital
+62620$Norrent-Fontes$Norrent-Fontes$Norrent-Fontes$Norrent-Fontes$Norrent-Fontes
+62184$Buissy$Buissy$Buissy$Buissy$Buissy
+62522$Loison-sur-Créquoise$Loison-sur-Créquoise$Loison-sur-Créquoise$Loison-sur-Créquoise$Loison-sur-Créquoise
+62186$Bully-les-Mines$Bully-les-Mines$Bully-les-Mines$Bully-les-Mines$Bully-les-Mines
+62187$Buneville$Buneville$Buneville$Buneville$Buneville
+62180$Brias$Brias$Brias$Bryas$Brias
+62151$Boisleux-au-Mont$Boisleux-au-Mont$Boisleux-au-Mont$Boisleux-au-Mont$Boisleux-au-Mont
+62182$Buire-au-Bois$Buire-au-Bois$Buire-au-Bois$Buire-au-Bois$Buire-au-Bois
+62183$Buire-le-Sec$Buire-le-Sec$Buire-le-Sec$Buire-le-Sec$Buire-le-Sec
+62100$Beauvoir-Wavans$Beauvoir-Wavans$Beaurainville$Beauvoir-Wavans$Beauvoir-Wavans
+62150$Boisjean$Boisjean$Boisjean$Boisjean$Boisjean
+62188$Burbure$Burbure$Burbure$Burbure$Burbure
+62189$Bus$Bus, Pas-de-Calais$Bus$Bus (Pas-de-Calais)$Bus (Paso de Calais)
+62813$La Thieuloye$La Thieuloye$La Thieuloye$La Thieuloye$La Thieuloye
+62101$Beauvois$Beauvois, Pas-de-Calais$Beauvois$Beauvois$Beauvois
+62773$Samer$Samer$Samer$Samer$Samer
+62772$Salperwick$Salperwick$Salperwick$Salperwick$Salperwick
+62771$Sallaumines$Sallaumines$Sallaumines$Sallaumines$Sallaumines
+62679$Questrecques$Questrecques$Questrecques$Questrecques$Questrecques
+62777$Le Sars$Le Sars$Le Sars$Le Sars$Le Sars
+62776$Sapignies$Sapignies$Sapignies$Sapignies$Sapignies
+62775$Sanghen$Sanghen$Sanghen$Sanghen$Sanghen
+62774$Sangatte$Sangatte$Sangatte$Sangatte$Sangatte
+62672$Puisieux$Puisieux, Pas-de-Calais$Puisieux$Puisieux (Pas-de-Calais)$Puisieux (Paso de Calais)
+62673$Quéant$Quéant$Quéant$Quéant$Quéant
+62779$Sarton$Sarton, Pas-de-Calais$Sarton$Sarton$Sarton
+62671$Pronville-en-Artois$Pronville-en-Artois$Pronville$Pronville$Pronville-en-Artois
+62185$Bullecourt$Bullecourt$Bullecourt$Bullecourt$Bullecourt
+62677$Le Quesnoy-en-Artois$Le Quesnoy-en-Artois$Le Quesnoy-en-Artois$Le Quesnoy-en-Artois$Le Quesnoy-en-Artois
+62674$Quelmes$Quelmes$Quelmes$Quelmes$Quelmes
+62675$Quercamps$Quercamps$$Quercamps$Quercamps
+62905$Zudausques$Zudausques$Zudausques$Zudausques$Zudausques
+62629$Noyellette$Noyellette$Noyellette$Noyellette$Noyellette
+62628$Noyelles-sous-Lens$Noyelles-sous-Lens$Noyelles-sous-Lens$Noyelles-sous-Lens$Noyelles-sous-Lens
+62091$Beaudricourt$Beaudricourt$Beaudricourt$Beaudricourt$Beaudricourt
+62901$Wittes$Wittes$Wittes$Wittes (Francja)$Wittes
+62529$Lorgies$Lorgies$Lorgies$Lorgies$Lorgies
+62260$Croix-en-Ternois$Croix-en-Ternois$Croix-en-Ternois$Croix-en-Ternois$Croix-en-Ternois
+62630$Noyelle-Vion$Noyelle-Vion$Noyelle-Vion$Noyelle-Vion$Noyelle-Vion
+62903$Zoteux$Zoteux$Zoteux$Zoteux$Zoteux
+62070$Bailleul-aux-Cornailles$Bailleul-aux-Cornailles$Bailleul-aux-Cornailles$Bailleul-aux-Cornailles$Bailleul-aux-Cornailles
+62071$Bailleul-lès-Pernes$Bailleul-lès-Pernes$Bailleul-lès-Pernes$Bailleul-lès-Pernes$Bailleul-lès-Pernes
+62072$Bailleulmont$Bailleulmont$Bailleulmont$Bailleulmont$Bailleulmont
+62073$Bailleul-Sir-Berthoult$Bailleul-Sir-Berthoult$Bailleul-Sir-Berthoult$Bailleul-Sir-Berthoult$Bailleul-Sir-Berthoult
+62074$Bailleulval$Bailleulval$Bailleulval$Bailleulval$Bailleulval
+62075$Baincthun$Baincthun$Baincthun$Baincthun$Baincthun
+62076$Bainghen$Bainghen$Bainghen$Bainghen$Bainghen
+62077$Bajus$Bajus, Pas-de-Calais$Bajus$Bajus$Bajus
+62078$Balinghem$Balinghem$Balinghem$Balinghem$Balinghem
+62258$Croisette$Croisette, Pas-de-Calais$Croisette$Croisette$Croisette
+62390$Groffliers$Groffliers$Groffliers$Groffliers$Groffliers
+62179$Brunembert$Brunembert$Brunembert$Brunembert$Brunembert
+62207$Campigneulles-les-Petites$Campigneulles-les-Petites$Campigneulles-les-Petites$Campigneulles-les-Petites$Campigneulles-les-Petites
+62274$Dourges$Dourges$Dourges$Dourges$Dourges
+62864$Vis-en-Artois$Vis-en-Artois$Vis-en-Artois$Vis-en-Artois$Vis-en-Artois
+62272$Douchy-lès-Ayette$Douchy-lès-Ayette$Douchy-lès-Ayette$Douchy-lès-Ayette$Douchy-lès-Ayette
+62273$Doudeauville$Doudeauville, Pas-de-Calais$Doudeauville$Doudeauville (Pas-de-Calais)$Doudeauville (Paso de Calais)
+62270$Divion$Divion$Divion$Divion$Divion
+62206$Campigneulles-les-Grandes$Campigneulles-les-Grandes$Campigneulles-les-Grandes$Campigneulles-les-Grandes$Campigneulles-les-Grandes
+62171$Boyaval$Boyaval$Boyaval$Boyaval$Boyaval
+62863$Violaines$Violaines$Violaines$Violaines$Violaines
+62173$Brebières$Brebières$Brebières$Brebières$Brebières
+62172$Boyelles$Boyelles$Boyelles$Boyelles$Boyelles
+62175$Brévillers$Brévillers, Pas-de-Calais$Brévillers$Brévillers (Pas-de-Calais)$Brévillers (Paso de Calais)
+62205$Campagne-lès-Wardrecques$Campagne-lès-Wardrecques$Campagne-lès-Wardrecques$Campagne-lès-Wardrecques$Campagne-lès-Wardrecques
+62177$Brimeux$Brimeux$Brimeux$Brimeux$Brimeux
+62176$Bréxent-Énocq$Bréxent-Énocq$Bréxent-Énocq$Bréxent-Énocq$Bréxent-Énocq
+62756$Sainte-Marie-Kerque$Sainte-Marie-Kerque$Sainte-Marie-Kerque$Sainte-Marie-Kerque$Sainte-Marie-Kerque
+62388$Grigny$Grigny, Pas-de-Calais$Grigny$Grigny (Pas-de-Calais)$Grigny (Paso de Calais)
+62751$Saint-Inglevert$Saint-Inglevert$Saint-Inglevert$Saint-Inglevert$Saint-Inglevert
+62750$Saint-Hilaire-Cottes$Saint-Hilaire-Cottes$Saint-Hilaire-Cottes$Saint-Hilaire-Cottes$Saint-Hilaire-Cottes
+62753$Saint-Laurent-Blangy$Saint-Laurent-Blangy$Saint-Laurent-Blangy$Saint-Laurent-Blangy$Saint-Laurent-Blangy
+62801$Souchez$Souchez$Souchez$Souchez$Souchez
+62250$Courrières$Courrières$Courrières$Courrières$Courrières
+62752$Saint-Josse$Saint-Josse$Saint-Josse$Saint-Josse$Saint-Josse
+62398$Guisy$Guisy$Guisy$Guisy$Guisy
+62722$Rougefay$Rougefay$Rougefay$Rougefay$Rougefay
+62005$Achiet-le-Grand$Achiet-le-Grand$Achiet-le-Grand$Achiet-le-Grand$Achiet-le-Grand
+62004$Achicourt$Achicourt$Achicourt$Achicourt$Achicourt
+62007$Acq$Acq, Pas-de-Calais$Acq$Acq$Acq
+62006$Achiet-le-Petit$Achiet-le-Petit$Achiet-le-Petit$Achiet-le-Petit$Achiet-le-Petit
+62001$Ablain-Saint-Nazaire$Ablain-Saint-Nazaire$Ablain-Saint-Nazaire$Ablain-Saint-Nazaire$Ablain-Saint-Nazaire
+62003$Acheville$Acheville$Acheville$Acheville$Acheville
+62002$Ablainzevelle$Ablainzevelle$Ablainzevelle$Ablainzevelle$Ablainzevelle
+62759$Saint-Martin-Choquel$Saint-Martin-Choquel$Saint-Martin-Choquel$Saint-Martin-Choquel$Saint-Martin-Choquel
+62582$Monchy-le-Preux$Monchy-le-Preux$Monchy-le-Preux$Monchy-le-Preux$Monchy-le-Preux
+62009$Adinfer$Adinfer$Adinfer$Adinfer$Adinfer
+62008$Acquin-Westbécourt$Acquin-Westbécourt$Acquin-Westbécourt$Acquin-Westbécourt$Acquin-Westbécourt
+62758$Saint-Martin-Boulogne$Saint-Martin-Boulogne$Saint-Martin-Boulogne$Saint-Martin-Boulogne$Saint-Martin-Boulogne
+62368$Gaudiempré$Gaudiempré$Gaudiempré$Gaudiempré$Gaudiempré
+62612$Neuvireuil$Neuvireuil$Neuvireuil$Neuvireuil$Neuvireuil
+62613$Nielles-lès-Bléquin$Nielles-lès-Bléquin$Nielles-lès-Bléquin$Nielles-lès-Bléquin$Nielles-lès-Bléquin
+62412$Hardinghen$Hardinghen$Hardinghen$Hardinghen$Hardinghen
+62413$Harnes$Harnes$Harnes$Harnes$Harnes
+62829$Le Transloy$Le Transloy$Le Transloy$Le Transloy$Le Transloy
+62828$Tramecourt$Tramecourt$Tramecourt$Tramecourt$Tramecourt
+62416$Hautecloque$Hautecloque, Pas-de-Calais$Hautecloque$Hautecloque$Hautecloque
+62414$Haucourt$Haucourt, Pas-de-Calais$Haucourt$Haucourt (Pas-de-Calais)$Haucourt (Paso de Calais)
+62415$Haute-Avesnes$Haute-Avesnes$Haute-Avesnes$Haute-Avesnes$Haute-Avesnes
+62823$Torcy$Torcy, Pas-de-Calais$Torcy$Torcy (Pas-de-Calais)$Torcy (Paso de Calais)
+62822$Tollent$Tollent$Tollent$Tollent$Tollent
+62821$Tingry$Tingry$Tingry$Tingry$Tingry
+62820$Tincques$Tincques$Tincques$Tincques$Tincques
+62827$Tournehem-sur-la-Hem$Tournehem-sur-la-Hem$Tournehem-sur-la-Hem$Tournehem-sur-la-Hem$Tournehem-sur-la-Hem
+62825$Tortequesne$Tortequesne$Tortequesne$Tortequesne$Tortequesne
+62824$Tortefontaine$Tortefontaine$Tortefontaine$Tortefontaine$Tortefontaine
+62369$Gavrelle$Gavrelle$Gavrelle$Gavrelle$Gavrelle
+62559$Marquion$Marquion$Marquion$Marquion$Marquion
+62558$Marquay$Marquay, Pas-de-Calais$Marquay$Marquay (Pas-de-Calais)$Marquay (Paso de Calais)
+62553$Marest$Marest$Marest$Marest$Marest
+62552$Maresquel-Ecquemicourt$Maresquel-Ecquemicourt$Maresquel-Ecquemicourt$Maresquel-Ecquemicourt$Maresquel-Ecquemicourt
+62551$Marenla$Marenla$Marenla$Marenla$Marenla
+62550$Marconnelle$Marconnelle$Marconnelle$Marconnelle$Marconnelle
+62557$Marœuil$Marœuil$Maroeuil$Marœuil$Marœuil
+62556$Marles-sur-Canche$Marles-sur-Canche$Marles-sur-Canche$Marles-sur-Canche$Marles-sur-Canche
+62555$Marles-les-Mines$Marles-les-Mines$Marles-les-Mines$Marles-les-Mines$Marles-les-Mines
+62554$Maresville$Maresville$Maresville$Maresville$Maresville
+62802$Le Souich$Le Souich$Le Souich$Le Souich$Le Souich
+62747$Saint-Floris$Saint-Floris$Saint-Floris$Saint-Floris$Saint-Floris
+62103$Béhagnies$Béhagnies$Béhagnies$Béhagnies$Béhagnies
+62803$Surques$Surques$Surques$Surques$Surques
+62880$Le Wast$Le Wast$Le Wast$Le Wast$Le Wast
