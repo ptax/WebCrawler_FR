@@ -9,7 +9,6 @@ import Utils.SaveAndLoadDictFile
 import GetDataInCommune
 
 
-
 def StructurCordinates(GoogleResult):
     DictMyData = {
                         u'G_Coordinates_northeast_Lat_1':'None',
