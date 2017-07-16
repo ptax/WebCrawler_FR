@@ -52,7 +52,7 @@ def dms2dec(dms_str):
 
 if __name__ == '__main__':
     Cordinates = u'49° 36′ 05″ , 3° 29′ 00″ ,″ ,'.split(',')
-    Cordinates = u"50° 12′ 32″ nord, 2° 19′ 13″".split(',')
+    Cordinates = u"50° 20′ 54″ nord, 2° 39′ 27″ est″".split(',')
 
     # Cordinates = LoadMyDict['53139']['W_Cordommees'].replace('ou,','S').split(',')
     #print Cordinates[1]

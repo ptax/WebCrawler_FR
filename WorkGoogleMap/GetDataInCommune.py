@@ -181,7 +181,7 @@ def GetPlaceId(GoogleResult):
         GoogleResult = GoogleResult[0]
     except:
         GoogleStatus = 'None'
-        GoogleResult = 'None'
+        Google_Result = 'None'
     if GoogleStatus == u"OK":
         try:
             G_PlaceId = str(GoogleResult['place_id']).strip()

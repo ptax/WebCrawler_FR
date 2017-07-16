@@ -11,7 +11,7 @@ import GetDataInCommune
 
 
 if __name__ == '__main__':
-
+    '''
     LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/GoogleDataPageUpdate_13_06_17_2')
 
     print len(LoadMyDict)
@@ -45,7 +45,27 @@ if __name__ == '__main__':
     NameDict = '../WorkBaseFile/GoogleLangFirstThree_14_06_17'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict,NameDict)
     print len(WorkDict)
+    '''
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/GoogleLangFirstThree_14_06_17')
+    List_None = []
+    List_KeyErr = []
+    c = 0
+    for Data in LoadMyDict.values():
+        c += 1
+        try:
 
-    #LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/GoogleLangFirstThree_14_06_17')
-    #print LoadMyDict['88395']
+            G_Name_ru = Data['G_Name_ru']
+            CodeCommune = Data['InseeXls_CodeCommune']
+            print c, G_Name_ru, CodeCommune
+            if u'None' in str(G_Name_ru):
+                List_None.append(CodeCommune)
+            else:
+                pass
+        except KeyError:
+            List_KeyErr.append(CodeCommune)
+
+    print len(List_None)
+    print len(List_KeyErr)
+
+
 

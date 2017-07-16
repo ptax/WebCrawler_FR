@@ -54,7 +54,7 @@ def SaveCsv():
 
 
 def ConvertCSVFirstData():
-    NameSaveFile = os.path.abspath('../WorkBaseFile/27_06_17_Auvergne-Rhone-Alpes.txt')
+    NameSaveFile = os.path.abspath('../WorkBaseFile/29_06_17_Occitanie.txt')
     HeaderLine = DataStructure.FirstColumHeader.GetHeader_2('\t')
     text_file = open(NameSaveFile, "a")
     text_file.write(HeaderLine + '\n')
@@ -71,7 +71,7 @@ def ConvertCSVFirstData():
 
         except KeyError:
             W_Region = 'None'
-        if u'Auvergne-Rhône-Alpes' in W_Region:
+        if u'Occitanie' in W_Region:
             try:
                 InseeXls_CodeCommune = ReplaceCooma(Data['InseeXls_CodeCommune'])
             except KeyError:
@@ -569,6 +569,11 @@ def ConvertCSVFirstData():
                         urllib.unquote(str(Wiki_Old_UrlInCommune)).decode('utf8'),
                         ClearName.Run(Wiki_Old_NameSnipet),
                         ColResultInSnipet]
+
+            DataInSaveFile = '{' + "'" + str(InseeXls_CodeCommune) + "':" + str(Data) + '}'
+            text_file = open("../WorkBaseFile/29_06_17_base_Occitanie.txt", "a")
+            text_file.write(str(DataInSaveFile) + '\n')
+
 
             DataSave = '\t'.join(str(v) for v in DataSave)
 
