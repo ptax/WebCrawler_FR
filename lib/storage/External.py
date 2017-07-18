@@ -1,8 +1,8 @@
 import lib.storage.Location
 
 
-class ExternalLocation(Location):
+class External(Location):
     
     def __init__(self, code, storage, type):
-        super(ExternalLocation, self).__init__(code, storage=storage)
+        super(External, self).__init__(code, storage=storage)
         self._type = type

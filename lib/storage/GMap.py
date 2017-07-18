@@ -1,7 +1,7 @@
-import lib.storage.ExternalLocation
+import lib.storage.External
 
 
-class WikiLocation(ExternalLocation):
+class GMap(ExternalLocation):
     
     def __init__(self, code, storage):
         super(WikiLocation, self).__init__(code, storage=storage, type='gmap')
