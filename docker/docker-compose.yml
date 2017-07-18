@@ -1,0 +1,19 @@
+version: '2'
+services:
+  wiki_parser_python:
+    build:
+      context: ./../
+      dockerfile: ./docker/python3.dockerfile
+    image: python3:wiki_parser
+    links:
+      - wiki_parser_mongodb
+
+  wiki_parser_mongodb:
+    build:
+      context: ./../
+      dockerfile: ./docker/mongodb.dockerfile
+    image: mongodb:wiki_parser
+    volumes:
+      - /path/for/host/data:/data/db
+    expose:
+      -27017:17027
