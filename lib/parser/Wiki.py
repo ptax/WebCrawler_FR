@@ -23,7 +23,6 @@ class Wiki(Parser):
     def get_admin_hierarchy(self):
         '''
         contain short name, long name, type and tree for hierarchy or sort bya index
-        :return:
         '''
         pass
 
