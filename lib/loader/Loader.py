@@ -4,5 +4,5 @@ class Loader:
         self._loader_lib = loader_lib
 
     def load(self, url, headers=none):
-        self._loader_lib.Request(url, headers)
-        return urllib2.urlopen(req)
+        req = self._loader_lib.Request(url, headers)
+        return self._loader_lib.urlopen(req)

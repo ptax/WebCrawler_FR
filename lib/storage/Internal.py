@@ -1,7 +1,7 @@
 import lib.storage.Location
 
 
-class Verified(Location):
+class Internal(Location):
 
     def _add_source(self, name, value):
         data = self._get_obj()

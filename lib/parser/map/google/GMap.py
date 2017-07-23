@@ -1,4 +1,5 @@
-import lib.parser.Parser
+import lib.parser.Parser as Parser
+
 
 class GMap(Parser):
 
