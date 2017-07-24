@@ -14,6 +14,9 @@ class Wiki(Parser):
     POSTAL_CODES = 'postal_codes'
     LANG_LINKS = 'lang_links'
 
+    def __init__(self, content):
+        super(Wiki, self).__init__(content=content)
+
     def get_main_block(self):
         pass
 
@@ -27,13 +30,35 @@ class Wiki(Parser):
         pass
 
     def get_latitude(self):
-        pass
+        result = None
+        match = re.search(r"data-lat=\"(?P<lat>[\d\.]+)\"", self.content)
+        if match.group('lat'):
+            result = match.group('lat')
+        return result
 
     def get_longitude(self):
-        pass
+        result = None
+        match = re.search(r"data-lon=\"(?P<lon>[\d\.]+)\"", self.content)
+        if match.group('lon'):
+            result = match.group('lon')
+        return result
 
     def get_altitude(self):
         pass
+
+    def _get_min_altitude(self, content):
+        result = None
+        match = re.search(r"(?i)Min\.?\s*(?P<min>\d+)", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+        if match.group('min'):
+            result = match.group('min')
+        return result
+
+    def _get_max_altitude(self, content):
+        result = None
+        match = re.search(r"(?i)Max\.?\s*(?P<max>\d+)", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+        if match.group('max'):
+            result = match.group('max')
+        return result
 
     def get_population(self):
         pass
@@ -47,8 +72,21 @@ class Wiki(Parser):
     def get_postal_codes(self):
         pass
 
-    def get_lang_links(self):
+    def get_residents(self):
         pass
+
+    def get_lang_links(self):
+        result = {}
+        match = re.search(ur"(?i)<li[^>]+class\s*=\s*[\"'][^\"']*interlanguage[^\"]*[\"'].*?href=[\"'](?P<url>.*?)[\"'][^>]*?title=[\"']\s*(?P<name>.*?)\s*—[^\"']*[\"'].*?lang=[\"'](?P<lang>\w+)[\"']",
+                          self.content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+        if match.group('url'):
+            urls = match.group('url')
+            langs = match.group('lang')
+            names = match.group('name')
+            for key, lang in langs:
+                result[lang] = {'name': names[key], 'url':urls[key]}
+
+        return result
 
     def is_location_page(self):
         pass
@@ -81,3 +119,7 @@ class Wiki(Parser):
             else:
                 find_codes.append(code)
         return find_codes
+
+    def _first_numbers(self, content):
+        match = re.search(r"^(?P<number>([\d,\.]+))", content.replace(' ', ''))
+        return match.group('number').strip(',.') if match.group('number') else 0
