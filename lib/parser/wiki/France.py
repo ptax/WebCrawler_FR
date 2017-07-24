@@ -7,6 +7,13 @@ from bs4 import BeautifulSoup
 class France(Wiki):
 
     HOST = 'https://fr.wikipedia.org'
+    ADMIN_LEVEL_1 = 'country'
+    ADMIN_LEVEL_2 = 'region'
+    ADMIN_LEVEL_3 = 'department'
+    ADMIN_LEVEL_4 = 'borough'
+    ADMIN_LEVEL_5 = 'city'
+    ADMIN_LEVEL_6 = 'commune'
+
 
     def __init__(self, content):
         super(France, self).__init__(content)
@@ -106,19 +113,29 @@ class France(Wiki):
         return {"url": self.HOST + match.group('url'), "name": self.replace_html(match.group('name'))} if match else {}
 
     def _get_country(self):
-        return self._get_value_with_link(u"Pays")
+        result = self._get_value_with_link(u"Pays")
+        result.type = self.ADMIN_LEVEL_1
+        return result
 
     def _get_region(self):
-        return self._get_value_with_link(u"Région")
+        result = self._get_value_with_link(u"Région")
+        result.type = self.ADMIN_LEVEL_2
+        return result
 
     def _get_department(self):
-        return self._get_value_with_link(u"Département")
+        result = self._get_value_with_link(u"Département")
+        result.type = self.ADMIN_LEVEL_3
+        return result
 
     def _get_borough(self):
-        return self._get_value_with_link(u"Arrondissement")
+        result = self._get_value_with_link(u"Arrondissement")
+        result.type = self.ADMIN_LEVEL_4
+        return result
 
     def _get_city(self):
-        return self._get_value_with_link(u"Ville")
+        result = self._get_value_with_link(u"Ville")
+        result.type = self.ADMIN_LEVEL_5
+        return result
 
     def get_altitude(self):
         result = {}

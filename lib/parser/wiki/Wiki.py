@@ -14,6 +14,13 @@ class Wiki(Parser):
     POSTAL_CODES = 'postal_codes'
     LANG_LINKS = 'lang_links'
 
+    ADMIN_LEVEL_1 = ''
+    ADMIN_LEVEL_2 = ''
+    ADMIN_LEVEL_3 = ''
+    ADMIN_LEVEL_4 = ''
+    ADMIN_LEVEL_5 = ''
+    ADMIN_LEVEL_6 = ''
+
     def __init__(self, content):
         super(Wiki, self).__init__(content=content)
 

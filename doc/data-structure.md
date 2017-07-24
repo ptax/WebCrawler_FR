@@ -9,12 +9,17 @@ name - string название админ деления
   Paris
 ```
 
+type - string уровень местоположения
+```text
+  Region
+```
+
 i18n - dict названия на разных языках
 ```text
-{
+  {
 	en: Paris,
 	ru: Париж
-}
+  }
 ```
 
 admin_hierarchy - list список в порядке убывания  всех уровней админ делений до этого пункта (позволит миксовать запросы к тому-же гуглу)
@@ -30,9 +35,9 @@ admin_hierarchy - list список в порядке убывания  всех
   ]
 ```
 
-capital - string имя и ссылка на центр для админ деления
+capital - string имя центра админ деления
 ```text
-CapitalName
+  CapitalName
 ```
 
 center - dict позиция центра админ единицы
@@ -198,9 +203,14 @@ url - string ссылка на страницу на языке страны
   http://fr.wiki...
 ```
 
-name  string имя админ единицы записаное в заголовке страницы на языке страны
+name - string имя админ единицы записаное в заголовке страницы на языке страны
 ```text
   Paris
+```
+
+type - string уровень местоположения
+```text
+  Region
 ```
 
 i18n - dict названия на разных языках
@@ -214,7 +224,7 @@ i18n - dict названия на разных языках
 admin_hierarchy - list список в порядке убывания  всех уровней админ делений до этого пункта (позволит миксовать запросы к тому-же гуглу)
 ```text
   [
-    {name:France, type:country, i18n:{{en:France, url:http://en.wiki...}, {ru:Франция, url:http://ru.wiki...}},
+    {name:France, type:country, i18n:{en:{name:France, url:http://en.wiki...}, ru:{name:Франция, url:http://ru.wiki...}},
     {...},
     {name:Île-de-France, type:region, i18n:{...}},
     {name:Paris, type:department, i18n:{...}},
@@ -226,7 +236,7 @@ admin_hierarchy - list список в порядке убывания  всех
 
 capital - dict Название центра и ссылка на страницу центра
 ```text
-{name:CapitalName, url:UrlToCapitalPage}
+  {name:CapitalName, url:UrlToCapitalPage}
 ```
 
 center - dict позиция админ единицы
