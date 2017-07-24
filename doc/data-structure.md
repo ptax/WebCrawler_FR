@@ -201,8 +201,8 @@ name  string имя админ единицы записаное в заголо
 i18n - dict названия на разных языках
 ```text
   {
-	{en: Paris, url:http://en.wiki...},
-	{ru: Париж, url:http://ru.wiki...}
+	en:{name: Paris, url:http://en.wiki...},
+	ru:{name: Париж, url:http://ru.wiki...}
   }
 ```
 
