@@ -75,6 +75,9 @@ class Wiki(Parser):
     def get_residents(self):
         pass
 
+    def get_capital(self):
+        pass
+
     def get_lang_links(self):
         result = {}
         match = re.search(ur"(?i)<li[^>]+class\s*=\s*[\"'][^\"']*interlanguage[^\"]*[\"'].*?href=[\"'](?P<url>.*?)[\"'][^>]*?title=[\"']\s*(?P<name>.*?)\s*—[^\"']*[\"'].*?lang=[\"'](?P<lang>\w+)[\"']",
@@ -92,13 +95,15 @@ class Wiki(Parser):
         pass
 
     def is_many_answers(self):
-        pass
+        match = re.search(r"(class=\"results-info\")", self.content)
+        return bool(match.group(0))
 
     def get_answers_links(self):
-        pass
+        match = re.search(r"<div[^>]*?class=[\"']mw-search-result-heading[\"'][^>]*?>\s*<a href=[\"'](?P<url>/wiki/[^\"]+)[\"']", self.content)
+        return [(self.HOST + x) for x in match.group('url')]
 
     def _is_range(self, content):
-        return re.match(r"\d+-\d+") is not None
+        return re.match(r"\d+-\d+", content) is not None
 
     def _range(self, content):
         codes = []

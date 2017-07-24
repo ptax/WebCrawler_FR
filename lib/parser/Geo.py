@@ -14,3 +14,7 @@ class Geo:
 
     def to_dot(self, text):
         pass
+
+    @staticmethod
+    def distance(start_lat, start_lng, end_lat, end_lng):
+        return vincenty((start_lat, start_lng), (end_lat, end_lng)).meters

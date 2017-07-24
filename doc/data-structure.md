@@ -30,6 +30,11 @@ admin_hierarchy - list список в порядке убывания  всех
   ]
 ```
 
+capital - string имя и ссылка на центр для админ деления
+```text
+CapitalName
+```
+
 center - dict позиция центра админ единицы
 ```text
   {
@@ -217,6 +222,11 @@ admin_hierarchy - list список в порядке убывания  всех
     {name:Paris, type:district, i18n:{...}}
     {...}
   ]
+```
+
+capital - dict Название центра и ссылка на страницу центра
+```text
+{name:CapitalName, url:UrlToCapitalPage}
 ```
 
 center - dict позиция админ единицы

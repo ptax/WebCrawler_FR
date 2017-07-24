@@ -4,12 +4,12 @@ import parser.wiki.Wiki as Wiki
 from bs4 import BeautifulSoup
 
 
-class WikiFr(Wiki):
+class France(Wiki):
 
     HOST = 'https://fr.wikipedia.org'
 
     def __init__(self, content):
-        super(WikiFr, self).__init__(content)
+        super(France, self).__init__(content)
         self._main_block_soap = self.get_main_block()
         self._content_soap = BeautifulSoup(self.content)
 
@@ -23,6 +23,10 @@ class WikiFr(Wiki):
             dic.admin_hierarchy = self.get_admin_hierarchy()
 
         dic.i18n = self.get_lang_links()
+
+        capital = serf.get_capital()
+        if capital:
+            dic.capital = capital
 
         lat = self.get_latitude()
         lng = self.get_longitude()
@@ -138,7 +142,7 @@ class WikiFr(Wiki):
         return first_numbers if first_numbers else population
 
     def get_density(self):
-        data = self._get_value(u'Densité')
+        data = self._get_value(u"Densité")
         first_numbers = self._first_numbers(data)
 
         return first_numbers if first_numbers else data
@@ -148,6 +152,28 @@ class WikiFr(Wiki):
         first_numbers = self._first_numbers(data)
 
         return first_numbers if first_numbers else data
+
+    def get_capital(self):
+        result = {}
+
+        capital = self._get_value_with_link(u"Siège")
+        if not result and capital:
+            result = capital
+
+        capital = self._get_value_with_link(u"Siège de la préfecture")
+        if not result and capital:
+            result = capital
+
+        capital = self._get_value_with_link(u"Chef-lieu")
+        if not result and capital:
+            result = capital
+
+        capital = self._get_value_with_link(u"Capitale")
+        if capital:
+            result = capital
+
+        return result
+
 
     def _get_value(self, column_name):
         match = re.search(
@@ -165,6 +191,10 @@ class WikiFr(Wiki):
         data = self._get_value('Code commune')
         return self._parse_commune_codes(data) if data else ''
 
+    def is_location_page(self):
+        match = re.search(r"href=[\"']/wiki/Mod%C3%A8le:Infobox_(?P<code>Pays|(R%C3%A9gion|D%C3%A9partement|Arrondissement|Canton|Intercommunalit%C3%A9|Commune)_de_France)[\"']",
+                          self.content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+        return bool(match.group('code'))
 
     def _parse_postal_codes(self, content):
         codes = []
