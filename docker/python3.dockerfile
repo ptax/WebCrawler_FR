@@ -6,9 +6,11 @@ RUN python -m pip install pymongo==3.4.0
 
 RUN python -m pip install geopy==1.11.0
 
-RUN apt-get install -y python3-bs4
+RUN pip3 install beautifulsoup4
 
 RUN pip install pyyaml
+
+RUN apt-get install -y python-matplotlib
 
 WORKDIR /app
 
