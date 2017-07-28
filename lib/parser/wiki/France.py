@@ -1,7 +1,7 @@
 import re
-import parser.wiki.Wiki as Wiki
-
 from bs4 import BeautifulSoup
+from lib.parser.wiki.Wiki import Wiki as Wiki
+
 
 
 class France(Wiki):
@@ -14,68 +14,70 @@ class France(Wiki):
     ADMIN_LEVEL_5 = u'ville'
     ADMIN_LEVEL_6 = u'commune'
 
+    BEAUTIFULSOUP_PARSER = "html.parser"
+
 
     def __init__(self, content):
         super(France, self).__init__(content)
         self._main_block_soap = self.get_main_block()
-        self._content_soap = BeautifulSoup(self.content)
+        self._content_soap = BeautifulSoup(self.content, self.BEAUTIFULSOUP_PARSER)
 
     def as_dictionary(self):
         dic = {}
 
-        dic.name = self.get_name()
+        dic.update(name=self.get_name())
 
         admin = self.get_admin_hierarchy()
         if admin:
-            dic.admin_hierarchy = self.get_admin_hierarchy()
+            dic.update(admin_hierarchy=self.get_admin_hierarchy())
 
         dic.i18n = self.get_lang_links()
 
         capital = serf.get_capital()
         if capital:
-            dic.capital = capital
+            dic.update(capital=capital)
 
         lat = self.get_latitude()
         lng = self.get_longitude()
         if lat and lng:
-            dic.center = {
+            dic.update(center={
                 'latitude': lat,
                 'longitude': lng
-            }
+            })
 
         altitude = self.get_altitude()
         if altitude:
-            dic.altitude = altitude
+            dic.update(altitude=altitude)
 
         population = self.get_population()
         if population:
-            dic.population = population
+            dic.update(population=population)
 
         density = self.get_density()
         if density:
-            dic.density = density
+            dic.update(density=density)
 
         area = self.get_area()
         if area:
-            dic.area = area
+            dic.update(area=area)
 
         postal_codes = self.get_postal_codes()
         if postal_codes:
-            dic.postal_codes = postal_codes
+            dic.update(postal_codes=postal_codes)
 
         commune_codes = self.get_commune_codes()
         if commune_codes:
-            dic.commune_codes = commune_codes
+            dic.update(commune_codes=commune_codes)
 
         return dic
 
     def get_main_block(self):
-        return BeautifulSoup(self.content).find("table", { "class" : "infobox_v2" })
+        return BeautifulSoup(self.content, self.BEAUTIFULSOUP_PARSER).find("table", { "class" : "infobox_v2" })
 
     def get_name(self):
-        name_raw = elf._content_soap.find('#firstHeading')
+        name_raw = self._content_soap.find('#firstHeading')
         if not name_raw:
-            name_raw = elf._content_soap.find('tr:nth-child(1) > td')
+            name_raw = self._content_soap.find('tr:nth-child(1) > td')
 
         return self.replace_html(name_raw) if name_raw else ''
 
@@ -215,7 +217,7 @@ class France(Wiki):
 
     def _parse_postal_codes(self, content):
         codes = []
-        content = re.sup(ur"(?i)\s*à\s*", "-", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+        content = re.sup(r"(?i)\s*à\s*", "-", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
         content = re.sup(r"(?i)\s*et(\s+de)?\s*", ",", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
         content = re.sup(r"\s+", "", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
 

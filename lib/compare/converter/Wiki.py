@@ -1,11 +1,5 @@
 import lib.compare.converter.Converter as Converter
 
-ADMIN_LEVEL_1
-ADMIN_LEVEL_2
-ADMIN_LEVEL_3
-ADMIN_LEVEL_4
-ADMIN_LEVEL_5
-ADMIN_LEVEL_6
 class Wiki(Converter):
 
     def __init__(self, obj):

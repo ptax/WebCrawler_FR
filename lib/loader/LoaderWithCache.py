@@ -7,6 +7,7 @@ class LoaderWithCache(Loader):
 
     def load(self, url, headers=None, use_cache=True):
         result = ''
+        code = 200
         if use_cache:
             result = self.from_cache(url, headers=headers)
 
@@ -14,7 +15,7 @@ class LoaderWithCache(Loader):
             result, code= super(LoaderWithCache, self).load(url, headers=headers)
             self.to_cache(url, content=result, headers=headers)
 
-        return result
+        return result, code
 
     def from_cache(self, url, headers=None):
         return self._storage.get(url, headers=headers)

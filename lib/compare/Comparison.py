@@ -1,4 +1,5 @@
 from geopy.distance import vincenty
+import matplotlib.path as MplPath
 
 
 class Comparison:
@@ -17,4 +18,10 @@ class Comparison:
 
     @staticmethod
     def by_polygon(polygon, candidate):
-        pass
+        """
+        :param polygon: [(lat1, lng1), (lat2, lng2), (lat3, lng3), (lat1, lng1)]
+        :param candidate:
+        :return:
+        """
+        path = MplPath.Path(polygon)
+        return path.contains_point((candidate.lat, candidate.lng))

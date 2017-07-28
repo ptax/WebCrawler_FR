@@ -1,5 +1,5 @@
 import re
-import lib.parser.Parser as Parser
+from lib.parser.Parser import Parser as Parser
 
 
 class Wiki(Parser):
@@ -87,7 +87,7 @@ class Wiki(Parser):
 
     def get_lang_links(self):
         result = {}
-        match = re.search(ur"(?i)<li[^>]+class\s*=\s*[\"'][^\"']*interlanguage[^\"]*[\"'].*?href=[\"'](?P<url>.*?)[\"'][^>]*?title=[\"']\s*(?P<name>.*?)\s*—[^\"']*[\"'].*?lang=[\"'](?P<lang>\w+)[\"']",
+        match = re.search(r"(?i)<li[^>]+class\s*=\s*[\"'][^\"']*interlanguage[^\"]*[\"'].*?href=[\"'](?P<url>.*?)[\"'][^>]*?title=[\"']\s*(?P<name>.*?)\s*—[^\"']*[\"'].*?lang=[\"'](?P<lang>\w+)[\"']",
                           self.content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
         if match.group('url'):
             urls = match.group('url')
