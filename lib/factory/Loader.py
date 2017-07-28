@@ -1,9 +1,10 @@
-import urllib2
-import lib.loader.LoaderWithCache as LoaderWithCache
-import lib.loader.Loader as LoaderWOCache
-import lib.loader.storage.MongoDB as MongoDBStorage
+from lib.loader.LoaderWithCache import LoaderWithCache as LoaderWithCache
+from lib.loader.Loader import Loader as LoaderWOCache
+from lib.loader.storage.MongoDB import MongoDB as MongoDBStorage
+from lib.hashlib.sha512 import sha512
 
 from pymongo import MongoClient
+import gridfs
 
 
 class Loader:
@@ -17,8 +18,8 @@ class Loader:
         """
         connection = MongoClient(storage_config['host'], storage_config['port'])
         db = connection.loader_cache
-        storage = MongoDBStorage(db=db, hash_lib=hashlib)
-        return LoaderWithCache(loader_lib=urllib2, storage=storage)
+        storage = MongoDBStorage(db=gridfs.GridFS(db), hash_lib=sha512())
+        return LoaderWithCache(storage=storage)
 
     @staticmethod
     def loader():
@@ -26,4 +27,4 @@ class Loader:
 
         :return lib.loader.Loader:
         """
-        return LoaderWOCache(loader_lib=urllib2)
+        return LoaderWOCache()

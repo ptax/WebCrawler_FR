@@ -4,17 +4,26 @@ class MongoDB:
         self._db = db
         self._hash_lib = hash_lib
 
-    def get(self, url, headers=none):
+    def has(self, url, headers=None):
         hash = self.make_hash(url, headers=headers)
-        document = self._db.find_one({'code': hash})
-        return document.content if 'content' in document else ''
+        return self._db.exists({"filename": hash})
 
-    def set(self, url, content, headers=none):
+    def get(self, url, headers=None):
+        result = ''
+        if self.has(url, headers):
+            hash = self.make_hash(url, headers=headers)
+            document = self._db.find_one({'filename': hash})
+            result = document.read()
+        return result
+
+    def set(self, url, content, headers=None):
         hash = self.make_hash(url, headers=headers)
-        self._db.set(hash, content)
+        return self._db.put(content, filename=hash)
 
-    def make_hash(self, url, headers=none):
+    def make_hash(self, url, headers=None):
         return self._hash_lib.make(url, headers)
 
-    def remove(self, url, headers=none):
-        self._hash_lib.remove({'code': self.make_hash(url, headers=headers)})
+    def remove(self, url, headers=None):
+        if self.has(url, headers):
+            document = self._db.find_one({'filename': self.make_hash(url, headers=headers)})
+            self._db.delete(document._id)

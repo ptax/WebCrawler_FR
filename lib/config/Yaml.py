@@ -1,5 +1,5 @@
 import yaml
-import lib.config.Config as Config
+from lib.config.Config import Config as Config
 
 
 class Yaml(Config):
