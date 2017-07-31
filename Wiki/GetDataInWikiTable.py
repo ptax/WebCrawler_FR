@@ -151,23 +151,134 @@ def FilterLanguages(ListLanguages):
     return MyLangDict
 
 
+def get_status(html):
+    td = html.findAll("td", {"class": "entete map"})[0]['style']
+    bg = td.replace('background-color:', '').replace('color:#000000', '')
+    if '#ffffbb;' in bg:
+        return {'WikiStatus': 'yellow'}
+    elif '#DDFFDD;' in bg:
+        return {'WikiStatus': 'green'}
+    else:
+        return {'WikiStatus': str(bg)}
 
 
 if __name__ == '__main__':
-
-    Url = "https://fr.wikipedia.org/wiki/Arras"
+    Url = "https://fr.wikipedia.org/wiki/Val-Cenis"
     GetHtml = GetHtml(Url)
     Table = GetHtml[0]
-    LangHref = GetHtml[1]
-    #print LangHref
+    # print get_status(Table)
 
+
+    DataDict = {}
+    LangHref = GetHtml[1]
     DictTableInformation = GetInformation(Table)
     LanguagesDict = FilterLanguages(GetLanguages(LangHref))
+
 
     DictDatainWikiPage = DictTableInformation.copy()
     DictDatainWikiPage.update(LanguagesDict)
 
+    Coordinates = DictDatainWikiPage['W_Cordommees']
 
+    print Coordinates
+
+    '''
+    import pandas as pd
+
+    data_columns = ['KeywordId',
+                   'Format_Wiki_NameSnipet',
+                   'Format__NomCN',
+                   'NomCN_Wiki_Name_comparisons',
+                    'InseeChange_DepComN',
+                    'InseeChange_NomCN',
+                    'InseeChange_DepComA',
+                    'InseeChange_NomCA',
+                    'InseeChange_ComDLG',
+                    'InseeChange_Date1',
+                    'InseeChange_Date2',
+                    'InseeChange_Date3',
+                    'ColResultInSnipet',
+                    'ColResultInSnipetSubSnipet',
+                    'Wiki_UrlCommune',
+                    'Wiki_NameSnipet',
+                    'WikiStatus',
+                  'W_Pays',
+                  'W_Region',
+                  'W_Departement',
+                  'W_Arrondissement',
+                  'W_Canton',
+                  'W_Intercommunalite',
+                  'W_CodePostal',
+                  'W_CodeCommune',
+                  'W_Population',
+                  'W_Densite',
+                  'W_Cordommees',
+                  'W_Altitude',
+                  'W_Superficie',
+                  'W_Name_ru',
+                  'W_Name_uk',
+                  'W_Name_en',
+                  'W_Name_de',
+                  'W_Name_pl',
+                  'W_Name_es',
+                  'W_Name_pt',
+                  'W_Name_it',
+                  'W_Name_nl',
+                  'W_Name_da',
+                  'W_Name_no',
+                  'W_Name_sv',
+                  'W_Name_cs',
+                  'W_Name_ro',
+                  'W_Name_bg',
+                  'W_Name_hu',
+                  'W_Name_sk',
+                  'W_Name_sl',
+                  'W_Name_sh',
+                  'W_Name_hr',
+                  'W_Url_ru',
+                  'W_Url_uk',
+                  'W_Url_en',
+                  'W_Url_de',
+                  'W_Url_pl',
+                  'W_Url_es',
+                  'W_Url_pt',
+                  'W_Url_it',
+                  'W_Url_nl',
+                  'W_Url_da',
+                  'W_Url_no',
+                  'W_Url_sv',
+                  'W_Url_cs',
+                  'W_Url_ro',
+                  'W_Url_bg',
+                  'W_Url_hu',
+                  'W_Url_sk',
+                  'W_Url_sl',
+                  'W_Url_sh',
+                  'W_Url_hr',
+                  'G_Coordinates_northeast_Lat_1',
+                  'G_Coordinates_northeast_Lng_1',
+                  'G_Coordinates_southwest_Lat_2',
+                  'G_Coordinates_southwest_Lng_2',
+                  'G_Coordinates_location_Lat_3',
+                  'G_Coordinates_location_Lng_3',
+                  'G_Locality_long_name',
+                  'G_Locality_short_name',
+                  'G_Locality_types',
+                  'G_AdminLevel_1_long_name',
+                  'G_AdminLevel_1_short_name',
+                  'G_AdminLevel_1_types',
+                  'G_AdminLevel_2_long_name',
+                  'G_AdminLevel_2_short_name',
+                  'G_AdminLevel_2_types',
+                  'G_Country_long_name',
+                  'G_Country_short_name',
+                  'G_Country_types',
+                  'G_postal_code_long_name',
+                 'G_postal_code_short_name',
+                 'G_postal_code_types',
+                 'G_FormatAddress',
+                 'G_Types']
+    '''
     #print DictDatainWikiPage['W_Url_sl'],DictDatainWikiPage['W_Name_sl'],DictDatainWikiPage['W_Pays'],DictDatainWikiPage['W_Departement']
 
 

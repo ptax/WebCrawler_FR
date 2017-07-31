@@ -192,7 +192,16 @@ def GetHeader_2(Delimiter):
                   91:'Wiki_NameSnipet',
                   92:'Wiki_Old_UrlInCommune',
                   93:'Wiki_Old_NameSnipet',
-                  94:'ColResultInSnipet'
+                  94: 'ColResultInSnipet',
+                  95: 'Wiki_NameSnipet_lower',
+                  96: 'G_Locality_short_name_lower',
+                  97: 'F_Compare_Wiki_NameSnipet_G_Locality_short_name_equally',
+                  98: 'F_Compare_Wiki_NameSnipet_G_Locality_short_name_percentage',
+                  99: 'F_Compare_Wiki_NameSnipet_G_Locality_short_name_percentage_more_or_equal_80',
+                  100: 'W_Departement_status',
+                  101: 'W_Arrondissement_status',
+                  102: 'W_Canton_status'
+
 
 
                   }

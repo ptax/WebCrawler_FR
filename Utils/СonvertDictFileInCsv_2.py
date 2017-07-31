@@ -7,11 +7,12 @@ import os
 
 import csv
 import Utils.SaveAndLoadDictFile
-import DataStructure.FirstColumHeader
+import DataStructure.FirstColumHeader_1
 import urllib
 import re
 import ClearName
 import Utils.convert_to_latin
+
 
 def ReplaceCooma(Str):
     Str = re.sub(",$", '', str(Str))
@@ -31,45 +32,19 @@ def NameWinkiConvertUrl(Name):
     return Name
 
 
-def SaveCsv():
-    ListNone = []
-    NameSaveFile = os.path.abspath('../WorkBaseFile/Wiki_Url_08_06_17.csv')
-    HeaderLine = DataStructure.FirstColumHeader.GetHeader('\t')
-    text_file = open(NameSaveFile, "a")
-    text_file.write(HeaderLine + '\n')
-    DictFile = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/Dict_WikiUrl_08_06_17_2')
-    print len(DictFile)
-    for Data in DictFile.values():
-        WikiUrl = str(Data['Wiki_Url'])
-        Data = Data['InseeXls_CodeCommune'] + '\t' + Data['InseeXls_NameCommune'] + '\t' + Data[
-            'InseeXls_Population'] + '\t' + Data['Wiki_Url']
-        if u'Faund' in WikiUrl:
-            ListNone.append('Not')
-        # Data = {'{0}\t{1}\t{2}\t{3}'}.format(Data['InseeXls_CodeCommune'],Data['InseeXls_NameCommune'],Data['InseeXls_Population'],Data['Wiki_Url'])
-        print Data
-        text_file = open(NameSaveFile, "a")
-        text_file.write(Data + '\n')
-    text_file.close()
-    print 'Commune Not Faund\t' + str(len(ListNone))
-
-
 def ConvertCSVFirstData():
-    NameSaveFile = os.path.abspath('../WorkBaseFile/28_07_17_Moderation_Commun_Onli.txt')
-    HeaderLine = DataStructure.FirstColumHeader.GetHeader_2('\t')
+    NameSaveFile = os.path.abspath('../WorkBaseFile/27_07_17_Hauts-de-France.txt')
+    HeaderLine = DataStructure.FirstColumHeader_1.GetHeader_2('\t')
     text_file = open(NameSaveFile, "a")
     text_file.write(HeaderLine + '\n')
-    DictFile = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/28_07_17_Moderation_Commun_Onli')
+    DictFile = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune_3')
     print len(DictFile)
 
     w_rigion_mini = [u'Martinique', u'Guadeloupe']
     for Data, Keys in zip(DictFile.values(), DictFile.keys()):
 
         try:
-            W_Region = Data['W_Region'].replace(',', '').replace(u'(préfecture)', '').replace(
-                u'(siège du conseil régional)', '').replace(u'(siège)', '').replace(u'(Préfecture)', '').replace(
-                u'(bureau centralisateur)', '').replace(u'(Champagne-Ardenne)', '').replace(u'(chef-lieu)', '').replace(
-                u"Provence-Alpes-Côte d'Azur", u"Provence-Alpes-Côte d’Azur").strip()
-
+            W_Region = Data['W_Region']
         except KeyError:
             W_Region = 'None'
 
@@ -87,7 +62,7 @@ def ConvertCSVFirstData():
         except:
             G_Types = 'None'
 
-        if W_Region:
+        if u'Hauts-de-France' in W_Region:
             # print DictFile[Keys]
             #print Data['InseeXls_CodeCommune']
             try:
@@ -162,166 +137,6 @@ def ConvertCSVFirstData():
                 W_Superficie = ReplaceCooma(Data['W_Superficie'])
             except KeyError:
                 W_Superficie = 'None'
-            try:
-                W_Name_ru = Data['W_Name_ru']
-            except KeyError:
-                W_Name_ru = 'None'
-            try:
-                W_Name_uk = Data['W_Name_uk']
-            except KeyError:
-                W_Name_uk = 'None'
-            try:
-                W_Name_en = Data['W_Name_en']
-            except KeyError:
-                W_Name_en = 'None'
-            try:
-                W_Name_de = Data['W_Name_de']
-            except KeyError:
-                W_Name_de = 'None'
-            try:
-                W_Name_pl = Data['W_Name_pl']
-            except KeyError:
-                W_Name_pl = 'None'
-            try:
-                W_Name_es = Data['W_Name_es']
-            except KeyError:
-                W_Name_es = 'None'
-            try:
-                W_Name_pt = Data['W_Name_pt']
-            except KeyError:
-                W_Name_pt = 'None'
-            try:
-                W_Name_it = Data['W_Name_it']
-            except KeyError:
-                W_Name_it = 'None'
-            try:
-                W_Name_nl = Data['W_Name_nl']
-            except KeyError:
-                W_Name_nl = 'None'
-            try:
-                W_Name_da = Data['W_Name_da']
-            except KeyError:
-                W_Name_da = 'None'
-            try:
-                W_Name_no = Data['W_Name_no']
-            except KeyError:
-                W_Name_no = 'None'
-            try:
-                W_Name_sv = Data['W_Name_sv']
-            except KeyError:
-                W_Name_sv = 'None'
-            try:
-                W_Name_cs = Data['W_Name_cs']
-            except KeyError:
-                W_Name_cs = 'None'
-            try:
-                W_Name_ro = Data['W_Name_ro']
-            except KeyError:
-                W_Name_ro = 'None'
-            try:
-                W_Name_bg = Data['W_Name_bg']
-            except KeyError:
-                W_Name_bg = 'None'
-            try:
-                W_Name_hu = Data['W_Name_hu']
-            except KeyError:
-                W_Name_hu = 'None'
-            try:
-                W_Name_sk = Data['W_Name_sk']
-            except KeyError:
-                W_Name_sk = 'None'
-            try:
-                W_Name_sl = Data['W_Name_sl']
-            except KeyError:
-                W_Name_sl = 'None'
-            try:
-                W_Name_sh = Data['W_Name_sh']
-            except KeyError:
-                W_Name_sh = 'None'
-            try:
-                W_Name_hr = Data['W_Name_hr']
-            except KeyError:
-                W_Name_hr = 'None'
-            try:
-                W_Url_ru = Data['W_Url_ru']
-            except KeyError:
-                W_Url_ru = 'None'
-            try:
-                W_Url_uk = Data['W_Url_uk']
-            except KeyError:
-                W_Url_uk = 'None'
-            try:
-                W_Url_en = Data['W_Url_en']
-            except KeyError:
-                W_Url_en = 'None'
-            try:
-                W_Url_de = Data['W_Url_de']
-            except KeyError:
-                W_Url_de = 'None'
-            try:
-                W_Url_pl = Data['W_Url_pl']
-            except KeyError:
-                W_Url_pl = 'None'
-            try:
-                W_Url_es = Data['W_Url_es']
-            except KeyError:
-                W_Url_es = 'None'
-            try:
-                W_Url_pt = Data['W_Url_pt']
-            except KeyError:
-                W_Url_pt = 'None'
-            try:
-                W_Url_it = Data['W_Url_it']
-            except KeyError:
-                W_Url_it = 'None'
-            try:
-                W_Url_nl = Data['W_Url_nl']
-            except KeyError:
-                W_Url_nl = 'None'
-            try:
-                W_Url_da = Data['W_Url_da']
-            except KeyError:
-                W_Url_da = 'None'
-            try:
-                W_Url_no = Data['W_Url_no']
-            except KeyError:
-                W_Url_no = 'None'
-            try:
-                W_Url_sv = Data['W_Url_sv']
-            except KeyError:
-                W_Url_sv = 'None'
-            try:
-                W_Url_cs = Data['W_Url_cs']
-            except KeyError:
-                W_Url_cs = 'None'
-            try:
-                W_Url_ro = Data['W_Url_ro']
-            except KeyError:
-                W_Url_ro = 'None'
-            try:
-                W_Url_bg = Data['W_Url_bg']
-            except KeyError:
-                W_Url_bg = 'None'
-            try:
-                W_Url_hu = Data['W_Url_hu']
-            except KeyError:
-                W_Url_hu = 'None'
-            try:
-                W_Url_sk = Data['W_Url_sk']
-            except KeyError:
-                W_Url_sk = 'None'
-            try:
-                W_Url_sl = Data['W_Url_sl']
-            except KeyError:
-                W_Url_sl = 'None'
-            try:
-                W_Url_sh = Data['W_Url_sh']
-            except KeyError:
-                W_Url_sh = 'None'
-            try:
-                W_Url_hr = Data['W_Url_hr']
-            except KeyError:
-                W_Url_hr = 'None'
             try:
                 G_Coordinates_northeast_Lat_1 = Data['G_Coordinates_northeast_Lat_1']
             except KeyError:
@@ -438,18 +253,6 @@ def ConvertCSVFirstData():
                 W_Cordommees_Convert = Data['W_Cordommees_Convert']
             except:
                 W_Cordommees_Convert = 'None'
-            try:
-                G_Name_ru = Data['G_Name_ru']
-            except:
-                G_Name_ru = 'None'
-            try:
-                G_Name_uk = Data['G_Name_uk']
-            except:
-                G_Name_uk = 'None'
-            try:
-                G_Name_en = Data['G_Name_en']
-            except:
-                G_Name_en = 'None'
 
             try:
                 if str(Data['InseeXls_CodeCommune']).strip() == ReplaceCooma(Data['W_CodeCommune']):
@@ -543,46 +346,6 @@ def ConvertCSVFirstData():
                         W_Cordommees,
                         W_Altitude,
                         W_Superficie,
-                        W_Name_ru,
-                        W_Name_uk,
-                        W_Name_en,
-                        W_Name_de,
-                        W_Name_pl,
-                        W_Name_es,
-                        W_Name_pt,
-                        W_Name_it,
-                        W_Name_nl,
-                        W_Name_da,
-                        W_Name_no,
-                        W_Name_sv,
-                        W_Name_cs,
-                        W_Name_ro,
-                        W_Name_bg,
-                        W_Name_hu,
-                        W_Name_sk,
-                        W_Name_sl,
-                        W_Name_sh,
-                        W_Name_hr,
-                        W_Url_ru,
-                        W_Url_uk,
-                        W_Url_en,
-                        W_Url_de,
-                        W_Url_pl,
-                        W_Url_es,
-                        W_Url_pt,
-                        W_Url_it,
-                        W_Url_nl,
-                        W_Url_da,
-                        W_Url_no,
-                        W_Url_sv,
-                        W_Url_cs,
-                        W_Url_ro,
-                        W_Url_bg,
-                        W_Url_hu,
-                        W_Url_sk,
-                        W_Url_sl,
-                        W_Url_sh,
-                        W_Url_hr,
                         G_Coordinates_northeast_Lat_1,
                         G_Coordinates_northeast_Lng_1,
                         G_Coordinates_southwest_Lat_2,
@@ -609,9 +372,7 @@ def ConvertCSVFirstData():
                         G_FormatAddress,
                         G_Types,
                         W_Cordommees_Convert,
-                        G_Name_ru,
-                        G_Name_uk,
-                        G_Name_en,
+
                         F_Compare_InseeXls_CodeCommune_W_CodeCommune,
                         F_Compare_InseeXls_NameCommune_Wiki_Url,
                         F_Compare_InseeXls_NameCommune_G_Locality_long_name,
@@ -629,7 +390,7 @@ def ConvertCSVFirstData():
                         W_Arrondissement_status,
                         W_Canton_status]
 
-            # DataInSaveFile = '{' + "'" + str(InseeXls_CodeCommune) + "':" + str(Data) + '}'
+            #DataInSaveFile = '{' + "'" + str(InseeXls_CodeCommune) + "':" + str(Data) + '}'
             #text_file = open("../WorkBaseFile/16_07_17.txt", "a")
             #text_file.write(str(DataInSaveFile) + '\n')
 

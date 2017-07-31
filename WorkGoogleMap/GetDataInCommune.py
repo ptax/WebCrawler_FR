@@ -6,9 +6,15 @@ from urllib2 import urlopen
 import urllib
 import json
 import Utils.SaveAndLoadDictFile
+import random
 
-def GetDataInAddress(LocationName):
-    url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + LocationName + "&sensor=false&language=fr&key=AIzaSyAyuipQcvRBCoJDNBvt4b0jDmd7NECfOmg"
+
+def GetDataInAddress(LocationName, ApiKey):
+    # url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + LocationName + "&sensor=false&language=fr&key=AIzaSyAyuipQcvRBCoJDNBvt4b0jDmd7NECfOmg"
+    #url = "http://maps.googleapis.com/maps/api/geocode/json?address=" + LocationName + "&sensor=false&language=fr"
+    url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + LocationName + "&sensor=false&language=fr&key=" + str(
+        ApiKey)
+
     url=urllib.unquote(url).decode('utf8')
     try:
         response = json.loads(urlopen(url).read())
@@ -293,6 +299,7 @@ def StructureLocalType(GoogleResult):
                 DictMyData.update(DataUpdate)
     return DictMyData
 
+
 def GetCoordinatesInGoogle(GoogleResult):
 
     DictDataInGoogleResult = {}
@@ -349,8 +356,7 @@ def GetCoordinatesInGoogle(GoogleResult):
     return DictDataInGoogleResult
 
 def SplitGetDataInPlaceId(GoogleResult):
-
-    GetAdressDict = StructureLocalType(GoogleResult)
+    GetAdressDict = GetCoordinatesInGoogle(GoogleResult)
     GetCoordimatDict = GetCoordinatesInGoogle(GoogleResult)
     Mydict = GetAdressDict.copy()
 
@@ -358,18 +364,54 @@ def SplitGetDataInPlaceId(GoogleResult):
     return Mydict
 
 
+def stucture_postcode_localities(GoogleResult):
+    try:
+        GoogleStatus = GoogleResult[1]
+        GoogleResult = GoogleResult[0]
+    except:
+        GoogleStatus = 'None'
+        GoogleResult = 'None'
+        pass
+    if GoogleStatus == u"OK":
+        try:
+            postcode_localities = GoogleResult['postcode_localities']
+        except:
+            postcode_localities = ['None']
+    else:
+        postcode_localities = ['None']
+    return postcode_localities
+
+
+
 if __name__ == '__main__':
     CodeInsee = '62217'
-    LocationName = '62217,Achicourt,France'
-    Test = GetDataInAddress(LocationName)
+    LocationName = '18300,France'
 
-    #print DataStructure(Test)
+    ApikeyList = ['AIzaSyBZVOSPh0Z4mv9jljJWzZNSug6upuec7Sg', 'AIzaSyAeaWLxSHFEdwWEVVYajslt7R9eP0ZpLXQ',
+                  'AIzaSyARBYHwwK5uPoNuS2iN3UOg8fQGRgHLz78', 'AIzaSyDpkHWwId9J1mMCqu9mirXPEwpM3XTs0GU',
+                  'AIzaSyAIAT5ptZVJqiFiTQZxAXp6KT8jREfKidU', 'AIzaSyDXBLyip9Go5V4COM2w-ELE-oV1Zm8EQRk',
+                  'AIzaSyDBA9EWB_zNWC6XjDu9mGyIuuV6QSL_ABM', 'AIzaSyD_YqB4d_-xKcmNP9jJCiPkJYDS8J3f6pI',
+                  'AIzaSyAAqEuv_SHtc0ByecPXSQiKH5f2p2t5oP4']
+    ApiKey = random.choice(ApikeyList)
+
+    GoogleResult = GetDataInAddress(LocationName, ApiKey)
+
+    ListLocation = stucture_postcode_localities(GoogleResult)
+    for i in ListLocation:
+        print i
+
+    '''
+    Test = GetDataInAddress(LocationName)
+    print Test[1]
+    print Test
+
+    print DataStructure(Test)
     Cordinates_1 = '50.4775'
     Cordinates_2 = '1.85944444444'
     #Res = GetDataInCordinates(Cordinates_1,Cordinates_2)
     #print Res
-    #rint DataStructure(Res)
-    Lang = u'fr'
+    #print DataStructure(Res)
+    #Lang = u'fr'
 
 
 
@@ -383,5 +425,6 @@ if __name__ == '__main__':
 
     PlaceId = 'ChIJQZHKaGJI6EcREPdpgT7xCgQ'
 
-    GoogleResult = GetResultInSendPlaceId(PlaceId)
-    print SplitGetDataInPlaceId(GoogleResult)
+    #GoogleResult = GetResultInSendPlaceId(PlaceId)
+    #print SplitGetDataInPlaceId(GoogleResult)
+    '''

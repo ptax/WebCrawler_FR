@@ -17,6 +17,6 @@ def Run(FilePathName):
 
 
 if __name__ == '__main__':
-    NameFile = r'../Wiki/BaseCommune'
+    NameFile = r'../WorkBaseFile/BaseCommune'
     for i in Run(NameFile):
         print i[0]
