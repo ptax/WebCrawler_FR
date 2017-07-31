@@ -1,4 +1,4 @@
-import lib.storage.Location
+from lib.location.Location import Location
 
 
 class Internal(Location):
