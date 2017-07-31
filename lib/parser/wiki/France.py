@@ -14,56 +14,13 @@ class France(Wiki):
     ADMIN_LEVEL_5 = u'ville'
     ADMIN_LEVEL_6 = u'commune'
 
-    BEAUTIFULSOUP_PARSER = "html.parser"
-
-
     def __init__(self, content):
         super(France, self).__init__(content)
-        self._main_block_soap = self.get_main_block()
-        self._content_soap = BeautifulSoup(self.content, self.BEAUTIFULSOUP_PARSER)
+        self._main_block = str(self.get_main_block())
+
 
     def as_dictionary(self):
-        dic = {}
-
-        dic.update(name=self.get_name())
-
-        admin = self.get_admin_hierarchy()
-        if admin:
-            dic.update(admin_hierarchy=self.get_admin_hierarchy())
-
-        dic.i18n = self.get_lang_links()
-
-        capital = serf.get_capital()
-        if capital:
-            dic.update(capital=capital)
-
-        lat = self.get_latitude()
-        lng = self.get_longitude()
-        if lat and lng:
-            dic.update(center={
-                'latitude': lat,
-                'longitude': lng
-            })
-
-        altitude = self.get_altitude()
-        if altitude:
-            dic.update(altitude=altitude)
-
-        population = self.get_population()
-        if population:
-            dic.update(population=population)
-
-        density = self.get_density()
-        if density:
-            dic.update(density=density)
-
-        area = self.get_area()
-        if area:
-            dic.update(area=area)
-
-        postal_codes = self.get_postal_codes()
-        if postal_codes:
-            dic.update(postal_codes=postal_codes)
+        dic = super(France, self).as_dictionary()
 
         commune_codes = self.get_commune_codes()
         if commune_codes:
@@ -72,14 +29,27 @@ class France(Wiki):
         return dic
 
     def get_main_block(self):
-        return BeautifulSoup(self.content, self.BEAUTIFULSOUP_PARSER).find("table", { "class" : "infobox_v2" })
+        content = self._content_soap.find("table", { "class" : "infobox_v2" })
+        if not content:
+            content = self._content_soap.find("table", { "class" : "infobox_v3" })
+        return content
 
     def get_name(self):
-        name_raw = self._content_soap.find('#firstHeading')
+        name_raw = self._content_soap.select_one('#firstHeading')
         if not name_raw:
-            name_raw = self._content_soap.find('tr:nth-child(1) > td')
+            name_raw = self._content_soap.select_one('tr:nth-child(1) > td')
 
-        return self.replace_html(name_raw) if name_raw else ''
+        return self.replace_html(str(name_raw)) if name_raw else ''
+
+    def get_type(self):
+        text = None
+        match = re.search(
+            r'href=["\']/wiki/Mod%C3%A8le:Infobox_(?P<code>Pays|(R%C3%A9gion|D%C3%A9partement|Arrondissement|Canton|Intercommunalit%C3%A9|Commune)_de_France)["\']',
+            self._main_block, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+        if match:
+            text = match.group('code')
+            text = self._url_decode(text).replace('_de_France', '').lower()
+        return text
 
     def get_admin_hierarchy(self):
         admin = []
@@ -106,121 +76,121 @@ class France(Wiki):
 
         return admin
 
-    def _get_value_with_link(self, column_name):
+    def _get_value_with_link(self, column_name, content):
         match = re.search(
             r"<th[^>]*>.*?" + re.escape(column_name) + r".*?<[^>]*th>\s*<td[^>]*>.*?<a[^>]*href=\"(?P<url>/wiki/[^\"]*)\"[^>]*>(?P<name>[^<]*)</a>.*?<[^>]*td>",
-            self.content,
+            content,
             re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
 
         return {"url": self.HOST + match.group('url'), "name": self.replace_html(match.group('name'))} if match else {}
 
     def _get_country(self):
-        result = self._get_value_with_link(u"Pays")
-        result.type = self.ADMIN_LEVEL_1
+        result = self._get_value_with_link(u"Pays", self._main_block)
+        result.update(type=self.ADMIN_LEVEL_1)
         return result
 
     def _get_region(self):
-        result = self._get_value_with_link(u"Région")
-        result.type = self.ADMIN_LEVEL_2
+        result = self._get_value_with_link(u"Région", self._main_block)
+        result.update(type=self.ADMIN_LEVEL_2)
         return result
 
     def _get_department(self):
-        result = self._get_value_with_link(u"Département")
-        result.type = self.ADMIN_LEVEL_3
+        result = self._get_value_with_link(u"Département", self._main_block)
+        if result:
+            result.update(type=self.ADMIN_LEVEL_3)
         return result
 
     def _get_borough(self):
-        result = self._get_value_with_link(u"Arrondissement")
-        result.type = self.ADMIN_LEVEL_4
+        result = self._get_value_with_link(u"Arrondissement", self._main_block)
+        if result:
+            result.update(type=self.ADMIN_LEVEL_4)
         return result
 
     def _get_city(self):
-        result = self._get_value_with_link(u"Ville")
-        result.type = self.ADMIN_LEVEL_5
+        result = self._get_value_with_link(u"Ville", self._main_block)
+        if result:
+            result.update(type=self.ADMIN_LEVEL_5)
         return result
 
     def get_altitude(self):
         result = {}
-        data = self._get_value(u'Altitude')
+        data = self._get_value(u'Altitude', self._main_block)
 
         min = self._get_min_altitude(data)
         if min is not None:
-            result.min = min
+            result.update(min=min)
 
         max = self._get_max_altitude(data)
         if max is not None:
-            result.max = max
+            result.update(max=max)
 
         return result
-
 
     def get_population(self):
-        population = self._get_value(u"Population<br />\nmunicipale")
-        first_numbers = self._first_numbers(population)
+        population = self._get_value(u"Population", self._main_block)
+        first_numbers = self._first_numbers(str(population))
 
-        return first_numbers if first_numbers else population
+        return int(first_numbers) if first_numbers else 0
 
     def get_density(self):
-        data = self._get_value(u"Densité")
-        first_numbers = self._first_numbers(data)
+        data = self._get_value(u"Densité", self._main_block)
+        first_numbers = self._first_numbers(str(data))
 
-        return first_numbers if first_numbers else data
+        return int(first_numbers) if first_numbers else 0
 
     def get_area(self):
-        data = self._get_value(u'Superficie')
-        first_numbers = self._first_numbers(data)
+        data = self._get_value(u'Superficie', self._main_block)
+        first_numbers = float(self._first_numbers(str(data)))
 
-        return first_numbers if first_numbers else data
+        return first_numbers if first_numbers else None
 
     def get_capital(self):
-        result = {}
 
-        capital = self._get_value_with_link(u"Siège")
-        if not result and capital:
-            result = capital
-
-        capital = self._get_value_with_link(u"Siège de la préfecture")
-        if not result and capital:
-            result = capital
-
-        capital = self._get_value_with_link(u"Chef-lieu")
-        if not result and capital:
-            result = capital
-
-        capital = self._get_value_with_link(u"Capitale")
+        capital = self._get_value_with_link(u"Siège", self._main_block)
         if capital:
-            result = capital
+            return capital
 
-        return result
+        capital = self._get_value_with_link(u"Siège de la préfecture", self._main_block)
+        if capital:
+            return capital
+
+        capital = self._get_value_with_link(u"Chef-lieu", self._main_block)
+        if capital:
+            return capital
+
+        capital = self._get_value_with_link(u"Capitale", self._main_block)
+        if capital:
+            return capital
+
+        return None
 
 
-    def _get_value(self, column_name):
+    def _get_value(self, column_name, content):
         match = re.search(
-            r"<th[^>]*>.*?" + re.escape(column_name) + r".*?<[^>]*th>\s*<td[^>]*>(?P<name>.*)<[^>]*td>",
-            self.content,
+            r"<th[^>]*>.*?" + re.escape(column_name) + r".*?<[^>]*th>\s*<td[^>]*>(?P<name>.*?)<[^>]*td>",
+            content,
             re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
 
-        return self.replace_html(match.group('name'))
+        return self.replace_html(match.group('name')) if match else None
 
     def get_postal_codes(self):
-        data = self._get_value('Code postal')
+        data = self._get_value('Code postal', self._main_block)
         return self._parse_postal_codes(data) if data else ''
 
     def get_commune_codes(self):
-        data = self._get_value('Code commune')
+        data = self._get_value('Code commune', self._main_block)
         return self._parse_commune_codes(data) if data else ''
 
     def is_location_page(self):
         match = re.search(r"href=[\"']/wiki/Mod%C3%A8le:Infobox_(?P<code>Pays|(R%C3%A9gion|D%C3%A9partement|Arrondissement|Canton|Intercommunalit%C3%A9|Commune)_de_France)[\"']",
-                          self.content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+            self._main_block, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
         return bool(match.group('code'))
 
     def _parse_postal_codes(self, content):
         codes = []
-        content = re.sup(r"(?i)\s*à\s*", "-", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
-        content = re.sup(r"(?i)\s*et(\s+de)?\s*", ",", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
-        content = re.sup(r"\s+", "", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
-
+        content = re.sub(r"(?i)\s*à\s*", "-", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+        content = re.sub(r"(?i)\s*et(\s+de)?\s*", ",", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
+        content = re.sub(r"\s+", "", content, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
         for code_bloc in content.split(','):
             codes += self._parse_postal_code(code_bloc)
 
@@ -230,9 +200,5 @@ class France(Wiki):
         return self._parse_postal_codes(content)
 
     def get_residents(self):
-        result = self._get_value(u"Gentilé")
+        result = self._get_value(u"Gentilé", self._main_block)
         return result if result else ''
-
-
-
-

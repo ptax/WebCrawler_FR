@@ -1,8 +1,5 @@
 from lib.factory.Loader import Loader as Factory
-import sys
 
-
-sys.path.insert(0, "/app")
 
 loader = Factory.loader()
 

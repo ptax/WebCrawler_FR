@@ -1,6 +1,7 @@
 from lib.factory.Loader import Loader as Loader
 from lib.config.Yaml import Yaml as Config
 
+
 config = Config('./config/config.yml')
 loader = Loader.loader_with_mongodb(config.get('mongodb'))
 
