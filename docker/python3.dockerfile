@@ -8,9 +8,11 @@ RUN python -m pip install geopy==1.11.0
 
 RUN pip3 install beautifulsoup4
 
-RUN pip install pyyaml
+RUN python -m pip install pyyaml=3.12
 
-RUN apt-get install -y python-matplotlib
+RUN python -m pip install matplotlib=2.0.1
+
+RUN python -m pip install pandas=0.20.3
 
 WORKDIR /app
 
