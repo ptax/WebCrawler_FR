@@ -13,8 +13,8 @@ content = loader.load(url, headers=headers)
 content_from_storage = loader.from_cache(url, headers=headers)
 
 if len(content) == len(content_from_storage):
-    print('.')
+    print('.', end='')
 else:
-    print('E')
+    print('E', end='')
 
 loader._storage.remove(url, headers=headers)

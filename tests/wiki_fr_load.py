@@ -9,6 +9,6 @@ headers = {'User-Agent': 'Mozilla/5.0'}
 content, code = loader.load(url, headers=headers)
 
 if code == 200 and len(content) > 0:
-    print('.')
+    print('.', end='')
 else:
-    print('E')
+    print('E', end='')
