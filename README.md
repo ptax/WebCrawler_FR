@@ -19,7 +19,12 @@ install docker with docker-compose
 ##Run dev environment
 ```bash
 cd /path/to/project/root
-docker-compose -f docker/docker-compose-dev.yml up
+docker-compose -f ./docker/docker-compose-dev.yml up
+```
+
+## Clear logs
+```bash
+sudo rm -rf ./log/*.log
 ```
 
 ##Update project in prod
