@@ -8,7 +8,7 @@ loader = Loader.loader_with_mongodb(config.get('mongodb'))
 url = 'https://fr.wikipedia.org/wiki/Paris'
 headers = {'User-Agent': 'Mozilla/5.0'}
 
-content = loader.load(url, headers=headers)
+content, code = loader.load(url, headers=headers)
 
 content_from_storage = loader.from_cache(url, headers=headers)
 
