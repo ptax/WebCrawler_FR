@@ -1,7 +1,7 @@
-from lib.loader.Loader import Loader as Loader
+from lib.loader.HttpRequest import HttpRequest as HttpRequest
 
 
-class LoaderWithCache(Loader):
+class HttpRequestWithCache(HttpRequest):
     def __init__(self, storage):
         self._storage = storage
 
@@ -10,9 +10,8 @@ class LoaderWithCache(Loader):
         code = 200
         if use_cache:
             result = self.from_cache(url, headers=headers)
-
         if not result:
-            result, code= super(LoaderWithCache, self).load(url, headers=headers)
+            result, code = super(HttpRequestWithCache, self).load(url, headers=headers)
             self.to_cache(url, content=result, headers=headers)
 
         return result, code
@@ -21,4 +20,4 @@ class LoaderWithCache(Loader):
         return self._storage.get(url, headers=headers)
 
     def to_cache(self, url, content, headers=None):
-        self._storage.set(url, content=content, headers=headers)
+        self._storage.set(url=url, content=content, headers=headers)

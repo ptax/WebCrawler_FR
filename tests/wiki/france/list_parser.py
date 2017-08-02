@@ -12,4 +12,4 @@ parser = WikiFr(content)
 
 print('.' if parser.is_many_answers() else 'E', end='')
 
-print(parser.get_answers_links())
+print('.' if parser.get_answers_links() else 'E', end='')

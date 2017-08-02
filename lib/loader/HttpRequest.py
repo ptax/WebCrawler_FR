@@ -1,7 +1,7 @@
 import urllib.request as loader_lib
 
 
-class Loader:
+class HttpRequest:
 
     @staticmethod
     def load(url, headers=None):
