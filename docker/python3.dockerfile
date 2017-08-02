@@ -14,6 +14,9 @@ RUN python -m pip install matplotlib==2.0.1
 
 RUN python -m pip install pandas==0.20.3
 
+ENV PYTHONPATH "$PYTHONPATH:/app/"
+ENV PYTHONIOENCODING "utf-8"
+
 WORKDIR /app
 
 CMD ["sleep", "50d"]
