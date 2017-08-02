@@ -14,6 +14,8 @@ RUN python -m pip install matplotlib==2.0.1
 
 RUN python -m pip install pandas==0.20.3
 
+RUN pip install -U googlemaps==2.5.1
+
 ENV PYTHONPATH "$PYTHONPATH:/app/"
 ENV PYTHONIOENCODING "utf-8"
 

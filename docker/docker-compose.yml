@@ -5,9 +5,6 @@ services:
       context: ./../
       dockerfile: ./docker/python3.dockerfile
     image: python3:wiki_parser
-    environment:
-      PYTHONPATH: '$PYTHONPATH:/app/'
-      PYTHONIOENCODING: 'utf-8'
     links:
       - wiki_parser_mongodb
 
