@@ -1,3 +1,6 @@
 mongodb:
     host: wiki_parser_mongodb
     port: 27017
+
+googlemaps:
+    geocoding: AIzaSyApLhGCGAAgMXncb0KR6CtLA33gU9yOpZY
