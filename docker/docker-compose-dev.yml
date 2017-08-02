@@ -5,16 +5,13 @@ services:
       context: ./../
       dockerfile: ./docker/python3.dockerfile
     image: python3:wiki_parser
-    entrypoint:
-      - git
-      - clone
-      - https://github.com/bpteam/WebCrawler_FR.git
-      - .
     environment:
       PYTHONPATH: '$PYTHONPATH:/app/'
       PYTHONIOENCODING: 'utf-8'
     links:
       - wiki_parser_mongodb
+    volumes:
+      - /home/ec/PycharmProjects/WebCrawler_FR:/app
 
   wiki_parser_mongodb:
     build:
@@ -22,6 +19,6 @@ services:
       dockerfile: ./docker/mongodb.dockerfile
     image: mongodb:wiki_parser
     volumes:
-      - /home/ec/PycharmProjects/data/wiki_parser_mongodb:/project/parser_db
+      - /home/ec/PycharmProjects/data/wiki_parser_mongodb:/data/db
     expose:
       - 27017

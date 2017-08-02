@@ -19,4 +19,4 @@ ENV PYTHONIOENCODING "utf-8"
 
 WORKDIR /app
 
-CMD ["sleep", "50d"]
+CMD ["sleep", "365d"]
