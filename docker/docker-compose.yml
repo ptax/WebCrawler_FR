@@ -5,11 +5,6 @@ services:
       context: ./../
       dockerfile: ./docker/python3.dockerfile
     image: python3:wiki_parser
-    entrypoint:
-      - git
-      - clone
-      - https://github.com/bpteam/WebCrawler_FR.git
-      - .
     environment:
       PYTHONPATH: '$PYTHONPATH:/app/'
       PYTHONIOENCODING: 'utf-8'

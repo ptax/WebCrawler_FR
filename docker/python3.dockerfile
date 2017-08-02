@@ -19,4 +19,6 @@ ENV PYTHONIOENCODING "utf-8"
 
 WORKDIR /app
 
+RUN git clone https://github.com/bpteam/WebCrawler_FR.git .
+
 CMD ["sleep", "365d"]
