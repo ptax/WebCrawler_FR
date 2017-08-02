@@ -32,13 +32,13 @@ log.add('Params: [{0}]'.format(repr(opts).encode('utf-8')), log.INFO)
 url_format = "https://fr.wikipedia.org/w/index.php?search={0}&title=Sp%C3%A9cial:Recherche&profile=default&fulltext=1&searchengineselect=mediawiki&searchToken=ac9zaxa1lggzxpdhc5ukg06t6"
 message_format = 'Parsing request:[{0}]'
 
-use_insee_list = opts.s
+use_insee_list = bool(opts.s)
 file_name_insee_list = opts.s if use_insee_list else './WorkBaseFile/BaseCommuneInInseeFR'
 
-use_request = opts.r
+use_request = bool(opts.r)
 custom_request = opts.r if use_request else ''
 
-use_link = opts.l
+use_link = bool(opts.l)
 custom_link = opts.l if use_link else ''
 
 
