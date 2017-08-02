@@ -6,7 +6,6 @@ class Location:
         self._new = False
         self._document = self._get_or_create_doc()
 
-
     def _get_or_create_doc(self):
         document = self._storage.find_one(self._query)
         if not document:
@@ -19,6 +18,10 @@ class Location:
     def is_new(self):
         return self._new
 
+    def get_document(self):
+        return self._document
+
     def update(self, new_data):
         new_doc = {**self._get_or_create_doc(), **new_data}
         self._storage.update_one(self._query, {'$set': new_doc})
+        self._document = self._get_or_create_doc()

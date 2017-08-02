@@ -1,10 +1,11 @@
 import re
+from geopy.distance import vincenty
 
 class Geo:
 
     WITHOUT_ZERO = r'^-?[\.,]\d+'
-    LAT_REGEXP = ur"([^\d\.,-]|-(?=-)|^)(?P<coordinate>-?(([0-8]?\d([\.,]\d+)?|90([\.,]0+)?)))([^\d,.°’\'\"]|(?<=(\d|[\.,\"\'])\d{2})\"?$|$)"
-    LNG_REGEXP = ur"([^\d\.,-]|-(?=-)|^)(?P<coordinate>-?(\d{1,2}([\.,]\d+)?|1([0-7]\d([\.,]\d+)?|80([\.,]0+)?)))([^\d,.°’\'\"]|(?<=(\d|[\.,\"\'])\d{2})\"?$|$)"
+    LAT_REGEXP = r"([^\d\.,-]|-(?=-)|^)(?P<coordinate>-?(([0-8]?\d([\.,]\d+)?|90([\.,]0+)?)))([^\d,.°’\'\"]|(?<=(\d|[\.,\"\'])\d{2})\"?$|$)"
+    LNG_REGEXP = r"([^\d\.,-]|-(?=-)|^)(?P<coordinate>-?(\d{1,2}([\.,]\d+)?|1([0-7]\d([\.,]\d+)?|80([\.,]0+)?)))([^\d,.°’\'\"]|(?<=(\d|[\.,\"\'])\d{2})\"?$|$)"
 
     def lat(self, text):
         return re.search(self.LAT_REGEXP, text, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
