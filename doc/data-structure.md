@@ -308,3 +308,58 @@ time - dict данные вмени в админ еденицы
 
 # Google Maps
 
+code string уникальный идентификатор, берется из place_id
+```text
+ChIJkdDO-yFu5kcRk04wCbaedQQ
+```
+
+name string вставляется из long name
+```text
+France
+```
+
+short_name вставляется из поля short name
+```text
+FR
+```
+
+type - string тип админ единицы
+```text
+administrative_area_level_1
+```
+
+lang - string язык названий
+```text
+en
+```
+
+admin_hierarchy - list список в порядке убывания всех уровней админ до этого пункта
+```text
+[
+    {name:France, short_name: FR, type:country},
+    {name:Île-de-France, short_name: Île-de-France, type:administrative_area_level_1},
+    {name:Paris, short_name: Paris, type:administrative_area_level_2},
+    {...}
+]
+```
+
+center - dict позиция админ единицы
+```text
+  {
+    latitude - float
+    longitude - float
+  }
+```
+bounds - dict границы окна карты для просмотре этого пункта на карте
+```text
+  {
+    left: {lat:23.32, lng: 35.35},
+    right: {lat:32.54, lng: 33.45}
+  }
+```
+
+postal_code - string почтовый код для текущего адреса или точки
+```text
+75001
+```
+
