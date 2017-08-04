@@ -1,3 +1,5 @@
+import gzip
+
 class MongoDB:
 
     def __init__(self, db):
@@ -10,11 +12,11 @@ class MongoDB:
         result = None
         document = self._db.find_one({'filename': key})
         if document:
-            result = self.unserialyse(document.read())
+            result = self.deserialize(document.read())
         return result
 
     def set(self, key, content):
-        return self._db.put(self.serialyse(content), filename=key)
+        return self._db.put(self.serialize(content), filename=key)
 
     def remove(self, key):
         document = self._db.find_one({'filename': key})
@@ -22,9 +24,9 @@ class MongoDB:
             self._db.delete(document._id)
 
     @staticmethod
-    def serialyse(content):
-        return content
+    def serialize(content):
+        return gzip.compress(content, compresslevel=9)
 
     @staticmethod
-    def unserialyse(content):
-        return content
+    def deserialize(content):
+        return gzip.decompress(content)
