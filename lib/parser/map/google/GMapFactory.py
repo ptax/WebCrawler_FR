@@ -6,6 +6,6 @@ class GMapFactory:
     @staticmethod
     def france(response):
         objects = []
-        for i, point in response:
+        for point in response:
             objects.append(France(point))
         return objects

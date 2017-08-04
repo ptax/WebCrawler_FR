@@ -1,4 +1,4 @@
-import lib.parser.Parser as Parser
+from lib.parser.Parser import Parser as Parser
 
 
 class GMap(Parser):
@@ -24,8 +24,56 @@ class GMap(Parser):
 
     def __init__(self, content):
         self._content = content
+        self._admin_levels = []
         for x in range(1, self.QUANTITY_OF_ADMIN_LEVELS + 1):
-            self._admin_levels.append(self['ADMIN_LEVEL_%d' % (x)])
+            self._admin_levels.append(getattr(self, 'ADMIN_LEVEL_%d' % (x)))
+
+    def as_dictionary(self):
+        dic = {}
+
+        place_id = self.get_place_id()
+        if place_id:
+            dic.update(code=place_id)
+
+        long_name = self.get_long_name()
+        if long_name:
+            dic.update(name=long_name)
+
+        short_name = self.get_short_name()
+        if long_name:
+            dic.update(short_name=short_name)
+
+        type = self.get_type()
+        if type:
+            dic.update(type=type)
+
+        admin_hierarchy = self.get_admin_hierarchy()
+        if admin_hierarchy:
+            dic.update(admin_hierarchy=admin_hierarchy)
+
+        center_lat = self.get_center_latitude()
+        center_lng = self.get_center_longitude()
+        if center_lat and center_lng:
+            dic.update(center={
+                'latitude': center_lat,
+                'longitude': center_lng
+            })
+
+        left_latitude = self.get_left_latitude()
+        left_longitude = self.get_left_longitude()
+        right_latitude = self.get_right_latitude()
+        right_longitude = self.get_right_longitude()
+        if left_latitude and left_longitude and right_latitude and right_longitude:
+            dic.update(bounds={
+                'left': {'lat': left_latitude, 'lng': left_longitude},
+                'right': {'lat': right_latitude, 'lng': right_longitude},
+            })
+
+        postal_code = self.get_post_code()
+        if postal_code:
+            dic.update(postal_code=postal_code)
+
+        return dic
 
     def get_center_latitude(self):
         #result = None
@@ -120,7 +168,7 @@ class GMap(Parser):
 
     def _get_admin_type(self, target):
         result = None
-        for i, level in self._admin_levels:
+        for level in self._admin_levels:
             if self._has_value_in_list(search=level, target_list=target):
                 result = level
                 break
