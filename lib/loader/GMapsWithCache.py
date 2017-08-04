@@ -47,4 +47,4 @@ class LoaderGMapsWithCache(GMaps):
 
     def to_cache(self, content, params):
         if content:
-            self._storage.set(content=json.dumps(content), params=params)
+            self._storage.set(content=bytes(json.dumps(content), 'utf8'), params=params)
