@@ -10,8 +10,8 @@ class France(Wiki):
     ADMIN_LEVEL_1 = u'pays'
     ADMIN_LEVEL_2 = u'région'
     ADMIN_LEVEL_3 = u'département'
-    ADMIN_LEVEL_4 = u'arrondissement'
-    ADMIN_LEVEL_5 = u'ville'
+    ADMIN_LEVEL_4 = u'ville'
+    ADMIN_LEVEL_5 = u'arrondissement'
     ADMIN_LEVEL_6 = u'commune'
 
     def __init__(self, content):
