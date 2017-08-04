@@ -1,4 +1,3 @@
-import pandas as pd
 from time import time
 import sys
 from lib.factory.Loader import Loader
