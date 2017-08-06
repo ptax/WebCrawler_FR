@@ -43,8 +43,8 @@ capital - string имя центра админ деления
 center - dict позиция центра админ единицы
 ```text
   {
-    latitude - float
-    longitude - float
+    lat - float
+    lng - float
   }
 ```
 borders - list граница админ единицы - поможет определять, тот ли еэто пункт (позиция пункта из других источников должна входить в границы)
@@ -242,8 +242,8 @@ capital - dict Название центра и ссылка на страниц
 center - dict позиция админ единицы
 ```text
   {
-    latitude - float
-    longitude - float
+    lat - float
+    lng - float
   }
 ```
 
@@ -313,6 +313,15 @@ code string уникальный идентификатор, берется из
 ChIJkdDO-yFu5kcRk04wCbaedQQ
 ```
 
+requests - tuple запросы по которым получили эту информацию
+```text
+  (
+    'issee 25325',
+    'Commune 25325',
+    (23.435436, 53.62223) # lat, lng
+  )
+```
+
 name string вставляется из long name
 ```text
 France
@@ -346,8 +355,8 @@ admin_hierarchy - list список в порядке убывания всех 
 center - dict позиция админ единицы
 ```text
   {
-    latitude - float
-    longitude - float
+    lat - float
+    lng - float
   }
 ```
 bounds - dict границы окна карты для просмотре этого пункта на карте
