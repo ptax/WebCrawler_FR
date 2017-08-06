@@ -54,8 +54,8 @@ class Wiki(Parser):
         lng = self.get_longitude()
         if lat and lng:
             dic.update(center={
-                'latitude': lat,
-                'longitude': lng
+                'lat': lat,
+                'lng': lng
             })
 
         altitude = self.get_altitude()

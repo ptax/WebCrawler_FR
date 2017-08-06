@@ -55,8 +55,8 @@ class GMap(Parser):
         center_lng = self.get_center_longitude()
         if center_lat and center_lng:
             dic.update(center={
-                'latitude': center_lat,
-                'longitude': center_lng
+                'lat': center_lat,
+                'lng': center_lng
             })
 
         left_latitude = self.get_left_latitude()
