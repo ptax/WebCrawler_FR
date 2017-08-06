@@ -1,5 +1,5 @@
 import pandas as pd
-from time import time
+import datetime
 import sys
 from lib.factory.Loader import Loader
 from lib.parser.wiki.France import France as WikiFr
@@ -28,7 +28,7 @@ force_update = opts.f
 headers = {'User-Agent': 'Mozilla/5.0'}
 loader = Loader.loader_with_mongodb(config.get('mongodb'))
 document_factory = DocFactory(config.get('mongodb'))
-log = FileLog('./log/wiki_france_insee_list_{time}.log'.format(time=time()))
+log = FileLog('./log/wiki_france_insee_list_{date}.log'.format(date=datetime.datetime.now().strftime('%Y-%m-%d')))
 log.add('Start', log.INFO)
 log.add('Params: [{0}]'.format(repr(opts).encode('utf-8')), log.INFO)
 
@@ -39,6 +39,7 @@ message_format = 'Parsing request:[{request}]'
 
 use_insee_list = bool(opts.s)
 file_name_insee_list = opts.s if use_insee_list else './WorkBaseFile/BaseCommuneInInseeFR'
+
 
 def update_meta(url, request, document):
     actual_doc = document.get_document()
@@ -80,7 +81,7 @@ try:
                 log.add('Have error with insee [{insee}]'.format(insee=insee), FileLog.WARNING)
     else:
         log.add('Wrong command', log.ERROR)
-        print('use parameters like -s csv file or -r query string or -l link to wiki page')
+        print('use parameters like -l csv file for wiki query')
 except:
     message = str(sys.exc_info())
     log.add('Unexpected error: [{0}]'.format(message), log.ERROR)

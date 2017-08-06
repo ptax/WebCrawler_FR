@@ -9,10 +9,10 @@ loader = LoaderFactory.loader_gmaps_with_cache(config.get('googlemaps'), config.
 
 address = 'France, Paris'
 
-address_content = loader.by_address(address=address)
+position_content = loader.by_position(lat=48.83333, lng=2.33333)
 
-print('.' if len(address_content) else 'E', end='')
+print('.' if len(position_content) else 'E', end='')
 
-objects = MapFactory.france(address_content)
+objects = MapFactory.france(position_content)
 
 print('.' if len(objects) else 'E', end='')

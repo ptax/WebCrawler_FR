@@ -1,6 +1,7 @@
 from lib.hashlib.sha512 import sha512
 from pymongo import MongoClient
 from lib.location.Wiki import Wiki
+from lib.location.GMap import GMap
 
 
 class Storage:
@@ -15,5 +16,5 @@ class Storage:
         return Wiki(code=code, storage=self._db)
 
 
-    def gmaps(self):
-        pass
+    def gmaps(self, code):
+        return GMap(code=code, storage=self._db)

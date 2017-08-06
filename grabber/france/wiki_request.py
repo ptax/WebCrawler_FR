@@ -1,4 +1,4 @@
-from time import time
+import datetime
 import sys
 from lib.factory.Loader import Loader
 from lib.parser.wiki.France import France as WikiFr
@@ -22,7 +22,7 @@ force_update = opts.f
 headers = {'User-Agent': 'Mozilla/5.0'}
 loader = Loader.loader_with_mongodb(config.get('mongodb'))
 document_factory = DocFactory(config.get('mongodb'))
-log = FileLog('./log/wiki_france_{time}.log'.format(time=time()))
+log = FileLog('./log/wiki_request_france_{date}.log'.format(date=datetime.datetime.now().strftime('%Y-%m-%d')))
 log.add('Start', log.INFO)
 log.add('Params: [{0}]'.format(repr(opts).encode('utf-8')), log.INFO)
 
@@ -31,6 +31,7 @@ message_format = 'Parsing request:[{0}]'
 
 use_request = bool(opts.q)
 custom_request = opts.q if use_request else ''
+
 
 def update_meta(url, request, document):
     actual_doc = document.get_document()
@@ -63,7 +64,7 @@ try:
             update_meta(url=url, request=url, document=doc)
     else:
         log.add('Wrong command', log.ERROR)
-        print('use parameters like -s csv file or -r query string or -l link to wiki page')
+        print('use parameters like -q query string for search in wiki in url format')
 except:
     message = str(sys.exc_info())
     log.add('Unexpected error: [{0}]'.format(message), log.ERROR)
