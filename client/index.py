@@ -7,6 +7,7 @@ from lib.config.Yaml import Yaml as Config
 app = Flask(__name__)
 
 @app.route("/")
+@app.route("/index.html")
 def index():
     return render_template('admin/index.html')
 
