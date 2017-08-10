@@ -6,6 +6,9 @@ class Location:
         self._new = False
         self._document = self._get_or_create_doc()
 
+    def get_storage(self):
+        return self._storage
+
     def _get_or_create_doc(self):
         document = self._storage.find_one(self._query)
         if not document:

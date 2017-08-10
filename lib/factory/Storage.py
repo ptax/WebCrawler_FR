@@ -18,3 +18,9 @@ class Storage:
 
     def gmaps(self, code):
         return GMap(code=code, storage=self._db)
+
+    def gmaps_collection(self):
+        return self._db[GMap.TYPE]
+
+    def wiki_collection(self):
+        return self._db[Wiki.TYPE]
