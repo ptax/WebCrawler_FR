@@ -184,7 +184,7 @@ class France(Wiki):
     def is_location_page(self):
         match = re.search(r"href=[\"']/wiki/Mod%C3%A8le:Infobox_(?P<code>Pays|(R%C3%A9gion|D%C3%A9partement|Arrondissement|Canton|Intercommunalit%C3%A9|Commune)_de_France)[\"']",
             self._main_block, re.MULTILINE | re.UNICODE | re.IGNORECASE | re.DOTALL)
-        return bool(match.group('code'))
+        return bool(match)
 
     def _parse_postal_codes(self, content):
         codes = []
