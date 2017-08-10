@@ -16,6 +16,6 @@ services:
       dockerfile: ./docker/mongodb.dockerfile
     image: mongodb:wiki_parser
     volumes:
-      - /home/ec/PycharmProjects/data/wiki_parser_mongodb:/project/parser_db
+      - /project/storages/wiki_gmaps_parser_mongodb:/data/db
     expose:
       - 27017
