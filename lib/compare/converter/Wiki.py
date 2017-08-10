@@ -14,16 +14,16 @@ class Wiki(Converter):
         }
 
     def by_name(self):
-        dic = {origin: self.obj.name}
+        dic = {'origin': self.obj.name}
         for key, value in self.obj.i18n.items():
             dic[key] = value.name
         return dic
 
     def by_distance(self):
-        return {lat: self.obj.center.latitude, lng: self.obj.center.longitude}
+        return {'lat': self.obj.center.latitude, 'lng': self.obj.center.longitude}
 
     def _admin_value(self, value):
-        dic = {origin: value.name}
+        dic = {'origin': value.name}
         for key, val in value.i18n.items():
             dic[key] = val.name
         return dic
@@ -37,8 +37,6 @@ class Wiki(Converter):
             admins[self._admin_index(value)] = self._admin_value(value)
 
         return admins
-
-
 
     def by_polygon(self):
         return self.by_distance()
