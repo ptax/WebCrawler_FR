@@ -24,6 +24,6 @@ ENV FLASK_APP "/app/client/index.py"
 
 WORKDIR /app
 
-#RUN git clone https://github.com/bpteam/WebCrawler_FR.git .
+RUN git clone https://github.com/bpteam/WebCrawler_FR.git .
 
 CMD ["flask", "run", "--host=0.0.0.0"]
