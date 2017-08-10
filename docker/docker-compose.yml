@@ -5,10 +5,12 @@ services:
       context: ./../
       dockerfile: ./docker/python3.dockerfile
     image: python3:wiki_parser
+    volumes:
+      - datavolume:/app
     links:
       - wiki_parser_mongodb
-    ports:
-      - 5000:5000
+    expose:
+      - 5000
 
   wiki_parser_mongodb:
     build:
@@ -19,3 +21,18 @@ services:
       - /project/storages/wiki_gmaps_parser_mongodb:/data/db
     expose:
       - 27017
+
+  nginx_wiki_parser:
+    build:
+      context: ./../
+      dockerfile: ./docker/nginx.dockerfile
+    image: nginx:wiki_parser
+    volumes:
+      - datavolume:/app
+    ports:
+      - 80:80
+    links:
+      - wiki_parser_python
+
+volumes:
+  datavolume: {}

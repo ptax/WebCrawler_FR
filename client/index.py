@@ -7,8 +7,8 @@ from lib.config.Yaml import Yaml as Config
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
-    return "Hello World!"
+def index():
+    return render_template('admin/index.html')
 
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
