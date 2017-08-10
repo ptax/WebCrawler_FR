@@ -7,6 +7,8 @@ services:
     image: python3:wiki_parser
     links:
       - wiki_parser_mongodb
+    ports:
+      - 5000:5000
 
   wiki_parser_mongodb:
     build:

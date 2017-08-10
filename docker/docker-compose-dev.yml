@@ -9,6 +9,8 @@ services:
       - wiki_parser_mongodb
     volumes:
       - /home/ec/PycharmProjects/WebCrawler_FR:/app
+    ports:
+      - 5000:5000
 
   wiki_parser_mongodb:
     build:

@@ -16,11 +16,14 @@ RUN python -m pip install pandas==0.20.3
 
 RUN pip install -U googlemaps==2.5.1
 
+RUN pip install Flask==0.12.2
+
 ENV PYTHONPATH "$PYTHONPATH:/app/"
 ENV PYTHONIOENCODING "utf-8"
+ENV FLASK_APP "/app/client/index.py"
 
 WORKDIR /app
 
 RUN git clone https://github.com/bpteam/WebCrawler_FR.git .
 
-CMD ["sleep", "365d"]
+CMD ["flask", "run", "--host=0.0.0.0"]
