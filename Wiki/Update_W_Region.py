@@ -45,7 +45,7 @@ def get_region(content):
 
 if __name__ == '__main__':
 
-    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune_1')
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_UpdateCommune_2')
     WorkDict = LoadMyDict.copy()
     c = 0
     for Data, Keys in zip(WorkDict.values(), WorkDict.keys()):
@@ -72,7 +72,7 @@ if __name__ == '__main__':
             print c, Keys, W_Region, 'New_region \t', New_Region
         else:
             pass
-    name_dict = '../WorkBaseFile/27_07_17_Up_Moreration_commune_2'
+    name_dict = '../WorkBaseFile/01_08_17_UpdateCommune_3'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, name_dict)
 
 

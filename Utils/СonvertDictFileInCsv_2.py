@@ -12,7 +12,7 @@ import urllib
 import re
 import ClearName
 import Utils.convert_to_latin
-
+from Utils.distance_coordinates import haversine
 
 def ReplaceCooma(Str):
     Str = re.sub(",$", '', str(Str))
@@ -33,11 +33,11 @@ def NameWinkiConvertUrl(Name):
 
 
 def ConvertCSVFirstData():
-    NameSaveFile = os.path.abspath('../WorkBaseFile/27_07_17_Hauts-de-France.txt')
+    NameSaveFile = os.path.abspath('../WorkBaseFile/08_09_17_not_in_locality_Update.txt')
     HeaderLine = DataStructure.FirstColumHeader_1.GetHeader_2('\t')
     text_file = open(NameSaveFile, "a")
     text_file.write(HeaderLine + '\n')
-    DictFile = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune_3')
+    DictFile = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/08_09_17_not_in_locality_Update')
     print len(DictFile)
 
     w_rigion_mini = [u'Martinique', u'Guadeloupe']
@@ -62,7 +62,7 @@ def ConvertCSVFirstData():
         except:
             G_Types = 'None'
 
-        if u'Hauts-de-France' in W_Region:
+        if W_Region:
             # print DictFile[Keys]
             #print Data['InseeXls_CodeCommune']
             try:
@@ -326,6 +326,23 @@ def ConvertCSVFirstData():
             except:
                 W_Canton_status = 'None'
 
+            try:
+                W_cord = W_Cordommees_Convert.split(',')
+                Distance = round(haversine(float(W_cord[0]), float(W_cord[1]), float(G_Coordinates_location_Lat_3),
+                                           float(G_Coordinates_location_Lng_3)), 2)
+            except:
+                Distance = False
+
+            gen_address = str(InseeXls_NameCommune).strip() + ',' + str(W_Region).strip() + ',' + str(
+                W_Departement).strip() + ',' + 'France'
+            gen_address = gen_address.replace(' ', '-')
+            Google_Link_NP_Name = 'https://www.google.com.ua/maps/place/' + str(gen_address)
+            Google_Ling_Search_Coordinates = 'https://www.google.com.ua/search?site=&source=hp&q=' + str(
+                G_Coordinates_location_Lat_3) + '%2C' + str(G_Coordinates_location_Lng_3)
+            Google_Link_Distance = "https://www.google.com.ua/maps/dir/'" + str(W_Cordommees_Convert) + "'/'" + str(
+                G_Coordinates_location_Lat_3) + ',' + str(G_Coordinates_location_Lng_3) + "'/@12z/"
+
+
 
             # print InseeXls_CodeCommune,W_Canton,W_Name_ru
             #print G_Coordinates_northeast_Lat_1,G_Coordinates_northeast_Lng_1,G_Coordinates_southwest_Lat_2,G_Coordinates_southwest_Lng_2,G_Coordinates_location_Lat_3,G_Coordinates_location_Lng_3
@@ -388,7 +405,12 @@ def ConvertCSVFirstData():
                         F_Compare_Wiki_NameSnipet_G_Locality_short_name_percentage_more_or_equal_80,
                         W_Departement_status,
                         W_Arrondissement_status,
-                        W_Canton_status]
+                        W_Canton_status,
+                        Distance,
+                        Google_Link_NP_Name,
+                        Google_Ling_Search_Coordinates,
+                        Google_Link_Distance
+                        ]
 
             #DataInSaveFile = '{' + "'" + str(InseeXls_CodeCommune) + "':" + str(Data) + '}'
             #text_file = open("../WorkBaseFile/16_07_17.txt", "a")

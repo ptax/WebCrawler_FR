@@ -22,7 +22,7 @@ import random
 
 
 def gen_dict_in_file():
-    NameFile = r'../WorkBaseFile/Up_Date_Coomune_2'
+    NameFile = r'../WorkBaseFile/Up_Date_Coomune_3'
 
     MyDict = {}
     for i in Utils.GetListInFile.Run(NameFile):
@@ -35,12 +35,12 @@ def gen_dict_in_file():
                                         'InseeXls_NameCommune': InseeXls_NameCommune,
                                         'InseeXls_Population': InseeXls_Population.strip(),
                                         'Wiki_UrlInCommune': Wiki_UrlInCommune}
-    name_dict = '../WorkBaseFile/27_07_17_UP_Moderation_Data_2'
+    name_dict = '../WorkBaseFile/01_08_17_UpdateCommune'
     Utils.SaveAndLoadDictFile.SaveDict(MyDict, name_dict)
 
 
 def up_wiki():
-    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_UP_Moderation_Data_2')
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_UpdateCommune')
     WorkDict = LoadMyDict.copy()
 
     for Data, Keys in zip(WorkDict.values(), WorkDict.keys()):
@@ -62,7 +62,7 @@ def up_wiki():
         except:
             pass
 
-    name_dict = '../WorkBaseFile/27_07_17_UP_Moderation_Data_2_1'
+    name_dict = '../WorkBaseFile/01_08_17_UpdateCommune_1'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, name_dict)
 
 
@@ -109,11 +109,14 @@ def get_google_map(address, Apikey):
 
 
 def up_google_data_in_post_code():
-    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/23_07_17_UP_Moderation_Data_5')
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_inseeName_not_egual_google_name')
     WorkDict = LoadMyDict.copy()
     # del WorkDict['97801']
     for Data, Keys in zip(WorkDict.values(), WorkDict.keys()):
-        W_CodePostal = Data['W_CodePostal']
+        try:
+            W_CodePostal = Data['W_CodePostal']
+        except:
+            W_CodePostal = 'None'
         gen_address = str(W_CodePostal).strip().replace(',', '') + ',' + str(
             Data['InseeXls_NameCommune']).strip() + ',' + 'France'
         gen_address = gen_address.replace(' ', '-')
@@ -126,12 +129,12 @@ def up_google_data_in_post_code():
         Mydata = get_google_map(gen_address, ApiKey)
         print Keys, Mydata['G_Country_long_name'], gen_address, Mydata
         WorkDict[Keys].update(Mydata)
-    name_dict = '../WorkBaseFile/27_07_17_UP_Moderation_Data_2_3'
+    name_dict = '../WorkBaseFile/01_08_17_inseeName_not_egual_google_name_UP'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, name_dict)
 
 
 def up_google_coordinates():
-    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/23_07_17_UP_Moderation_Data_5')
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_inseeName_not_egual_google_name_UP')
     WorkDict = LoadMyDict.copy()
     list_erro = []
     for Data, Keys in zip(LoadMyDict.values(), LoadMyDict.keys()):
@@ -151,18 +154,50 @@ def up_google_coordinates():
         print Cordinat_1, Cordinat_2
         result = WorkGoogleMap.GetDataInCommune.GetDataInCordinates(Cordinat_1, Cordinat_2)
         GoogleDataCorrdinat = WorkGoogleMap.GetDataInCommune.GetCoordinatesInGoogle(result)
+
         #print GoogleDataCorrdinat
         WorkDict[i].update(GoogleDataCorrdinat)
-    name_dict = '../WorkBaseFile/27_07_17_UP_Moderation_Data_2_3'
+    name_dict = '../WorkBaseFile/01_08_17_inseeName_not_egual_google_name_UP_coodinates'
+    Utils.SaveAndLoadDictFile.SaveDict(WorkDict, name_dict)
+
+
+def up_google_coordinates_southwest():
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_G_Coordinates_northeast_Lat_1')
+    WorkDict = LoadMyDict.copy()
+    list_erro = []
+    for Data, Keys in zip(LoadMyDict.values(), LoadMyDict.keys()):
+        # print WorkDict[i]['W_Cordommees']
+        Cordinates = str(Data['W_Cordommees']).replace('ou,', 'S').split(',')
+        Cordinate = str(Utils.ConvertCordinates.dms2dec(Cordinates[0])) + ',' + str(
+            Utils.ConvertCordinates.dms2dec(Cordinates[1]))
+        Cordinates = Cordinate.split(',')
+        Cordinat_1 = Cordinates[0]
+        Cordinat_2 = Cordinates[1]
+
+        # Cordinat_1 = str(Data['G_Coordinates_location_Lat_3'])
+        #Cordinat_2 = str(Data['G_Coordinates_location_Lng_3'])
+
+        print Cordinat_1, Cordinat_2
+        result = WorkGoogleMap.GetDataInCommune.GetDataInCordinates(Cordinat_1, Cordinat_2)
+        GoogleDataCorrdinat = WorkGoogleMap.GetDataInCommune.GetCoordinatesInGoogle(result)
+        MyDict = {'G_Coordinates_northeast_Lat_1': GoogleDataCorrdinat['G_Coordinates_northeast_Lat_1'],
+                  'G_Coordinates_northeast_Lng_1': GoogleDataCorrdinat['G_Coordinates_northeast_Lng_1'],
+                  'G_Coordinates_southwest_Lat_2': GoogleDataCorrdinat['G_Coordinates_southwest_Lat_2'],
+                  'G_Coordinates_southwest_Lng_2': GoogleDataCorrdinat['G_Coordinates_southwest_Lng_2']
+                  }
+
+        #print GoogleDataCorrdinat
+        WorkDict[Keys].update(MyDict)
+    name_dict = '../WorkBaseFile/02_08_17_G_Coordinates_northeast_Lat_UpDate'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, name_dict)
 
 
 def up_data():
-    MyBase = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/24_07_17_UP')
+    MyBase = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release')
 
     WorkDict = MyBase.copy()
     print 'All Base', len(WorkDict)
-    UpDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_UP_Moderation_Data_2_4')
+    UpDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_UpdateCommune_7')
     NewDict = {}
     for Data, Keys in zip(UpDict.values(), UpDict.keys()):
         try:
@@ -170,19 +205,44 @@ def up_data():
         except:
             print Keys
             WorkDict[Keys] = Data
-    name_dict = '../WorkBaseFile/27_07_17_Up_Moreration_commune'
+    name_dict = '../WorkBaseFile/02_08_17_release_2'
+    Utils.SaveAndLoadDictFile.SaveDict(WorkDict, name_dict)
+
+
+def change_wiki_url():
+    MyBase = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release_2')
+    WorkDict = MyBase.copy()
+    for Data, Keys in zip(MyBase.values(), MyBase.keys()):
+
+        try:
+            Wiki_UrlInCommune = Data['Wiki_UrlInCommune']
+        except:
+            Wiki_UrlInCommune = None
+
+        if Wiki_UrlInCommune:
+
+            print Keys, Wiki_UrlInCommune
+            Mydata = {'Wiki_Url': Wiki_UrlInCommune}
+            WorkDict[Keys].update(Mydata)
+        else:
+            pass
+
+    name_dict = '../WorkBaseFile/02_08_17_release_3'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, name_dict)
 
 
 if __name__ == '__main__':
-    # gen_dict_in_file()
+
     #up_wiki()
-    #up_w_code_coommune()
-    #up_hand()
+
+
+
+
+
     #up_google_data_in_post_code()
 
     #up_google_coordinates()
-    up_data()
+    #up_data()
 
     #gen_dict_in_file()
     #up_wiki()
@@ -191,12 +251,35 @@ if __name__ == '__main__':
 
     #up_google_coordinates()
 
-    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune')
+    # up_google_data_in_post_code()
+    #up_google_coordinates()
+    #up_google_coordinates_southwest()
+    #up_data()
+
+    change_wiki_url()
+
+
+    # up_data()
+
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release_3')
     print 'New Base', len(LoadMyDict)
+    print LoadMyDict['08311']['Wiki_UrlInCommune'], LoadMyDict['08311']['W_Canton'], LoadMyDict['08311']['Wiki_Url']
+    print LoadMyDict['97612']['Wiki_UrlInCommune'], LoadMyDict['97612']['W_Canton'], LoadMyDict['97612']['Wiki_Url']
 
-    print LoadMyDict['97603']
-    print LoadMyDict['15268']
-
+    #for Data,Keys in zip(LoadMyDict.values(),LoadMyDict.keys()):
+    #print Keys,Data
+    '''
+    list_none = []
+    for Data,Keys in zip(LoadMyDict.values(),LoadMyDict.keys()):
+        G_Cord = Data['G_Coordinates_northeast_Lat_1']
+        print Keys,Data['G_Types'],G_Cord
+        if str(G_Cord) == 'None':
+            list_none.append(Keys)
+        else:pass
+    print len(list_none)
+    for i in list_none:
+        print i
+    '''
     '''
 
     LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_UP_Moderation_Data_2_3')

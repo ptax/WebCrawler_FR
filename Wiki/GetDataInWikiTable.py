@@ -12,11 +12,12 @@ import collections
 from collections import Counter
 def GetHtml(Url):
     wiki = Url
-    header = {'User-Agent': 'Mozilla/5.0'} #Needed to prevent 403 error on Wikipedia
+    header = {'User-Agent': 'Mozilla/6.0'}  # Needed to prevent 403 error on Wikipedia
     req = urllib2.Request(wiki,headers=header)
     page = urllib2.urlopen(req)
+
     soup = BeautifulSoup(page)
-    tables = soup.findAll("table", { "class" : "infobox_v2" })[0]
+    tables = soup.findAll("table", {"class": "infobox_v2"})[0]
     LangHref  =  soup.findAll("li", { "class" : "interlanguage-link" })
     return tables,LangHref
 
@@ -163,7 +164,7 @@ def get_status(html):
 
 
 if __name__ == '__main__':
-    Url = "https://fr.wikipedia.org/wiki/Val-Cenis"
+    Url = "https://fr.wikipedia.org/wiki/Mouzon_(Ardennes)"
     GetHtml = GetHtml(Url)
     Table = GetHtml[0]
     # print get_status(Table)
@@ -172,6 +173,7 @@ if __name__ == '__main__':
     DataDict = {}
     LangHref = GetHtml[1]
     DictTableInformation = GetInformation(Table)
+    print DictTableInformation
     LanguagesDict = FilterLanguages(GetLanguages(LangHref))
 
 

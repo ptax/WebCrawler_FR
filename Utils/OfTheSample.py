@@ -45,7 +45,7 @@ def get_moderation_canton():
 
 
 def inseeName_not_egual_wiki_url():
-    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune_3')
+    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release_3')
     Dict_not_egual = {}
     for Data, Keys in zip(load_base.values(), load_base.keys()):
 
@@ -60,12 +60,13 @@ def inseeName_not_egual_wiki_url():
             Dict_not_egual[Keys] = Data
         else:
             pass
-    name_dict = '../WorkBaseFile/28_07_17_inseeName_not_egual_wiki_url'
+    name_dict = '../WorkBaseFile/02_08_17_inseeName_not_egual_wiki_url'
     Utils.SaveAndLoadDictFile.SaveDict(Dict_not_egual, name_dict)
 
 
 def inseeName_not_egual_google_name():
-    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune_3')
+    load_base = Utils.SaveAndLoadDictFile.LoadDict(
+        '../WorkBaseFile/01_08_17_inseeName_not_egual_google_name_UP_coodinates')
     Dict_not_egual = {}
     for Data, Keys in zip(load_base.values(), load_base.keys()):
 
@@ -88,16 +89,96 @@ def inseeName_not_egual_google_name():
         else:
             pass
 
-    name_dict = '../WorkBaseFile/28_07_17_inseeName_not_egual_google_name'
+    name_dict = '../WorkBaseFile/01_08_17_inseeName_not_egual_google_name_UP_coodinates_test'
+    Utils.SaveAndLoadDictFile.SaveDict(Dict_not_egual, name_dict)
+
+
+def g_type_nonel():
+    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_Up_Moderation')
+    print len(load_base)
+    Dict_not_egual = {}
+    for Data, Keys in zip(load_base.values(), load_base.keys()):
+        print Keys, Data['G_Types']
+        try:
+            G_Types = Data['G_Types']
+        except:
+            G_Types = 'None'
+
+        if G_Types in 'None':
+            Dict_not_egual[Keys] = Data
+        else:
+            pass
+    name_dict = '../WorkBaseFile/01_08_17_G_Type_none'
+    Utils.SaveAndLoadDictFile.SaveDict(Dict_not_egual, name_dict)
+
+
+def southwest_and_northeast_none():
+    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release_2')
+    print len(load_base)
+    Dict_not_egual = {}
+    for Data, Keys in zip(load_base.values(), load_base.keys()):
+        try:
+            G_Coordinates_northeast_Lat_1 = Data['G_Coordinates_northeast_Lat_1']
+        except:
+            G_Coordinates_northeast_Lat_1 = 'None'
+
+        if G_Coordinates_northeast_Lat_1 == 'None':
+            Dict_not_egual[Keys] = Data
+        else:
+            pass
+    name_dict = '../WorkBaseFile/02_08_17_G_Coordinates_northeast'
+    Utils.SaveAndLoadDictFile.SaveDict(Dict_not_egual, name_dict)
+
+
+def post_code_not_int():
+    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release_2')
+    print len(load_base)
+    Dict_not_egual = {}
+    for Data, Keys in zip(load_base.values(), load_base.keys()):
+        try:
+            W_CodePostal = Data['W_CodePostal'].replace(',', '').strip()
+        except:
+            W_CodePostal = 'None'
+        try:
+            W_CodePostal = int(W_CodePostal)
+        except:
+            W_CodePostal = False
+
+        if W_CodePostal == False:
+            Dict_not_egual[Keys] = Data
+            # print Keys,Data['W_CodePostal']
+        else:
+            pass
+    name_dict = '../WorkBaseFile/02_08_17_wiki_post_code_not_int'
+    Utils.SaveAndLoadDictFile.SaveDict(Dict_not_egual, name_dict)
+
+
+def G_type_not_locality():
+    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release_2')
+    print len(load_base)
+    Dict_not_egual = {}
+    for Data, Keys in zip(load_base.values(), load_base.keys()):
+        try:
+            G_type = Data['G_Types']
+        except:
+            G_type = 'None'
+
+        if 'locality' in str(G_type):
+            pass
+        else:
+            Dict_not_egual[Keys] = Data
+
+    name_dict = '../WorkBaseFile/08_09_17_not_in_locality'
     Utils.SaveAndLoadDictFile.SaveDict(Dict_not_egual, name_dict)
 
 
 if __name__ == '__main__':
-    inseeName_not_egual_google_name()
-
-    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/28_07_17_inseeName_not_egual_google_name')
+    # post_code_not_int()
+    #G_type_not_locality()
+    load_base = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/08_09_17_not_in_locality')
     print len(load_base)
-    # print load_base['08311']
-
-
+    #print load_base[39177]['G_Types']
+    #print load_base['70369']['Wiki_Url']
+    for Data, Keys in zip(load_base.values(), load_base.keys()):
+        print Data['G_Types']
 

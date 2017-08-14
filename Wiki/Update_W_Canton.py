@@ -45,7 +45,7 @@ def get_canton(content):
 if __name__ == '__main__':
 
 
-    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune')
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_UpdateCommune_3')
     WorkDict = LoadMyDict.copy()
     print len(WorkDict)
     listErr = []
@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
                 WorkDict[Keys].update(data_up)
 
-    name_dict = '../WorkBaseFile/27_07_17_Up_Moreration_commune_1'
+    name_dict = '../WorkBaseFile/01_08_17_UpdateCommune_4'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, name_dict)
 
 

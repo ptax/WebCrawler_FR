@@ -32,7 +32,7 @@ def get_google_map(address, Apikey):
 
 
 def main():
-    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/24_07_17_UP')
+    LoadMyDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/08_09_17_not_in_locality')
     WorkDict = LoadMyDict.copy()
     c = 0
     listNoCode = []
@@ -50,18 +50,28 @@ def main():
         except:
             W_CodePostal = 'None'
             pass
+        try:
+            InseeXls_NameCommune = Data['InseeXls_NameCommune']
+        except:
+            InseeXls_NameCommune = ''
+        try:
+            W_Region = Data['W_Region']
+        except:
+            W_Region = ''
+        try:
+            W_Departement = Data['W_Departement']
+        except:
+            W_Departement = ''
         #print Data['G_Types']
-        if u'sublocality' in str(G_Types):
-            try:
-                G_postal_code_short_name = Data['G_postal_code_short_name']
-            except:
-                G_postal_code_short_name = 'Falce'
-                pass
+        if G_Types:
+
 
             #if str(W_CodePostal) != str(G_postal_code_short_name):
             c += 1
 
-            gen_address = str(W_CodePostal).strip() + ',' + str(Data['InseeXls_NameCommune']).strip() + ',' + 'France'
+            # gen_address = str(W_CodePostal).strip() + ',' + str(Data['InseeXls_NameCommune']).strip() + ',' + 'France'
+            gen_address = str(InseeXls_NameCommune).strip() + ',' + str(W_Region).strip() + ',' + str(
+                W_Departement).strip() + ',' + 'France'
             gen_address = gen_address.replace(' ', '-')
             ApikeyList = ['AIzaSyBZVOSPh0Z4mv9jljJWzZNSug6upuec7Sg', 'AIzaSyAeaWLxSHFEdwWEVVYajslt7R9eP0ZpLXQ',
                           'AIzaSyARBYHwwK5uPoNuS2iN3UOg8fQGRgHLz78', 'AIzaSyDpkHWwId9J1mMCqu9mirXPEwpM3XTs0GU',
@@ -75,7 +85,7 @@ def main():
         else:
             pass
 
-    NameDict = '../WorkBaseFile/24_07_17_UP'
+    NameDict = '../WorkBaseFile/08_09_17_not_in_locality_Update'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, NameDict)
     print len(WorkDict)
 
@@ -86,7 +96,7 @@ if __name__ == '__main__':
     #print get_google_map(address)
     main()
 
-    LoadDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/24_07_17_UP')
+    LoadDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/08_09_17_not_in_locality_Update')
 
     List_Rout = []
     for Data, Keys in zip(LoadDict.values(), LoadDict.keys()):
@@ -95,8 +105,8 @@ if __name__ == '__main__':
         except:
             G_Types = 'None'
             pass
-        if u'sublocality' in str(G_Types):
+        if u'locality' in str(G_Types):
             List_Rout.append(Keys)
-    print 'sublocality', len(List_Rout)
+    print 'locality', len(List_Rout)
 
     print len(List_Rout)

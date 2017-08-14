@@ -16,7 +16,7 @@ def countDuplicatesInList(dupedList):
 
 
 def replace_name():
-    LoadDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune_2')
+    LoadDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_UpdateCommune_5')
     WorkDict = LoadDict.copy()
     DataRe = {u"Provence-Alpes-Côte d'Azur": u"Provence-Alpes-Côte d’Azur",
               u"Rhône-Alpes": u"Auvergne-Rhône-Alpes",
@@ -50,12 +50,12 @@ def replace_name():
             list_err.append(Keys)
     print len(list_err)
 
-    NameDict = '../WorkBaseFile/27_07_17_Up_Moreration_commune_3'
+    NameDict = '../WorkBaseFile/01_08_17_UpdateCommune_6'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, NameDict)
 
 
 def up_status():
-    LoadDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_UP_Moderation_Data_2_3')
+    LoadDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/01_08_17_UpdateCommune_4')
     WorkDict = LoadDict.copy()
     for Data, Keys in zip(WorkDict.values(), WorkDict.keys()):
         try:
@@ -130,23 +130,21 @@ def up_status():
             DataUp = {'W_Canton': W_Canton.strip(), 'W_Canton_status': u'None'}
             WorkDict[Keys].update(DataUp)
 
-    NameDict = '../WorkBaseFile/27_07_17_UP_Moderation_Data_2_4'
+    NameDict = '../WorkBaseFile/01_08_17_UpdateCommune_5'
     Utils.SaveAndLoadDictFile.SaveDict(WorkDict, NameDict)
 
 
 def stats():
-    LoadDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/27_07_17_Up_Moreration_commune_3')
-
+    LoadDict = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release')
+    print len(LoadDict)
     WorkDict = LoadDict.copy()
     MyList = []
     StursList = []
     for Data, Keys in zip(WorkDict.values(), WorkDict.keys()):
         try:
-            W_Region = Data['G_Types']
+            W_Region = Data['W_Departement']
             MyList.append(W_Region)
             StursList.append(Data['W_Region'])
-
-
         except:
             W_Region = None
 
