@@ -1,0 +1,36 @@
+version: '2'
+services:
+  wiki_parser_python:
+    build:
+      context: ./../
+      dockerfile: ./docker/python3.dockerfile
+    image: python3:wiki_parser
+    links:
+      - wiki_parser_mongodb
+    volumes:
+      - ./../:/app
+    expose:
+      - 5000
+
+  wiki_parser_mongodb:
+    build:
+      context: ./../
+      dockerfile: ./docker/mongodb.dockerfile
+    image: mongodb:wiki_parser
+    volumes:
+      - ./../../data/wiki_parser_mongodb:/data/db
+    expose:
+      - 27017
+
+  nginx_wiki_parser:
+    build:
+      context: ./../
+      dockerfile: ./docker/nginx.dockerfile
+    image: nginx:wiki_parser
+    volumes:
+      - ./../config/nginx:/etc/nginx
+      - ./../:/app
+    ports:
+      - 80:80
+    links:
+      - wiki_parser_python
