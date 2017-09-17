@@ -300,6 +300,104 @@ def StructureLocalType(GoogleResult):
     return DictMyData
 
 
+def StructureGoogleData(GoogleResult):
+    DictMyData = {
+        u'G_Locality_long_name': '',
+        u'G_Locality_short_name': '',
+        u'G_Locality_types': '',
+        u'G_AdminLevel_1_long_name': '',
+        u'G_AdminLevel_1_short_name': '',
+        u'G_AdminLevel_1_types': '',
+        u'G_AdminLevel_2_long_name': '',
+        u'G_AdminLevel_2_short_name': '',
+        u'G_AdminLevel_2_types': '',
+        u'G_Country_long_name': '',
+        u'G_Country_short_name': '',
+        u'G_Country_types': '',
+        u'G_postal_code_long_name': '',
+        u'G_postal_code_short_name': '',
+        u'G_postal_code_types': ''
+    }
+    try:
+        GoogleStatus = GoogleResult[1]
+        GoogleResult = GoogleResult[0]
+    except:
+        pass
+        GoogleStatus = 'None'
+        GoogleResult = 'None'
+    if GoogleStatus == u"OK":
+
+        Adress = GoogleResult['address_components']
+        for Data in Adress:
+            types = ','.join(Data['types'])
+
+            if u'locality,political' in types:
+                DataUpdate = {u'G_Locality_long_name': Data['long_name'], u'G_Locality_short_name': Data['short_name'],
+                              u'G_Locality_types': types}
+                DictMyData.update(DataUpdate)
+            elif u'administrative_area_level_1,political' in types:
+                DataUpdate = {u'G_AdminLevel_1_long_name': Data['long_name'],
+                              u'G_AdminLevel_1_short_name': Data['short_name'], u'G_AdminLevel_1_types': types}
+                DictMyData.update(DataUpdate)
+            elif u'administrative_area_level_2,political' in types:
+                DataUpdate = {u'G_AdminLevel_2_long_name': Data['long_name'],
+                              u'G_AdminLevel_2_short_name': Data['short_name'], u'G_AdminLevel_2_types': types}
+                DictMyData.update(DataUpdate)
+            elif u'country,political' in types:
+                DataUpdate = {u'G_Country_long_name': Data['long_name'], u'G_Country_short_name': Data['short_name'],
+                              u'G_Country_types': types}
+                DictMyData.update(DataUpdate)
+            elif u'postal_code' in types:
+                DataUpdate = {u'G_postal_code_long_name': Data['long_name'],
+                              u'G_postal_code_short_name': Data['short_name'], u'G_postal_code_types': types}
+                DictMyData.update(DataUpdate)
+        try:
+            G_Coordinates_northeast_Lat_1 = GoogleResult['geometry']['bounds']['northeast']['lat']
+        except:
+            G_Coordinates_northeast_Lat_1 = "None"
+        try:
+            G_Coordinates_northeast_Lng_1 = GoogleResult['geometry']['bounds']['northeast']['lng']
+        except:
+            G_Coordinates_northeast_Lng_1 = 'None'
+        try:
+            G_Coordinates_southwest_Lat_2 = GoogleResult['geometry']['bounds']['southwest']['lat']
+        except:
+            G_Coordinates_southwest_Lat_2 = "None"
+        try:
+            G_Coordinates_southwest_Lng_2 = GoogleResult['geometry']['bounds']['southwest']['lng']
+        except:
+            G_Coordinates_southwest_Lng_2 = 'None'
+        try:
+            G_Coordinates_location_Lat_3 = GoogleResult['geometry']['location']['lat']
+        except:
+            G_Coordinates_location_Lat_3 = "None"
+        try:
+            G_Coordinates_location_Lng_3 = GoogleResult['geometry']['location']['lng']
+        except:
+            G_Coordinates_location_Lng_3 = 'None'
+        try:
+            G_FormatAddress = GoogleResult['formatted_address']
+        except:
+            G_FormatAddress = "None"
+        try:
+            G_Types = ','.join(GoogleResult['types'])
+        except:
+            G_Types = "None"
+        DictMyData.update({
+            'G_Coordinates_northeast_Lat_1': G_Coordinates_northeast_Lat_1,
+            'G_Coordinates_northeast_Lng_1': G_Coordinates_northeast_Lng_1,
+            'G_Coordinates_southwest_Lat_2': G_Coordinates_southwest_Lat_2,
+            'G_Coordinates_southwest_Lng_2': G_Coordinates_southwest_Lng_2,
+            'G_Coordinates_location_Lat_3': G_Coordinates_location_Lat_3,
+            'G_Coordinates_location_Lng_3': G_Coordinates_location_Lng_3,
+            'G_FormatAddress': G_FormatAddress,
+            'G_Types': G_Types,
+        })
+    return DictMyData
+
+
+
+
 def GetCoordinatesInGoogle(GoogleResult):
 
     DictDataInGoogleResult = {}
@@ -384,8 +482,8 @@ def stucture_postcode_localities(GoogleResult):
 
 
 if __name__ == '__main__':
-    CodeInsee = '62217'
-    LocationName = '18300,France'
+    CodeInsee = ''
+    LocationName = 'Canton+de+Plonéour-Lanvern'
 
     ApikeyList = ['AIzaSyBZVOSPh0Z4mv9jljJWzZNSug6upuec7Sg', 'AIzaSyAeaWLxSHFEdwWEVVYajslt7R9eP0ZpLXQ',
                   'AIzaSyARBYHwwK5uPoNuS2iN3UOg8fQGRgHLz78', 'AIzaSyDpkHWwId9J1mMCqu9mirXPEwpM3XTs0GU',
@@ -395,10 +493,12 @@ if __name__ == '__main__':
     ApiKey = random.choice(ApikeyList)
 
     GoogleResult = GetDataInAddress(LocationName, ApiKey)
+    print StructureGoogleData(GoogleResult)
+    print StructureLocalType(GoogleResult)
 
     ListLocation = stucture_postcode_localities(GoogleResult)
-    for i in ListLocation:
-        print i
+    # for i in ListLocation:
+    #print i
 
     '''
     Test = GetDataInAddress(LocationName)

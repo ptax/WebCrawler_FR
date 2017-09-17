@@ -13,14 +13,14 @@ arg_parser.add_argument('-f', help='turn on the force mode')
 arg_parser.add_argument('-a', help='address')
 opts = arg_parser.parse_args()
 
-config = Config('./config/config.yml')
+config = Config('../../config/config.yml')
 
 loader = LoaderFactory.loader_gmaps_with_cache(
     gmaps_config=config.get('googlemaps'),
     storage_config=config.get('mongodb')
 )
 document_factory = DocFactory(config.get('mongodb'))
-log = FileLog('./log/gmaps_address_france_{date}.log'.format(date=datetime.datetime.now().strftime('%Y-%m-%d')))
+log = FileLog('../../log/gmaps_address_france_{date}.log'.format(date=datetime.datetime.now().strftime('%Y-%m-%d')))
 log.add('Start', log.INFO)
 log.add('Params: [{0}]'.format(repr(opts).encode('utf-8')), log.INFO)
 

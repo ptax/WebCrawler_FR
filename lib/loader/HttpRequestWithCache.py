@@ -21,3 +21,4 @@ class HttpRequestWithCache(HttpRequest):
 
     def to_cache(self, url, content, headers=None):
         self._storage.set(url=url, content=content, headers=headers)
+

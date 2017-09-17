@@ -3,7 +3,7 @@ from lib.parser.map.google.GMapFactory import GMapFactory as MapFactory
 from lib.config.Yaml import Yaml as Config
 
 
-config = Config('./config/config.yml')
+config = Config('../../../config/config.yml')
 
 loader = LoaderFactory.loader_gmaps_with_cache(config.get('googlemaps'), config.get('mongodb'))
 

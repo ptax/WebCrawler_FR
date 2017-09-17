@@ -54,11 +54,11 @@ def SaveCsv():
 
 
 def ConvertCSVFirstData():
-    NameSaveFile = os.path.abspath('../WorkBaseFile/28_07_17_Moderation_Commun_Onli.txt')
+    NameSaveFile = os.path.abspath('../WorkBaseFile/17_09_17.txt')
     HeaderLine = DataStructure.FirstColumHeader.GetHeader_2('\t')
     text_file = open(NameSaveFile, "a")
     text_file.write(HeaderLine + '\n')
-    DictFile = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/28_07_17_Moderation_Commun_Onli')
+    DictFile = Utils.SaveAndLoadDictFile.LoadDict('../WorkBaseFile/02_08_17_release_3')
     print len(DictFile)
 
     w_rigion_mini = [u'Martinique', u'Guadeloupe']

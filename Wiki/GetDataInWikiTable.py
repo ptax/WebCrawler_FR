@@ -30,6 +30,110 @@ def WikiNameCommune(Table):
         NameCommune = 'None'
     return NameCommune
 
+
+def wiki_coordinates(Table):
+    try:
+        Coordinates = Table.find("a", {"class": "mw-kartographer-maplink"})
+        Coordinates = Coordinates.get('data-lat'), Coordinates.get('data-lon')
+    except:
+        Coordinates = 'None', 'None'
+    return Coordinates
+
+
+def GetInformation_canton(Table):
+    DictInformationTable = {}
+    DictDataInformation = {
+        1: (u'Pays', u'W_Pays'),
+        2: (u'Région', u'W_Region'),
+        3: (u'Département', u'W_Departement'),
+        4: (u'Arrondissement', u'W_Arrondissement'),
+        5: (u'Bureau centralisateur', u'W_Bureau'),
+        6: (u'Code canton', u'W_Code_Canton'),
+        7: (u'Création', u'W_Creation'),
+        8: (u'Population', u'W_Population'),
+        9: (u'Communes', u'W_Communes'),
+
+    }
+    DictDataInformation = collections.OrderedDict(sorted(DictDataInformation.items()))
+
+    for Data in DictDataInformation.values():
+        WikiNameInDict = Data[1]
+        WikiName = Data[0]
+        for row in Table.findAll('tr'):
+            if WikiName in row.text:
+                # print row.text
+                TableString = row.text.replace(WikiName, '').replace('municipale', '').replace('\n', ',').replace(',,',
+                                                                                                                  '').replace(
+                    'nord', '').replace('est', '').strip()
+                DictInformationTable.update({WikiNameInDict: TableString})
+    return DictInformationTable
+
+
+def GetInformation_arrondissement(Table):
+    DictInformationTable = {}
+    DictDataInformation = {
+        1: (u'Pays', u'W_Pays'),
+        2: (u'Région', u'W_Region'),
+        3: (u'Département', u'W_Departement'),
+        4: (u'Chef-lieu', u'W_Chef-lieu'),
+        5: (u'Code arrondissement', u'W_Code_arrondissement'),
+        6: (u'Population', u'W_Population'),
+        7: (u'Densité', u'W_Densite'),
+        8: (u'Superficie', u'W_Superficie'),
+        9: (u'Cantons', u'W_Cantons'),
+        10: (u'Communes', u'W_Communes'),
+
+    }
+    DictDataInformation = collections.OrderedDict(sorted(DictDataInformation.items()))
+    for Data in DictDataInformation.values():
+        WikiNameInDict = Data[1]
+        WikiName = Data[0]
+        for row in Table.findAll('tr'):
+            if WikiName in row.text:
+                TableString = row.text.replace(WikiName, '').replace('collectivité', '').replace('territoriale',
+                                                                                                 '').replace('et\n',
+                                                                                                             '').strip()
+                DictInformationTable.update({WikiNameInDict: TableString})
+    return DictInformationTable
+
+
+def GetInformation_departements(Table):
+    DictInformationTable = {}
+    DictDataInformation = {
+        1: (u'Pays', u'W_Pays'),
+        2: (u'Région', u'W_Region'),
+        3: (u'Création du département', u'W_Creation_du_departementt'),
+        4: (u'Chef-lieu', u'W_Chef-lieu'),
+        5: (u'Sous-préfectures', u'W_Sous_pefectures'),
+        6: (u'Président du conseil départemental', u'W_President_du_conseil_departemental'),
+        7: (u'Préfet', u'W_Prefet'),
+        8: (u'Code Insee', u'W_Code_Insee'),
+        9: (u'Code ISO 3166-2', u'W_Code_ISO_3166-2'),
+        10: (u'Code Eurostat NUTS-3', u'W_Code_Eurostat_NUTS-3'),
+        11: (u'Gentilé', u'W_Gentile'),
+        12: (u'Population', u'W_Population'),
+        13: (u'Densité', u'W_Densite'),
+        14: (u'Superficie', u'W_Superficie'),
+        15: (u'Arrondissements', u'W_Arrondissements'),
+        16: (u'Circonscriptions législatives', u'W_Circonscriptions_legislatives'),
+        17: (u'Cantons', u'W_Cantons'),
+        18: (u'Intercommunalités', u'W_Intercommunalites'),
+        19: (u'Communes', u'W_Communes')
+
+    }
+    DictDataInformation = collections.OrderedDict(sorted(DictDataInformation.items()))
+    for Data in DictDataInformation.values():
+        WikiNameInDict = Data[1]
+        WikiName = Data[0]
+        for row in Table.findAll('tr'):
+            if WikiName in row.text:
+                TableString = row.text.replace(WikiName, '').replace('collectivité', '').replace('territoriale',
+                                                                                                 '').replace('et\n',
+                                                                                                             '').strip()
+                DictInformationTable.update({WikiNameInDict: TableString})
+    return DictInformationTable
+
+
 def GetInformation(Table):
     DictInformationTable = {}
     DictDataInformation = {

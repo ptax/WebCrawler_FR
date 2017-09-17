@@ -13,3 +13,5 @@ parser = WikiFr(content)
 print('.' if parser.is_many_answers() else 'E', end='')
 
 print('.' if parser.get_answers_links() else 'E', end='')
+
+import googlemaps

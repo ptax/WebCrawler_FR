@@ -4,7 +4,7 @@ from lib.config.Yaml import Yaml as Config
 from lib.parser.wiki.France import France as WikiParser
 
 
-config = Config('./config/config.yml')
+config = Config('../../../config/config.yml')
 document_factory = DocFactory(config.get('mongodb'))
 
 url = 'https://fr.wikipedia.org/wiki/Paris'

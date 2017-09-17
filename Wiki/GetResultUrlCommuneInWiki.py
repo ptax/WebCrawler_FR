@@ -17,7 +17,6 @@ def Run(NameCommune,CodeCommune):
                    'Wiki_Old_UrlInCommune':None,
                    'Wiki_Old_NameSnipet':None,
                    'ColResultInSnipet':None
-
                    }
     wiki = "https://fr.wikipedia.org/w/index.php?search=%22Code+commune+"+ CodeCommune + "%22&title=Sp%C3%A9cial:Recherche&profile=default&fulltext=1&searchengineselect=mediawiki&searchToken=ac9zaxa1lggzxpdhc5ukg06t6"
     header = {'User-Agent': 'Mozilla/5.0'} #Needed to prevent 403 error on Wikipedia
@@ -28,7 +27,6 @@ def Run(NameCommune,CodeCommune):
     ColResult =   str(SearchResult).replace('<ul class="mw-search-results">','').split('<li>')
     ColResult = [x for x in ColResult if x]
     ColResultLen = len(ColResult)
-
     for Result in ColResult:
         ResultObjet = BeautifulSoup(Result)
         ThemeCodeCommuneInSnipent = '<span class="searchmatch">' + str(CodeCommune) + '</span>'

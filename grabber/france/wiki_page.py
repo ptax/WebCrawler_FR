@@ -8,7 +8,7 @@ from lib.logger.File import File as FileLog
 from argparse import ArgumentParser
 
 
-config = Config('./config/config.yml')
+config = Config('../../config/config.yml')
 
 arg_parser = ArgumentParser(description='Download data from wiki by link or search request')
 arg_parser.add_argument('-f', help='turn on the force mode')
@@ -22,7 +22,7 @@ force_update = opts.f
 headers = {'User-Agent': 'Mozilla/5.0'}
 loader = Loader.loader_with_mongodb(config.get('mongodb'))
 document_factory = DocFactory(config.get('mongodb'))
-log = FileLog('./log/wiki_page_france_{date}.log'.format(date=datetime.datetime.now().strftime('%Y-%m-%d')))
+log = FileLog('../../log/wiki_page_france_{date}.log'.format(date=datetime.datetime.now().strftime('%Y-%m-%d')))
 log.add('Start', log.INFO)
 log.add('Params: [{0}]'.format(repr(opts).encode('utf-8')), log.INFO)
 
